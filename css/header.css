@@ -1,0 +1,79 @@
+/** Header ::
+* This cluster of styling properties host the
+* animated header features, transition speeds,
+* and logo asthetics. **/
+
+header {
+  background: black;
+  height: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.5s ease-in-out;
+  width: 100%;
+  z-index: 500;
+
+  font-size: 2em;
+  text-align: center;
+}
+
+a, a:hover, a:visited, a:link a:active{
+  text-decoration: none;
+  color: white;
+}
+
+a.active{
+  color: #e74c3c; ;
+}
+a.active:active{
+  color: white;
+}
+
+.nav-up{
+  top: -200px;
+}
+
+#navlist li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+IMG.logo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+}
+
+.float {
+  top: 0;
+  left: 0;
+  z-index: 900;
+  position: fixed;
+
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/*Hamburger Menu Icon*/
+IMG.menu {
+	max-width: 25px;
+}
+
+/*Hamburger Menu Icon Animations*/
+#imgHolder {
+  position:relative; 
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#imgHolder.rotated {
+  -webkit-transform : rotate(180deg); 
+  -moz-transform : rotate(180deg); 
+  -ms-transform : rotate(180deg); 
+  -o-transform : rotate(180deg); 
+  transform : rotate(180deg); 
+}

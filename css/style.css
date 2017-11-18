@@ -1,0 +1,23 @@
+/** Universal Style Defaults ::
+* The group of style properties listed below
+* are custom default settings for the site layout
+* offering a uniform and familiar appeal. **/
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  left: 0;
+  margin: 0;
+  height: 1000px;
+  padding-top: 250px;
+  background-color: lightgrey;
+  
+  transition: top 0.5s ease-in-out;
+
+  background-image: url("../img/trainStation.jpeg");
+  background-size:     cover;         
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
