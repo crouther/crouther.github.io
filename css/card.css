@@ -13,6 +13,10 @@ h2 {
   color: #e74c3c;  
 }
 
+.main-area {
+  padding-top: 20px;
+}
+
 .centered {
     margin: 0 auto;
     padding: 0 1em;
