@@ -40,13 +40,14 @@ h1{
 	padding: 10px;
 }
 
-.footer{
+.content{
 	position: absolute;
 	text-align: center;
 
 	width: auto;
 	height: auto;
 
+	/*Centers Data to middle of page*/
 	top: 50%;
 	left: 50%;
 	margin-left: -360px;
@@ -58,39 +59,38 @@ h1{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.footerContent {
+.text{
 	margin: 3%;
 	vertical-align: middle;
 }
 
-p {
+p{
 	margin: 2%;
 }
 
-a {
+a{
 	text-decoration: none;
 	color:white;
 }
 
-.button {
-	background-color: gray; /* Green */
-	border: none;
-	color: white;
-
-	padding: 15px 32px;
-	text-align: center;
-
-	text-decoration: none;
+.button{
 	display: inline-block;
-
-	font-size: 16px;
-	margin: 4px 2px;
+	float:center;
 	cursor: pointer;
 
+	background-color: gray;
+	border: none;
+
+	padding: 15px 32px;
+	margin: 4px 2px;
+
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
-
-	float:center;
 }
 
 .button:hover {
