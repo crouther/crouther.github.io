@@ -21,7 +21,7 @@
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     body{
         top: -100px;
     }
@@ -31,7 +31,7 @@
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body{
         top: -200px;
     }

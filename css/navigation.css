@@ -6,4 +6,58 @@
 
 	margin-left: -512px;
 	margin-top: -384px;
+
+	z-index: 500;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+.box{
+	width: 50%;
+	height: 50%;
+	z-index: 900;
+	opacity: .5;
+	position: absolute;
+}
+
+.aboutHire{
+	top: 0;
+	left: 0;
+}
+
+.research{
+	top: 0;
+	right: 0;
+}
+
+
+.projects{
+	bottom: 0;
+	left: 0;
+}
+
+
+.arts{
+	bottom: 0;
+	right: 0;
+}
+
+.diamond{
+	position: absolute;
+    z-index: 999;
+
+	top: 50%;
+	left: 50%;
+
+	margin-left: -125px;
+	margin-top: -125px;
+
+	height: 250px;
+	width: 250px;
+
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	ms-transform: rotate(45deg); /* IE 9 */
+    transform: rotate(45deg);
 }
