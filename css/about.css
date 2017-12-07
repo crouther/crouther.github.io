@@ -1,19 +1,9 @@
-<<<<<<< HEAD
- /** Simple About Me Page ::
+/** Simple About Me Page ::
 * The group of style properties listed below
 * are custom element stylings for the simeple 
 * about header, body, and footer contents **/
-=======
-* {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
->>>>>>> 6c93d78308c02c7d5ee0def0481da96cba75a199
 
 body{
-	background: #15151F;
- 	padding: 0;
-	margin: 0;
-
 	background-image: url("../img/bkg/20161002.jpeg");
   	background-size:     cover;         
   	background-repeat:   no-repeat;
@@ -38,7 +28,6 @@ body{
  	width: 200px; 
  	height: auto; 
  	padding: 10px;
-<<<<<<< HEAD
 }
 
 li{
@@ -79,7 +68,9 @@ h1{
 	vertical-align: middle;
 }
 
-p {margin: 2%;}
+p {
+	margin: 2%;
+}
 
 a {
 	text-decoration: none;
@@ -87,24 +78,25 @@ a {
 }
 
 .button {
-    background-color: gray; /* Green */
+    background-color: gray;
     border: none;
+
     color: white;
-    padding: 15px 32px;
+    font-size: 16px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+
     margin: 4px 2px;
+    padding: 15px 32px;
+
     cursor: pointer;
+    float:center;
+    display: inline-block;
+
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-    float:center;
 }
 
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-=======
- }
->>>>>>> 6c93d78308c02c7d5ee0def0481da96cba75a199
