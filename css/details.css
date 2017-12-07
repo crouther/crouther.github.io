@@ -1,0 +1,47 @@
+.container{
+	display: inline-block;
+	float: center;
+
+	width: 100%;
+	height: auto;
+
+	padding: 1%;
+	
+}
+
+.text{
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+}
+
+.box{
+	width: 31%;
+	height: auto;
+
+	padding: 1%;
+	margin: 0;
+	
+	float: left;
+}
+
+.back{
+	width: auto;
+	height: 1em;
+	padding: 10px;
+}
+
+.nav{
+	display: inline-block;
+	width: 100%;
+}
+
+.content{
+	max-width: 1560px;
+	margin: 0 auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+	background-color: #fff;
+}
+

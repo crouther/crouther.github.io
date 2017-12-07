@@ -1,0 +1,21 @@
+h1{
+	padding-top: 1%;
+	text-align: center;
+}
+
+.arrow{
+	display: inline-block; 
+	float: left;
+}
+
+.specs{
+	list-style-type: square;
+}
+
+.r{
+	background-color: #fceeed;
+}
+
+.bulletin{
+	background-color: #edfcf6;
+}

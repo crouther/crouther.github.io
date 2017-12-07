@@ -10,14 +10,5 @@
 body {
   left: 0;
   margin: 0;
-  height: 1000px;
-  padding-top: 250px;
-  background-color: black;
-  
-  transition: top 0.5s ease-in-out;
-
-  background-image: url("../img/trainStation.jpeg");
-  background-size:     cover;         
-  background-repeat:   no-repeat;
-  background-position: center center;
+  padding: 0;
 }
