@@ -1,6 +1,8 @@
 h1{
-	padding-top: 1%;
+	position: absolute;
+	padding: 1%;
 	text-align: center;
+	margin-left: 40%;
 }
 
 .arrow{
@@ -10,12 +12,18 @@ h1{
 
 .specs{
 	list-style-type: square;
-}
-
-.r{
-	background-color: #fceeed;
+	float: center;
 }
 
 .bulletin{
 	background-color: #edfcf6;
+}
+
+.cover{
+	background-color: black;
+	font-size: 1.5em;
+
+
+	color: white;
+	opacity: .7;
 }

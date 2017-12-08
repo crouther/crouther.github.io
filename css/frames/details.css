@@ -1,12 +1,10 @@
 .container{
+	margin-top: -4px;
 	display: inline-block;
 	float: center;
 
 	width: 100%;
 	height: auto;
-
-	padding: 1%;
-	
 }
 
 .text{
@@ -37,11 +35,10 @@
 }
 
 .content{
-	max-width: 1560px;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 
 	background-color: #fff;
 }
-
