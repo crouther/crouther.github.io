@@ -4,7 +4,7 @@
 * about header, body, and footer contents **/
 
 body{
-	background-image: url("../img/bkg/20161002.jpeg");
+	background-image: url("../../img/bkg/20161002.jpeg");
   	background-size:     cover;         
   	background-repeat:   no-repeat;
  }
