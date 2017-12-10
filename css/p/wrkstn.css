@@ -4,7 +4,6 @@ body{
 
 h1{
 	position: absolute;
-	padding: 1%;
 	margin-left: 10%;
 	color: #e54d42;
 	font-size: 3em;
@@ -27,5 +26,5 @@ h1{
 .cover{
 	background-color: #191919;
 	font-size: 1.5em;
-	color: #e54d42;;
+	color: #e54d42;
 }
