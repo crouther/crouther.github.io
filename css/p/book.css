@@ -8,22 +8,6 @@ h1{
 	size: 50px;
 }
 
-.header{
-	list-style-type: none; 
-	position: fixed; 
-	display: block; 
-
-	z-index: 900; 
-	top: 0; 
-	padding: 0; 
-	margin: 0;
-}
-
-.float-nav{
-	width: 200px; 
-	height: auto; 
-	padding: 10px;
-}
 
 .cover{
 	position: absolute;
