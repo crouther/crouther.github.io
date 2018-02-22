@@ -23,6 +23,27 @@
 <style type="text/css">
 	*{
 		text-decoration: none;
+		text-decoration-color: none;
+	}
+
+	/* unvisited link */
+	a:link {
+	    color: black;
+	}
+
+	/* visited link */
+	a:visited {
+	    color: black;
+	}
+
+	/* mouse over link */
+	a:hover {
+	    color: black;
+	}
+
+	/* selected link */
+	a:active {
+	    color: black;
 	}
 	
 	.fw-box{
@@ -80,7 +101,7 @@
 	}
 </style>
 
-<body style="background-color: #15151E;">
+<body style="background-color: #fff;">
 
 	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="img/bkg/20161209.jpeg"></div>
 	<div class="fw-box" style="background-color: #fff; opacity: 40%;">
@@ -88,14 +109,7 @@
 		<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 		<h4  style="margin:.5em;"><i>Avid developer, designer and maker.</i></h4>
 
-		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while persuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
-
-		<!--<button class = "button">
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSdB8b3kYPkGGAVj0m2eTTjcu2wMfrntRMI6qeC9Xg-sZUM0vg/viewform?usp=sf_link" target="_blank"><b>Hire</b></a>
-		</button>
-		<button class = "button">
-			<a href="https://www.linkedin.com/in/mylescrouther/" target="_blank"><b>More</b></a>
-		</button></div>-->
+		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while persuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing. Keep scrolling.</p>
 	</div>
 
 	<div class="fw-box">
@@ -157,5 +171,15 @@
 		</div>
 	</div>
 </body>
+
+<script type="text/javascript">
+	window.onload = popup() {
+  		window.setTimeout(disappear(), 500);
+	};
+
+	disappear(){
+		document.getElementById("mobileNotification").style.visibility = "hidden";  
+	}
+</script>
 
 </html>
