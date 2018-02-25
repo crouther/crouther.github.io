@@ -2,6 +2,10 @@
 <html>
 
 <head>
+	<!-- Get jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
 	<script>
@@ -21,7 +25,7 @@
 </head>
 
 <body>
-	<!--<div id="mobileNotification">On Mobile? <br> Click Center Diamond!</div>-->
+	<a href="i.html"><div id="mobileNotification">On Mobile? <br> Click Center Diamond!</div></a>
 
 	<img src="img/bkg/i.jpg" id="bg" alt="" style="opacity: .6;">
 
@@ -36,15 +40,8 @@
 	<div class="diamond" onclick="location.href='i.html';"></div>
 
 </body>
-<!--
 <script type="text/javascript">
-	window.onload = popup() {
-  		window.setTimeout(disappear(), 5000);
-	};
-
-	disappear(){
-		document.getElementById("mobileNotification").style.visibility = "hidden";  
-	}
-</script>-->
+$( "#mobileNotification" ).fadeOut( 8000, function() {});
+</script>
 
 </html>
