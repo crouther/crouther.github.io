@@ -4,6 +4,7 @@
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -13,8 +14,11 @@
 	</script>
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/elements.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/elements.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
 
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,6 +36,7 @@
 	*{
 		text-decoration: none;
 		text-decoration-color: none;
+		font-family: 'Anonymous Pro', monospace;
 	}
 
 	/* unvisited link */
@@ -75,11 +80,12 @@
 	}
 
 	.sm-text{
+		text-overflow: ellipsis;
 		text-align: center;
 		margin-left: auto;
   		margin-right: auto;
   		position: absolute;
-  		font-size: 1.25em;
+  		font-size: 2.4vw;
   		width: 100%;
   		top: 50%;
   		transform: translateY(-50%);
@@ -91,7 +97,7 @@
 		margin-left: auto;
   		margin-right: auto;
   		position: absolute;
-  		font-size: 4em;
+  		font-size: 5vw;
   		width: 100%;
   		top: 50%;
   		transform: translateY(-50%);
@@ -114,13 +120,13 @@
 
 <body style="background-color: #fff;">
 
-	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="img/bkg/20161209.jpeg"></div>
-	<div class="fw-box" style="background-color: #fff; opacity: 40%;">
+	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg"></div>
+	<div class="fw-box white" style="opacity: 40%;">
 		<div style="padding: 5%;">
 		<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 		<h4  style="margin:.5em;"><i>Avid developer, designer and maker.</i></h4>
 
-		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while persuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing. Keep scrolling.</p>
+		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while persuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
 	</div>
 
 	<div class="fw-box">
@@ -132,7 +138,7 @@
 			<div class="text">Art</div></div></a>
 	</div>
 
-	<div class="fw-box"><img id ="stem" style="max-width: 100%;" src="img/stem.jpg"></div>
+	<div class="fw-box"><img id ="stem" style="max-width: 100%;" src="../img/stem.jpg"></div>
 
 	<div class="fw-box white">
 		<div style="padding: 5%;">
@@ -143,16 +149,16 @@
 	</div>
 
 	<div class="fw-box">
-		<a href="https://photos.app.goo.gl/QlYKpNmjXIz1oaaD3"><div class="sm-box limegreen">
+		<a href="https://photos.app.goo.gl/QlYKpNmjXIz1oaaD3" target="_blank"><div class="sm-box limegreen">
 			<div class="text">Design</div></div></a>
-		<a href="p/workstation.html"><div class="sm-box tomato">
+		<a href="workstation.html"><div class="sm-box tomato">
 			<div class="text">Hardware</div></div></a>
-		<a href="p/justCards.html"><div class="sm-box lightblue">
+		<a href="justCards.html"><div class="sm-box lightblue">
 			<div class="text">Software</div></div></a>
 	</div>
 
 	<div class="fw-box white">
-		<img id ="research" style="max-width: 100%;" src="img/rsch.jpg">
+		<img id ="research" style="max-width: 100%;" src="../img/rsch.jpg">
 		<div style="padding: 5%;">
 			<h1 style="margin-bottom:0px;">Research</h1>
 			<h4  style="margin:.5em;"><i>Fact-finding analysis for academic studies</i></h4>
@@ -172,13 +178,14 @@
 	</div>
 
 	<div class="fw-box white">
-		<img id ="art" style="max-width: 100%;" src="img/bkg/book169.jpg">
+		<img id ="art" style="max-width: 100%;" src="../img/bkg/book169.jpg">
 		<div style="padding: 5%;">
-		<h1 style="margin-bottom:0px;">Take A Trip</h1>
+		<a href="book.html"><h1 style="margin-bottom:0px;">Take A Trip</h1></a>
 		<h4  style="margin:.5em;"><i>A pending novel by the works of Myles Crouther</i></h4>
 		<p>The book discusses the spoils of suburbia and the urban struggle in a dystopian fictional memoir. Taking place in the outskirts of the Washingtonian area during the turn of the 21st century. Unknown reasons explain the current plight of the world. The narrative follows the lives of the remaining American tribes of the eastern seaboard. <br><br>
 
 		The adolescent narrator discusses political, social, and ethical issues of a previous era  while trying to recover memories of what life was like before the change to dystopia. In an unusual environment he observes the coming of age of both preadolescences and his own search for adulthood. Bouncing between the different tribes he attempts to piece together his own recollection of his past life in order to come to peace with the isolation of this new dystopia. Questions of happiness and the will to survive drive this epic, fictional, American story.</p>
+		<a href="book.html"><p><i>Launch Page</i></p></a>
 		</div>
 	</div>
 </body>
