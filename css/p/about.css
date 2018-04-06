@@ -26,8 +26,8 @@ body{
 }
 
 .float-nav{
+ 	width: 200px;
 	min-width: 10%;
- 	width: 200px; 
  	height: auto; 
  	padding: 10px;
 }
