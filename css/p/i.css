@@ -2,7 +2,7 @@
 * This cluster of styling properties host 
 * the splash screen's UX **/
 
-#mobileNotification{
+#theme{
 	z-index: 999; 
 	background-color: tomato; 
 	color: black; 
