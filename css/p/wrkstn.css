@@ -9,11 +9,6 @@ h1{
 	font-size: 3em;
 }
 
-.arrow{
-	display: inline-block; 
-	float: left;
-}
-
 .specs{
 	list-style-type: square;
 	float: center;
@@ -27,4 +22,24 @@ h1{
 	background-color: #191919;
 	font-size: 1.5em;
 	color: #e54d42;
+}
+
+/* Create 3 equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 32.2%;
+    padding: 5px;
+}
+
+.column3 img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Responsive layout - 
+   makes the 3 columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 600px) {
+    .column3 {
+        width: 98%;
+   }
 }

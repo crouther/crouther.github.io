@@ -23,12 +23,6 @@
 	float: left;
 }
 
-.back{
-	width: auto;
-	height: 1em;
-	padding: 10px;
-}
-
 .nav{
 	display: inline-block;
 	width: 100%;

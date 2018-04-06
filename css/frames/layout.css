@@ -1,3 +1,8 @@
+/** Traditional Adaptable Grid ::
+* These styles deal with supporting a 4 column grid.
+* The objects have a fix width and stack accordingly.
+* Content heavily borrowed from W3Schools**/
+
 .row {
     padding-left: 5px;
     margin: 0 auto;
@@ -21,7 +26,8 @@
     clear: both;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - 
+   makes a two column-layout instead of four columns */
 @media only screen and (max-width: 800px) {
     body{
         top: -100px;
@@ -31,7 +37,8 @@
     }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - 
+   makes the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 600px) {
     body{
         top: -200px;
