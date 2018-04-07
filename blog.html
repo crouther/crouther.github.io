@@ -113,12 +113,13 @@
 </style>
 
 <body style="overflow: hidden">
-	<div class="wrapper"><iframe src="p/i.html" frameBorder = "0" scrolling = "yes" style="width: 100%; height: 100%; overflow-x: hidden;"></iframe></div>
+	<div class="wrapper"><iframe src="p/i.html" name ="contentFrame" frameBorder = "0" scrolling = "yes" style="width: 100%; height: 100%; overflow-x: hidden;"></iframe></div>
 
 	<div class="navBox">
 		<img src="img/icon/logo.png" style="width: 50%; padding: 2% 25% 2% 25%;">
 		<div style="position: absolute; left: -5vw;">
 		<pre><b>
+		<a href="p/i.html#name" target="contentFrame">About / Navigation</a>
 		<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black;">Contact Me</a>
 		<a class="anc" href="https://drive.google.com/open?id=1gP_rLLR_c_49rO9RWdkj3MkflBhSnHSr" target ="_blank">Resume</a>
 		<a class="anc" href="https://github.com/crouther" target ="_blank">Github</a>
@@ -136,8 +137,7 @@
 	(function(){
 		if ($(window).width() < 700) {
 			window.location.href = "p/i.html";
-		}
-    // do some stuff
+		}// do some stuff
     setTimeout(arguments.callee, 500);
 	})();
 </script>
