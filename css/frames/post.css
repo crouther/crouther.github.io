@@ -1,0 +1,89 @@
+*{
+	text-decoration: none;
+	text-decoration-color: none;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.mw-box{
+	width: 80%; 
+	padding-right: 10%; 
+	padding-left: 10%;
+
+}
+
+.fw-box{
+	width: 100%;
+}
+
+.sm-box{
+	width: 33.333%; 
+	padding-top: 33%; 
+	
+	float: left; 
+	position: relative;
+}
+
+.tiny-box{
+	width: 16.666%;
+	padding-top: 16.666%;
+
+	float: left;
+	position: relative;
+}
+
+.sm-topic-text{
+	text-overflow: ellipsis;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	font-size: 2.4vw;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.topic-text{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	font-size: 5vw;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Colors */
+.lightblue{background-color: #47e3ff;}
+.lightgray{background-color: lightgray}
+.limegreen{background-color: #47ffbf;}
+.dimgray{background-color: #5b7278;}
+.yellow{background-color: #ffed47;}
+.tomato{background-color: #ff6347;}
+.white{background-color: #fff;}
+.black{background-color: black;}
+.eit{background-color: #ffa500;}
+.hp{background-color: #0096d6;}
+.hpe{background-color: #0DAB7F;}
