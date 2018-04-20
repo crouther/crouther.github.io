@@ -4,7 +4,7 @@
 * Content heavily borrowed from W3Schools**/
 
 .row {
-    padding-left: 5px;
+    padding: 5px;
     margin: 0 auto;
 }
 /* Create four equal columns that floats next to each other */
@@ -15,7 +15,7 @@
 }
 
 .column img {
-    margin-top: 10px;
+    margin-top: 5px;
     width: 100%;
 }
 
@@ -33,7 +33,7 @@
         top: -100px;
     }
     .column {
-        width: 46%;
+        width: 47%;
     }
 }
 
@@ -45,6 +45,6 @@
     }
 
     .column {
-        width: 98%;
+        width: 95%;
    }
 }
