@@ -1,5 +1,4 @@
 .container{
-	margin-top: -4px;
 	display: inline-block;
 	float: center;
 
@@ -10,6 +9,7 @@
 .text{
 	margin-left: 10%;
 	margin-right: 10%;
+
 	width: 80%;
 }
 
@@ -23,16 +23,42 @@
 	float: left;
 }
 
-.nav{
-	display: inline-block;
-	width: 100%;
-}
-
 .content{
 	width: 100%;
+
 	margin: 0 auto;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 
 	background-color: #fff;
+}
+
+.caption{
+	position: absolute;
+	margin-left: 7%;
+	color: #e54d42;
+	font-size: 5em;
+}
+
+.slideAnimate{
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 7%;
+    width: 100%;
+  }
+}
+
+/*Specific to Hardawre Page*/
+.specs{
+	list-style-type: square;
+	float: center;
 }
