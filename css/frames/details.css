@@ -48,12 +48,12 @@
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    //width: 300%; 
   }
 
   to {
     margin-left: 7%;
-    width: 100%;
+    //width: 100%;
   }
 }
 
