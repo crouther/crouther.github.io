@@ -14,10 +14,10 @@
 }
 
 .box{
-	width: 31%;
+	width: 32%;
 	height: auto;
 
-	padding: 1%;
+	padding-left: 1%;
 	margin: 0;
 	
 	float: left;
@@ -61,4 +61,9 @@
 .specs{
 	list-style-type: square;
 	float: center;
+	font-size: 1.65vw;
+}
+
+h2{
+	font-size: 1.7vw;
 }
