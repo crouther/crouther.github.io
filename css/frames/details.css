@@ -57,6 +57,18 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+	.caption{font-size: 1em;}
+}
+
+@media only screen and (max-width: 600px) {
+	.caption{font-size: 2em;}
+}
+
+@media only screen and (max-width: 800px) {
+	.caption{font-size: 3em;}
+}
+
 /*Specific to Hardawre Page*/
 .specs{
 	list-style-type: square;
