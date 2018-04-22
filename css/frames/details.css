@@ -48,12 +48,10 @@
 @keyframes slidein {
   from {
     margin-left: 100%;
-    //width: 300%; 
   }
 
   to {
     margin-left: 7%;
-    //width: 100%;
   }
 }
 
@@ -70,14 +68,12 @@
 }
 
 /*Specific to Hardawre Page*/
+.subTitle{font-size: 1.3em;}
+
 .specs{
 	list-style-type: square;
 	float: center;
-	font-size: 1.65vw;
-}
-
-h2{
-	font-size: 1.7vw;
+	font-size: .8em;
 }
 
 .nopad{
