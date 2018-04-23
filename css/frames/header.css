@@ -11,7 +11,6 @@ body{
   
   transition: top 0.5s ease-in-out;
 
-  background-image: url("../img/trainStation.jpeg");
   background-size:     cover;         
   background-repeat:   no-repeat;
   background-position: center center;
@@ -35,16 +34,13 @@ header {
 }
 
 /** Header Text **/
-a, a:hover, a:visited, a:link a:active{
+#navlist a, a:visited, a:link{
   text-decoration: none;
   color: white;
 }
 
-a.active{
-  color: #e74c3c; ;
-}
-a.active:active{
-  color: white;
+#navlist a:hover{
+  color: tomato;
 }
 
 .nav-up{

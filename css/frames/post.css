@@ -5,23 +5,9 @@
 }
 
 /* unvisited link */
-a:link {
-    color: black;
-}
-
-/* visited link */
-a:visited {
-    color: black;
-}
-
-/* mouse over link */
-a:hover {
-    color: black;
-}
-
-/* selected link */
-a:active {
-    color: black;
+a, a:hover, a:visited, a:link a:active{
+  text-decoration: none;
+  color: black;
 }
 
 .mw-box{
@@ -40,6 +26,14 @@ a:active {
 	padding-top: 33%; 
 	
 	float: left; 
+	position: relative;
+}
+
+.dub-box{
+	width: 66%;
+	padding-top: 33%;
+
+	float: left;
 	position: relative;
 }
 
