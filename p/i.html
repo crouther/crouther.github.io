@@ -34,7 +34,7 @@
 	<title>Myles Crouther</title>
 </head>
 
-<body style="background-color: #fff;">
+<body style="background-color: #fff;" onload="checkCookie()">
 
 	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg"></div>
 	<div class="fw-box white" id ="name" style="opacity: 40%;">
@@ -116,7 +116,7 @@
 	</div>
 
 	<div class="fw-box" id="audio">
-		<a href="https://soundcloud.com/2mylesaway">
+		<a href="https://soundcloud.com/2mylesaway" target="_blank">
 			<img id ="SoundCloudCoverPhoto" style="max-width: 100%;" src="../img/bkg/sc.png">
 			<div style="padding: 5%;">
 				<h1 style="margin-bottom:0px;">SoundCloud... ^</h1>
@@ -127,12 +127,52 @@
 </body>
 
 <script type="text/javascript">
-	(function(){
-		if ($(window).width() > ($(window).height()*2)) {
-			window.location.href = "../index.html";
-		}// do some stuff
-    setTimeout(arguments.callee, 500);
-	})();
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var browser = getCookie("browser");
+    if (browser != "") {
+        alert("Welcome again " + username);
+    } else {
+        browser = prompt("Please enter your name:", "");
+        if (browser != "" && browser != null) {
+            setCookie("browser", browser, 365);
+        }
+    }
+}
+
+
+(function(){
+	var decodedCookie = decodeURIComponent(document.cookie);
+	if (($(window).width()) > ($(window).height())) {
+		window.location.href = "../index.html";
+	}// do some stuff
+setTimeout(arguments.callee, 500);
+})();
+
+
 </script>
 
 </html>
