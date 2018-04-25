@@ -38,7 +38,7 @@
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 30px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
 }
@@ -46,6 +46,10 @@
 /* Add a hover effect if you want */
 .fa:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+    .fa{padding: 17px;}
 }
 
 /* Set a specific color for each brand */

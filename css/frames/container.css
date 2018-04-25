@@ -1,0 +1,59 @@
+/*container.css*/
+*{font-family: 'Anonymous Pro', monospace;}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* visited link */
+.anc:visited {
+    color: green;
+}
+
+/* mouse over link */
+.anc a:hover {
+    color: gray;
+}
+
+/* True Page Body Content */
+.wrapper{
+	position: absolute; 
+	top: 0; 
+	right: 0%; 
+	width: 50%; 
+	height: 100%;
+}
+
+/* Floating Navigation Box */
+.navBox{
+	position: absolute; 
+	top: 10%; 
+	left: 10%; 
+	width: 30%; 
+	height: auto;
+	padding-bottom: 150px;
+}
+
+.navBox img{
+	width: 50%; 
+	padding: 2% 25% 2% 25%;
+}
+
+.navLinks{
+	position: absolute; 
+	left: -5vw;
+}
+
+/* Icon Dock */
+.iconDock{
+	position: absolute; 
+	bottom: 0%; 
+	left: 0;
+}
+
+@media (max-width: 1000px) {
+	.wrapper{width: 60%;}
+	.navBox{left: 5%;}
+	.navLinks{left: -12vw;}
+}

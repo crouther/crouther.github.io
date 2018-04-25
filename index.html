@@ -17,6 +17,7 @@
 	</script>
 
 	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/frames/container.css">
 	<link rel="stylesheet" type="text/css" href="css/elements.css">
 
 	<!-- Add icon library -->
@@ -38,57 +39,12 @@
 	<title>Myles Crouther</title>
 </head>
 
-<style type="text/css">
-	*{font-family: 'Anonymous Pro', monospace;}
-	
-	a{
-	    text-decoration: none;
-	    color: black;
-	}
-
-	/* visited link */
-	.anc:visited {
-	    color: green;
-	}
-
-	/* mouse over link */
-	a:hover {
-	    color: gray;
-	}
-
-	/* True Page Body Content */
-	.wrapper{
-		position: absolute; 
-		top: 0; 
-		right: 0%; 
-		width: 50%; 
-		height: 100%;
-	}
-
-	/* Floating Navigation Box */
-	.navBox{
-		position: absolute; 
-		top: 10%; 
-		left: 10%; 
-		width: 30%; 
-		height: auto;
-		padding-bottom: 150px;
-	}
-
-	/* Icon Dock */
-	.iconDock{
-		position: absolute; 
-		bottom: 0%; 
-		left: 0;
-	}
-</style>
-
 <body style="overflow: hidden">
 	<div class="wrapper"><iframe src="p/i.html" name ="contentFrame" frameBorder = "0" scrolling = "yes" style="width: 100%; height: 100%; overflow-x: hidden;"></iframe></div>
 
 	<div class="navBox">
-		<img src="img/icon/logo.png" style="width: 50%; padding: 2% 25% 2% 25%;">
-		<div style="position: absolute; left: -5vw;">
+		<img src="img/icon/logo.png">
+		<div class="navLinks">
 		<pre><b>
 		<a class="anc" href="p/i.html#name" target="contentFrame">About / Navigation</a>
 		<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black;">Contact Me</a>
