@@ -144,7 +144,7 @@ mobileCheck(navigator.userAgent||navigator.vendor||window.opera);
 if (isMobile) {isDesktop = false;}
 
 function responsivePage(){
-	if ( (($(window).width()) > ($(window).height()))) {
+	if ( (($(window).width()) > ($(window).height())) && isDesktop) {
 		window.location.href = "../index.html";
 	}// do some stuff
 setTimeout(arguments.callee, 500);
