@@ -1,0 +1,150 @@
+/** LandingPage.css
+*   This offers universal stylings for
+*   landing page themes produced by MKC
+*   the first group is generic for all
+*   page types with minor content variabion
+*   offered as the document continues **/
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+h1{
+	text-decoration: none;
+	size: 50px;
+}
+
+li{
+	display: inline;
+	float: left;
+}
+
+p{
+	margin: 2%;
+}
+
+.text{
+	margin: 3%;
+	vertical-align: middle;
+}
+
+
+/** Simple About Me Page
+*   The group of style properties listed below
+*   are custom element stylings for the simeple 
+*   about header, body, and footer contents **/
+
+.about{
+	background-image: url("../../img/bkg/20161002.jpeg");
+  	background-size:     cover;         
+  	background-repeat:   no-repeat;
+  	background-color: #15151E;
+ }
+
+/** Header
+*   The group of style properties listed below
+*   are custom element stylings for branding a
+*   landing page with a company logo **/
+
+.header{
+ 	list-style-type: none; 
+ 	position: fixed; 
+ 	display: block; 
+ 	z-index: 900; 
+ 	top: 0; 
+ 	padding: 0; 
+ 	margin: 0;
+}
+
+.float-nav{
+ 	width: 200px;
+	min-width: 10%;
+	max-width: 50%;
+ 	height: auto; 
+ 	padding: 10px;
+}
+
+ /** Footer
+* The group of style properties listed below
+* are custom element stylings for the simeple 
+* about footer **/
+
+.footer {
+	position: absolute;
+	background: #FFF;
+	z-index: 500;
+	opacity: .9;
+
+	bottom: 10%;
+	left: 16.666%;
+
+	width: 66.666%;
+	height: auto;
+
+	text-align: center;
+	color: black;
+	
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.footerContent {
+	margin: 3%;
+	vertical-align: middle;
+}
+
+
+/** Positioned Center Body Content
+*   Styling specifically for a landing page with
+*   body content and multi media centered in the 
+*   middle of the page **/
+
+.contentCentered{
+	position: absolute;
+	text-align: center;
+
+	width: auto;
+	height: auto;
+
+	/*Centers Data to middle of page*/
+	top: 50%;
+	left: 50%;
+	margin-left: -360px;
+	margin-top: -300px;
+
+	color: white;
+	background: #617075;
+	opacity: .9;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/** Positioned Right Body Content
+*   Styling specifically for a landing page with
+*   body content and multi media centered in the 
+*   middle of the page **/
+
+.contentRight{
+	position: absolute;
+	text-align: left;
+
+	width: 45%;
+	height: auto;
+
+	bottom: 2.5%;
+	left: 55%;
+
+	color: white;
+	background: black;
+	opacity: .9;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.cover{
+	position: absolute;
+	width: auto;
+	height: 100%;
+
+	bottom: 0%;
+	left: 0%;
+}

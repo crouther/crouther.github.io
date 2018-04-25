@@ -30,7 +30,8 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 .dub-box{
-	width: 66%;
+	margin: 0px;
+	width: 65%;
 	padding-top: 33%;
 
 	float: left;
@@ -81,3 +82,4 @@ a, a:hover, a:visited, a:link a:active{
 .eit{background-color: #ffa500;}
 .hp{background-color: #0096d6;}
 .hpe{background-color: #0DAB7F;}
+.eit2{background: linear-gradient(to bottom right, #ff664c, #ffa500);}

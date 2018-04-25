@@ -45,13 +45,6 @@ a{
 	left: -5vw;
 }
 
-/* Icon Dock */
-.iconDock{
-	position: absolute; 
-	bottom: 0%; 
-	left: 0;
-}
-
 @media (max-width: 1000px) {
 	.wrapper{width: 60%;}
 	.navBox{left: 5%;}
