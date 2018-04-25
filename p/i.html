@@ -130,8 +130,7 @@
 	//Variables for Broswer Responsive Link Redirections
 	var isMobile = false;
 	var isDesktop = true;
-	var isInIFrame = false;
-
+	
 
 	/** Function inIframe checks if page is contained in Frame
 	*   This done with a comparison of whether or not the
@@ -142,7 +141,7 @@
 	}
 
 	//Function corrects page inception assumption
-	isInIFrame = inIframe();
+	var isInIFrame = inIframe();
 
 
 	/** Function mobileCheck changes the isMobile boolean 
