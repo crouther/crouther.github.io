@@ -1,16 +1,27 @@
+.content{
+	width: 100%;
+
+	margin: 0 auto;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+
+	background-color: #fff;
+}
+
+/*Specific to Hardawre Page*/
+.caption{
+	position: absolute;
+	margin-left: 7%;
+	color: #e54d42;
+	font-size: 5em;
+}
+
 .container{
 	display: inline-block;
 	float: center;
 
 	width: 100%;
 	height: auto;
-}
-
-.text{
-	margin-left: 10%;
-	margin-right: 10%;
-
-	width: 80%;
 }
 
 .box{
@@ -23,24 +34,6 @@
 	float: left;
 }
 
-.content{
-	width: 100%;
-
-	margin: 0 auto;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-
-	background-color: #fff;
-}
-
-.caption{
-	position: absolute;
-	margin-left: 7%;
-	color: #e54d42;
-	font-size: 5em;
-}
-
-/*Specific to Hardawre Page*/
 .subTitle{font-size: 1.3em;}
 
 .specs{
