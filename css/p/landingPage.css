@@ -42,6 +42,7 @@ p{
   	background-color: #15151E;
  }
 
+
 /** Header
 *   The group of style properties listed below
 *   are custom element stylings for branding a
@@ -64,6 +65,7 @@ p{
  	height: auto; 
  	padding: 10px;
 }
+
 
  /** Footer
 * The group of style properties listed below
@@ -119,10 +121,10 @@ p{
 }
 
 
-/** Positioned Right Body Content
+/** Positioned Right Bottom Body Content
 *   Styling specifically for a landing page with
-*   body content and multi media centered in the 
-*   middle of the page **/
+*   body content and text centered at the bottom 
+*   of the page **/
 
 .contentRight{
 	position: absolute;
@@ -147,4 +149,28 @@ p{
 
 	bottom: 0%;
 	left: 0%;
+}
+
+
+/** Body Content Positioned Right Center
+*   Styling specifically for a landing page with
+*   body content and text centered at the right 
+*   and middle of the page **/
+
+.contentCenterRight{
+	position: absolute;
+	width: 40%; 
+	height: auto;
+
+	top: 30%;
+	left: 55%;
+}
+
+.leftImage{
+	position: absolute; 
+	left: 10%; 
+	top: 10%; 
+
+	max-width: 40%; 
+	max-height: 80%;
 }
