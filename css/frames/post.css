@@ -83,3 +83,7 @@ a, a:hover, a:visited, a:link a:active{
 .hp{background-color: #0096d6;}
 .hpe{background-color: #0DAB7F;}
 .eit2{background: linear-gradient(to bottom right, #ff664c, #ffa500);}
+
+.greenblue{background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
+.businessGray{background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
+.flColor{background: linear-gradient(to bottom right, #ffed47, #ffa500);}
