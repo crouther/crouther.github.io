@@ -78,11 +78,15 @@ a, a:hover, a:visited, a:link a:active{
 .yellow{background-color: #ffed47;}
 .tomato{background-color: #ff6347;}
 .white{background-color: #fff;}
+.gray{background-color: #666666;}
 .black{background-color: black;}
 .eit{background-color: #ffa500;}
 .hp{background-color: #0096d6;}
 .hpe{background-color: #0DAB7F;}
 .eit2{background: linear-gradient(to bottom right, #ff664c, #ffa500);}
+
+.whiteTxt{color: #fff;}
+.blackTxt{color: #000;}
 
 .greenblue{background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
 .businessGray{background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
