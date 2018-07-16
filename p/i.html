@@ -40,10 +40,11 @@
 
 <body style="background-color: #fff;">
 
-	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
+	<div class="fw-box"><img id="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
 
-		<div class="half-box tan" id ="name" style="margin-top: -1vh; min-height: 30vh;">
-			<div style="padding: 5%; margin-left: 3vw;">
+		<div class="container-box tan" id="name" style="margin-top: -1vh; min-height: 30vh;">
+			
+			<div class="box" style="padding: 5%; margin-left: 3vw;">
 				<br>
 				<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 				<h4  style="margin:.5em;">
@@ -55,23 +56,22 @@
 				<br>
 				<br>
 			</div>
+
+			<div class="box darkTan whiteTxt" id="aboutDesc" style="padding: 5%;">
+				<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
+			</div>
+
 		</div>
 
-		<div class="half-box darkTan" style="margin-top: -1vh; min-height: 30vh;">
-			<div class="sm-text whiteTxt" style="padding: 5%;">
-				<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>				
-			</div>
-		</div>
-		</div>
-<!--
-	<div class="fw-box white" id ="name" style="opacity: 40%;">
-		<div style="padding: 5%;">
+	</div> <!-- End of About -->
+
+	<div class="fw-box white" id="mobileName" style="opacity: 40%;">
+		<div id ="name" style="padding: 5%;">
 		<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 		<h4  style="margin:.5em;"><i>Avid developer, designer and maker.</i></h4>
 
 		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p></div></div>
 	</div>
--->
 
 	<div class="fw-box" id="contentNav">
 		<a href="#stem"><div class="sm-box lightgray" style="padding-top: 20%;">
@@ -157,6 +157,16 @@
 
 <script type="text/javascript">
 	var x = document.getElementById("contentNav");
+	var divMB = document.getElementById("mobileName");
+	var divName = document.getElementById("name");
+	var divAD = document.getElementById("aboutDesc");
+
+	var dN = divName.style.height;
+	var dA = divAD.style.height;
+
+	if(dN > dA) {divAD.style.height = divName.style.height;}
+	if(dN < dA) {divName.style.height = divAD.style.height;}
+
 
 	//Variables for Broswer Responsive Link Redirections
 	var isMobile = false;
@@ -176,6 +186,10 @@
 
 	if(isInIFrame){
 		x.style.display = "none";
+		divMB.style.display = "none";
+	}
+	else{
+		divMB.style.display = "none";
 	}
 
 
