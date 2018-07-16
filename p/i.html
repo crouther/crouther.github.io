@@ -18,6 +18,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/frames/post.css">
 
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
 
@@ -36,28 +40,51 @@
 
 <body style="background-color: #fff;">
 
-	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg"></div>
+	<div class="fw-box"><img id ="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
+
+		<div class="half-box tan" id ="name" style="margin-top: -1vh; min-height: 30vh;">
+			<div style="padding: 5%; margin-left: 3vw;">
+				<br>
+				<h1 style="margin-bottom:0px;">Myles Crouther</h1>
+				<h4  style="margin:.5em;">
+					<i>Avid developer, designer and maker.</i></h4>
+				<br>
+				<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a><br>
+				<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<div class="half-box darkTan" style="margin-top: -1vh; min-height: 30vh;">
+			<div class="sm-text whiteTxt" style="padding: 5%;">
+				<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>				
+			</div>
+		</div>
+		</div>
+<!--
 	<div class="fw-box white" id ="name" style="opacity: 40%;">
 		<div style="padding: 5%;">
 		<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 		<h4  style="margin:.5em;"><i>Avid developer, designer and maker.</i></h4>
 
-		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
+		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p></div></div>
 	</div>
+-->
 
 	<div class="fw-box" id="contentNav">
-		<a href="#stem"><div class="sm-box lightblue">
+		<a href="#stem"><div class="sm-box lightgray" style="padding-top: 20%;">
 			<div class="topic-text">Work</div></div></a>
-		<a href="#research"><div class="sm-box limegreen">
-			<div class="topic-text">Research</div></div></a>
-		<a href="#art"><div class="sm-box tomato">
+		<a href="#research"><div class="sm-box black" style="padding-top: 20%;">			<div class="topic-text whiteTxt">Research</div></div></a>
+		<a href="#art"><div class="sm-box gray" style="padding-top: 20%;">
 			<div class="topic-text">Art</div></div></a>
 	</div>
 
-	<div class="fw-box" id="projImage"><img id ="stem" style="max-width: 100%;" src="../img/stem.jpg"></div>
+	<div class="fw-box" id="work"><img id="projImage" style="max-width: 100%;" src="../img/stem.jpg"></div>
 
-	<div class="fw-box white" id="projDesc">
-		<div style="padding: 5%;">
+	<div class="fw-box white">
+		<div id="projDesc" style="padding: 5%;">
 		<h1 style="margin-bottom:0px;">My time in the industry</h1>
 		<h4  style="margin:.5em;"><i>Projects done professionally and privately</i></h4>
 
@@ -73,8 +100,8 @@
 			<div class="topic-text">Software</div></div></a>
 	</div>
 
-	<div class="fw-box white" id="rschImgDes">
-		<img id ="research" style="max-width: 100%;" src="../img/rsch.jpg">
+	<div class="fw-box white" id="research">
+		<img id ="rschImgDes" style="max-width: 100%;" src="../img/rsch.jpg">
 		
 		<div style="padding: 5%;">
 			<h1 style="margin-bottom:0px;">Research</h1>
@@ -129,6 +156,8 @@
 </body>
 
 <script type="text/javascript">
+	var x = document.getElementById("contentNav");
+
 	//Variables for Broswer Responsive Link Redirections
 	var isMobile = false;
 	var isDesktop = true;
@@ -144,6 +173,10 @@
 
 	//Function corrects page inception assumption
 	var isInIFrame = inIframe();
+
+	if(isInIFrame){
+		x.style.display = "none";
+	}
 
 
 	/** Function mobileCheck changes the isMobile boolean 
