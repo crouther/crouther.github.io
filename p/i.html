@@ -27,6 +27,7 @@
 
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="copyright" content="MKC is an unregistered trademark of MKC. A Crouther Company.">
 	<meta name="description" content="A portfolio site hosting industry experience, research, projects and arts from MKC.">
 	<meta name="keywords" content="myles crouther, crouther, myles, portfolio crouther, myles portfolio, myles crouther blog, blog, blog myles">
@@ -42,22 +43,21 @@
 
 	<div class="fw-box"><img id="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
 
-		<div class="container-box tan" id="name" style="margin-top: -1vh; min-height: 30vh;">
+		<div class="container-box tan" id="name" style="margin-top: -1vh;">
 			
 			<div class="box" style="padding: 5%; margin-left: 3vw;">
 				<br>
 				<h1 style="margin-bottom:0px;">Myles Crouther</h1>
-				<h4  style="margin:.5em;">
+				<h4  style="margin:.5em; margin-left: .3em;">
 					<i>Avid developer, designer and maker.</i></h4>
-				<br>
-				<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a><br>
+				<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a> &nbsp;
 				<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a>
 				<br>
 				<br>
 				<br>
 			</div>
 
-			<div class="box darkTan whiteTxt" id="aboutDesc" style="padding: 5%;">
+			<div class="box darkTan whiteTxt" id="aboutDesc" style="padding: 5%; margin-top: .5vh;">
 				<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
 			</div>
 
@@ -70,13 +70,16 @@
 		<h1 style="margin-bottom:0px;">Myles Crouther</h1>
 		<h4  style="margin:.5em;"><i>Avid developer, designer and maker.</i></h4>
 
-		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p></div></div>
+		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
+		<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a> &nbsp;
+		<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a></div></div>
 	</div>
 
 	<div class="fw-box" id="contentNav">
 		<a href="#stem"><div class="sm-box lightgray" style="padding-top: 20%;">
 			<div class="topic-text">Work</div></div></a>
-		<a href="#research"><div class="sm-box black" style="padding-top: 20%;">			<div class="topic-text whiteTxt">Research</div></div></a>
+		<a href="#research"><div class="sm-box black" style="padding-top: 20%;">
+			<div class="topic-text whiteTxt">Research</div></div></a>
 		<a href="#art"><div class="sm-box gray" style="padding-top: 20%;">
 			<div class="topic-text">Art</div></div></a>
 	</div>
@@ -156,16 +159,15 @@
 </body>
 
 <script type="text/javascript">
-	var x = document.getElementById("contentNav");
-	var divMB = document.getElementById("mobileName");
 	var divName = document.getElementById("name");
 	var divAD = document.getElementById("aboutDesc");
 
 	var dN = divName.style.height;
 	var dA = divAD.style.height;
 
-	if(dN > dA) {divAD.style.height = divName.style.height;}
-	if(dN < dA) {divName.style.height = divAD.style.height;}
+	if 		(dN == dA)	{ break; }
+	else if (dN > dA)	{ divAD.style.height = divName.style.height; }
+	else if (dN < dA)	{ divName.style.height = divAD.style.height; }
 
 
 	//Variables for Broswer Responsive Link Redirections
@@ -183,14 +185,6 @@
 
 	//Function corrects page inception assumption
 	var isInIFrame = inIframe();
-
-	if(isInIFrame){
-		x.style.display = "none";
-		divMB.style.display = "none";
-	}
-	else{
-		divMB.style.display = "none";
-	}
 
 
 	/** Function mobileCheck changes the isMobile boolean 
@@ -224,6 +218,14 @@
 
 	//Function call initiates call loop to check if page needs adjustment
 	responsivePage();
+
+		if(isDesktop){
+		document.getElementById("contentNav").style.display = "none";
+		document.getElementById("mobileName").style.display = "none";
+	}
+	else{
+		divMB.style.display = "initial";
+	}
 </script>
 
 </html>
