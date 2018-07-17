@@ -43,6 +43,7 @@
 
 	<div class="fw-box"><img id="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
 
+	<!--
 		<div class="container-box tan" id="name" style="margin-top: -1vh;">
 			
 			<div class="box" style="padding: 5%; margin-left: 3vw;">
@@ -63,7 +64,7 @@
 
 		</div>
 
-	</div> <!-- End of About -->
+	</div> End of About -->
 
 	<div class="fw-box white" id="mobileName" style="opacity: 40%;">
 		<div id ="name" style="padding: 5%;">
@@ -76,7 +77,7 @@
 	</div>
 
 	<div class="fw-box" id="contentNav">
-		<a href="#stem"><div class="sm-box lightgray" style="padding-top: 20%;">
+		<a href="#projImage"><div class="sm-box lightgray" style="padding-top: 20%;">
 			<div class="topic-text">Work</div></div></a>
 		<a href="#research"><div class="sm-box black" style="padding-top: 20%;">
 			<div class="topic-text whiteTxt">Research</div></div></a>
@@ -96,11 +97,14 @@
 
 	<div class="fw-box" id="projSubjects">
 		<a href="design.html"><div class="sm-box limegreen">
-			<div class="topic-text">Design</div></div></a>
+			<div class="topic-text"> 
+				<img src="../img/icon/graphic-design.svg" style="max-width: 40%;"><br>Design</div></div></a>
 		<a href="hardware.html"><div class="sm-box tomato">
-			<div class="topic-text">Hardware</div></div></a>
+			<div class="topic-text">
+				<img src="../img/icon/processor.svg" style="max-width: 40%;"><br>Hardware</div></div></a>
 		<a href="https://github.com/crouther" target="_blank"><div class="sm-box lightblue">
-			<div class="topic-text">Software</div></div></a>
+			<div class="topic-text">
+				<img src="../img/icon/coding.svg" style="max-width: 40%;"><br>Software</div></div></a>
 	</div>
 
 	<div class="fw-box white" id="research">
@@ -218,14 +222,6 @@
 
 	//Function call initiates call loop to check if page needs adjustment
 	responsivePage();
-
-		if(isDesktop){
-		document.getElementById("contentNav").style.display = "none";
-		document.getElementById("mobileName").style.display = "none";
-	}
-	else{
-		divMB.style.display = "initial";
-	}
 </script>
 
 </html>

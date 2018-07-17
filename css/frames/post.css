@@ -95,6 +95,17 @@ a, a:hover, a:visited, a:link a:active{
 	transform: translateY(-50%);
 }
 
+.md-topic-text{
+	text-overflow: ellipsis;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	font-size: 4vw;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
 .topic-text{
 	text-align: center;
