@@ -44,30 +44,8 @@
 
 <body style="background-color: #fff;">
 
-	<div class="fw-box" onclick="skipToabout();"><img id="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
-
-	<!--
-		<div class="container-box tan" id="name" style="margin-top: -1vh;">
-			
-			<div class="box" style="padding: 5%; margin-left: 3vw;">
-				<br>
-				<h1 style="margin-bottom:0px;">Myles Crouther</h1>
-				<h4  style="margin:.5em; margin-left: .3em;">
-					<i>Avid developer, designer and maker.</i></h4>
-				<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a> &nbsp;
-				<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a>
-				<br>
-				<br>
-				<br>
-			</div>
-
-			<div class="box darkTan whiteTxt" id="aboutDesc" style="padding: 5%; margin-top: .5vh;">
-				<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
-			</div>
-
-		</div>
-
-	</div> End of About -->
+	<div class="fw-box" onclick="skipToAbout();"><img id="about" style="max-width: 100%;" src="../img/bkg/20161209.jpeg">
+	</div>
 
 	<div class="fw-box white" id="mobileName" style="opacity: 40%;">
 		<div id ="name" style="padding: 5%;">
@@ -76,7 +54,7 @@
 
 		<p>Technically affluent. Consistently creative. Introspectively inspired. With a year of industry experience, while pursuing a computer science degree. Whom dabbles in computational research, instrumental music and creative writing.</p>
 		<a class="anc" href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact Me</a> &nbsp;
-		<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a></div></div>
+		<a class="anc" href="https://drive.google.com/open?id=1uE6SpL02FPO6PMG7OtNJ7lS4X0y3QeTz" target ="_blank" style="color:black; margin:.5em;">Resume</a></div>
 	</div>
 
 	<div class="fw-box" id="contentNav" style="display:none;">
@@ -88,7 +66,7 @@
 			<div class="topic-text">Art</div></div></a>
 	</div>
 
-	<div class="fw-box" id="work"><img id="projImage" style="max-width: 100%;" src="../img/stem.jpg"></div>
+	<div class="fw-box" id="work"><img id="projImage" style="max-width: 100%;" onclick="skipToWork();" src="../img/stem.jpg"></div>
 
 	<div class="fw-box white">
 		<div id="projDesc" style="padding: 5%;">
@@ -111,7 +89,7 @@
 	</div>
 
 	<div class="fw-box white" id="research">
-		<img id ="rschImgDes" style="max-width: 100%;" src="../img/rsch.jpg">
+		<img id ="rschImgDes" style="max-width: 100%;" onclick="skipToResearch();" src="../img/rsch.jpg">
 		
 		<div style="padding: 5%;">
 			<h1 style="margin-bottom:0px;">Research</h1>
@@ -131,15 +109,15 @@
 		<a href="#research"><div class="tiny-box limegreen"><div class="sm-topic-text">Artificial Intelligence</div></div></a>
 	</div>
 
-	<div class="fw-box white">
-		<img id ="art" style="max-width: 100%;" src="../img/bkg/book169.jpg">
+	<div class="fw-box white" id="book">
+		<img id ="art" style="max-width: 100%;" onclick="skipToArt();" src="../img/bkg/book169.jpg">
 		<div style="padding: 5%;">
-		<a href="book.html"><h1 style="margin-bottom:0px;">Take A Trip</h1></a>
-		<h4  style="margin:.5em;"><i>A pending novel by the works of Myles Crouther</i></h4>
-		<p>The book discusses the spoils of suburbia and the urban struggle in a dystopian fictional memoir. Taking place in the outskirts of the Washingtonian area during the turn of the 21st century. Unknown reasons explain the current plight of the world. The narrative follows the lives of the remaining American tribes of the eastern seaboard. <br><br>
+			<a href="book.html"><h1 style="margin-bottom:0px;">Take A Trip</h1></a>
+			<h4  style="margin:.5em;"><i>A pending novel by the works of Myles Crouther</i></h4>
+			<p>The book discusses the spoils of suburbia and the urban struggle in a dystopian fictional memoir. Taking place in the outskirts of the Washingtonian area during the turn of the 21st century. Unknown reasons explain the current plight of the world. The narrative follows the lives of the remaining American tribes of the eastern seaboard. <br><br>
 
-		The adolescent narrator discusses political, social, and ethical issues of a previous era  while trying to recover memories of what life was like before the change to dystopia. In an unusual environment he observes the coming of age of both preadolescences and his own search for adulthood. Bouncing between the different tribes he attempts to piece together his own recollection of his past life in order to come to peace with the isolation of this new dystopia. Questions of happiness and the will to survive drive this epic, fictional, American story.</p>
-		<a href="book.html" target="_blank"><p><i>Launch Page</i></p></a>
+			The adolescent narrator discusses political, social, and ethical issues of a previous era  while trying to recover memories of what life was like before the change to dystopia. In an unusual environment he observes the coming of age of both preadolescences and his own search for adulthood. Bouncing between the different tribes he attempts to piece together his own recollection of his past life in order to come to peace with the isolation of this new dystopia. Questions of happiness and the will to survive drive this epic, fictional, American story.</p>
+			<a href="book.html" target="_blank"><p><i>Launch Page</i></p></a>
 		</div>
 	</div>
 
@@ -165,8 +143,6 @@
 
 </body>
 
-<
-
 <script type="text/javascript">
 	if(isMobile){
 	document.getElementById("contentNav").style.display = "visible";
@@ -174,4 +150,4 @@
 </script>
 
 </html>
-<!-- Product of a one day build. Minor details and fine tuning have been gradually applied over time but the enhancements are negligible -->
+<!-- The original was a product of a one day build. Minor finessing of details and fine tuning have been gradually applied over time but the enhancements are negligible to the layout and framework -->

@@ -47,7 +47,22 @@ function responsivePage(){
 responsivePage();
 
 
-function skipToabout(){
+function skipToAbout(){
 	var element = document.getElementById("name");
-	element.scrollIntoView({block: "end"});
+	element.scrollIntoView({behavior: "smooth", block: "end"});
+}
+
+function skipToWork(){
+	var element = document.getElementById("projImage");
+	element.scrollIntoView({behavior: "smooth", block: "start"});
+}
+
+function skipToResearch(){
+	var element = document.getElementById("rschImgDes");
+	element.scrollIntoView({behavior: "smooth", block: "start"});
+}
+
+function skipToArt(){
+	var element = document.getElementById("art");
+	element.scrollIntoView({behavior: "smooth", block: "start"});
 }
