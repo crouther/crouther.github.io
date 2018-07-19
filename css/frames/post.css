@@ -10,6 +10,17 @@ a, a:hover, a:visited, a:link a:active{
   color: black;
 }
 
+.aboutSplash:after {
+    background: #D2B48C;
+    bottom: -28px;
+    content: "";
+    position: absolute;
+    left: 45%;
+    width: 90px; 
+    height: 90px;
+    transform: rotate(45deg);
+}
+
 .mw-box{
 	width: 80%; 
 	padding-right: 10%; 

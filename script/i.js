@@ -14,7 +14,6 @@ function inIframe () {
 //Function corrects page inception assumption
 var isInIFrame = inIframe();
 
-
 /** Function mobileCheck changes the isMobile boolean 
 *   variable based on a comparison of userAgent, vendor,
 *   and opera string variables given by navigator **/ 
@@ -46,6 +45,7 @@ function responsivePage(){
 
 //Function call initiates call loop to check if page needs adjustment
 responsivePage();
+
 
 function skipToabout(){
 	var element = document.getElementById("name");
