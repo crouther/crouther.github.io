@@ -7,7 +7,7 @@ This repository is a reflection of my web development practices. The site is dev
 ###CSS
 ------
 ~1000 lines of CSS in the prebuilt flexible stylesheets
-Utilitzing 3 overarching themes
+Utilitzing 3 overarching themes titled:
 -StrictlyBusiness
--AdvantFlat
+-AdventFlat
 -FirstLanding
