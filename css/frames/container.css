@@ -6,10 +6,13 @@ a{
     color: black;
 }
 
+.anc {font-size: 1.8vw;}
+
 /* visited link */
-.anc:visited {
-    color: green;
-}
+#ancAbout:visited {color: green;}
+#ancWork:visited {color: #999999;}
+#ancResa:visited {color: #D2B48C;}
+#ancArt:visited {color: #ff6347;}
 
 /* mouse over link */
 .anc a:hover {
