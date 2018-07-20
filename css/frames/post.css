@@ -36,12 +36,28 @@ a, a:hover, a:visited, a:link a:active{
 	position: relative;
 }
 
-.container-box {
+.container-box{
     display: flex;
+    flex-wrap: wrap
     width: 100%;
 }
-.box {
+
+.box{
     flex: 1;
+    width: 50%;
+}
+
+.item {
+  width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox>div {
+  flex: 0 50%;
 }
 
 @media screen and (orientation:portrait) {
