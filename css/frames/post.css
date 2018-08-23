@@ -109,6 +109,9 @@ a, a:hover, a:visited, a:link a:active{
 	.fb4c>div.item {
 		flex: 0 50%;
 	}
+	.fb4c>div.embeddedItem {
+		flex: 0 50%;
+	}
 }
 
 .dub-box{
