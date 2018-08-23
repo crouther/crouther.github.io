@@ -14,7 +14,6 @@ a, a:hover, a:visited, a:link a:active{
 	width: 80%; 
 	padding-right: 10%; 
 	padding-left: 10%;
-
 }
 
 .fw-box{
@@ -51,19 +50,18 @@ a, a:hover, a:visited, a:link a:active{
   width: 100%;
 }
 
-.flexbox {
+.fb2c {
   display: flex;
   flex-wrap: wrap;
 }
 
-.flexbox>div {
+.fb2c>div.item {
   flex: 0 50%;
 }
 
-@media screen and (orientation:portrait) {
-	.box {
-    flex: 1;
-    width: 100%;
+@media only screen and (orientation:portrait) {
+	.fb2c>div.item {
+		flex: 0 100%;
 	}
 }
 
