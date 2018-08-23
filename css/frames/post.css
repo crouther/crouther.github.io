@@ -46,8 +46,27 @@ a, a:hover, a:visited, a:link a:active{
     width: 50%;
 }
 
-.item {
+.item{
   width: 100%;
+}
+
+.item img{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	border-radius: 5%;
+}
+
+.embeddedItem{
+	width: 100%;
+}
+
+.embeddedItem img{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	border-radius: 5%;
+
 }
 
 .fb2c {
@@ -55,13 +74,40 @@ a, a:hover, a:visited, a:link a:active{
   flex-wrap: wrap;
 }
 
+.fb2c>div.embeddedItem{
+  flex: 0 50%;
+}
+
 .fb2c>div.item {
   flex: 0 50%;
+}
+
+.fb4c {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fb4c>div.embeddedItem{
+  flex: 0 25%;
+}
+
+.fb4c>div.item {
+  flex: 0 25%;
 }
 
 @media only screen and (orientation:portrait) {
 	.fb2c>div.item {
 		flex: 0 100%;
+	}
+
+	.embeddedItem img{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	}
+
+	.fb4c>div.item {
+		flex: 0 50%;
 	}
 }
 
