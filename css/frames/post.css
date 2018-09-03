@@ -56,6 +56,75 @@ a, a:hover, a:visited, a:link a:active{
 	padding: 0%;
 }
 
+.tileBlock{
+	width: 100%;
+	//max-width: 25vw;
+}
+
+.tbV{
+	width: 25%;
+}
+
+.tbV img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2%;
+}
+
+.tbV h3{
+	width: 80%;
+	padding: 10%;
+	padding-top: 5%;
+	padding-bottom: 1%; 
+	margin: 0%;
+}
+
+.tbV p{
+	width: 80%;
+	min-height: 10vw;
+	max-height: 15vw;
+	padding: 10%;
+	margin: 0%;
+}
+
+.tbBig{
+	-webkit-flex-basis: 50%; /* Safari 6.1+ */
+    flex-basis: 50%;
+}
+
+.tileImg{
+	min-height: 23vw;
+}
+
+.tileBlock img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2%;
+}
+
+.tileBlock h3{
+	width: 80%;
+	padding: 10%;
+	padding-top: 5%;
+	padding-bottom: 1%; 
+	margin: 0%;
+}
+
+.tileBlock p{
+	width: 80%;
+	min-height: 10vw;
+	//max-height: 15vw;
+	padding: 10%;
+	margin: 0%;
+  	text-overflow: ellipsis;
+
+}
+
+.tbIcon {
+	width: 50%;
+	padding: 25%;
+}
+
 .embeddedItem{
 	width: 100%;
 }
@@ -84,12 +153,23 @@ a, a:hover, a:visited, a:link a:active{
   flex-wrap: wrap;
 }
 
+.fbv {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
 .fb4c>div.embeddedItem{
   flex: 0 25%;
 }
 
 .fb4c>div.item {
   flex: 0 25%;
+}
+
+.fb4c>div.tileBlock {
+  flex: 0 23%;
+  padding: 1%;
 }
 
 @media only screen and (orientation:portrait) {
@@ -109,11 +189,20 @@ a, a:hover, a:visited, a:link a:active{
 	.fb4c>div.embeddedItem {
 		flex: 0 50%;
 	}
+
+	.fb4c>div.tileBlock {
+  		flex: 0 48%;
+  		padding: 1%;
+	}
+
+	.tileBlock p{
+		min-height: 30vw;
+	}
 }
 
 .dub-box{
 	margin: 0px;
-	width: 65%;
+	width: 66.666%;
 	padding-top: 33%;
 
 	float: left;
