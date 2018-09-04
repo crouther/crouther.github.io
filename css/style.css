@@ -7,6 +7,15 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+    font-family: brushed;
+    src: url(../fonts/brushed.ttf);
+}
+
+.brushed{
+	font-family: brushed;
+}
+
 body {
   left: 0;
   margin: 0;
