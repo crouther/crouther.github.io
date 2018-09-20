@@ -21,7 +21,7 @@ var json = {"items": [
     "header": "Research",
     "description": "Fact-finding analysis from academic studies",
     "color": "tan",
-    "img":"../img/rsch.jpg",
+    "img":"../img/icon/rsch.jpg",
     "url":"https://crouther.github.io/p/rsch"
    },
 
@@ -29,7 +29,7 @@ var json = {"items": [
     "header": "Art",
     "description": "Inspirational creative releases to keep the mind busy",
     "color": "yellow",
-    "img":"../img/bkg/sc.png",
+    "img":"../img/icon/sc.png",
     "url":"https://crouther.github.io/p/art"
    },
 
