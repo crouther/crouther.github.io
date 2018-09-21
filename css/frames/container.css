@@ -24,7 +24,7 @@ a{
 	position: absolute; 
 	top: 0; 
 	right: 0%; 
-	width: 101vh;
+	width: 105vh;
 	max-width: 60%;
 	height: 100%;
 }
@@ -50,7 +50,7 @@ a{
 }
 
 @media (max-width: 1000px) {
-	.wrapper{width: 101vh; max-width: 65%;}
+	.wrapper{width: 105vh; max-width: 65%;}
 	.navBox{left: 2%;}
 	.navLinks{left: -12vw;}
 }
