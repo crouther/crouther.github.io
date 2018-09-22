@@ -172,6 +172,15 @@ a, a:hover, a:visited, a:link a:active{
   padding: 1%;
 }
 
+#mainImage{
+	padding-left: 5vw; 
+	max-height: 100vh; 
+	width: auto; 
+	max-width: 40vw;
+}
+
+
+
 @media only screen and (orientation:portrait) {
 	.fb2c>div.item {
 		flex: 0 100%;
@@ -197,6 +206,12 @@ a, a:hover, a:visited, a:link a:active{
 
 	.tileBlock p{
 		min-height: 30vw;
+	}
+
+	#mainImage{
+		width: 80vw;
+		max-width: 80vw;
+		padding-left: 10vw; 
 	}
 }
 
