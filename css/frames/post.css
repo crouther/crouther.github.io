@@ -287,6 +287,7 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 /* Colors */
+.purp{background-color:#d890ff;}
 .lightblue{background-color: #47e3ff;}
 .limegreen{background-color: #47ffbf;}
 .dimgray{background-color: #5b7278;}
@@ -303,6 +304,8 @@ a, a:hover, a:visited, a:link a:active{
 .black{background-color: black;}
 
 .ducati{background-color: #d40000;}
+.github{background-color:#6e5494;}
+
 .eit{background-color: #ffa500;}
 .hp{background-color: #0096d6;}
 .hpe{background-color: #0DAB7F;}
