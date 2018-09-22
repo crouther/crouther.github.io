@@ -172,6 +172,8 @@ a, a:hover, a:visited, a:link a:active{
   padding: 1%;
 }
 
+#imIt{padding-top: 6%;}
+
 #mainImage{
 	padding-left: 5vw; 
 	max-height: 100vh; 
@@ -182,6 +184,8 @@ a, a:hover, a:visited, a:link a:active{
 
 
 @media only screen and (orientation:portrait) {
+	#imIt{padding-top: 0%;}
+
 	.fb2c>div.item {
 		flex: 0 100%;
 	}
