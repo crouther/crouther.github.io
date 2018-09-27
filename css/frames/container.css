@@ -25,7 +25,7 @@ a{
 	top: 0; 
 	right: 0%; 
 	width: 105vh;
-	max-width: 60%;
+	//max-width: 60%;
 	height: 100%;
 }
 
@@ -33,24 +33,26 @@ a{
 .navBox{
 	position: absolute; 
 	top: 10%; 
-	left: 7%; 
-	width: 30%; 
+	max-width: 40%;
+	width: calc(100vw - 105vh);
 	height: auto;
 	padding-bottom: 150px;
 }
 
 .navBox img{
-	width: 50%; 
-	padding: 2% 25% 2% 25%;
+	width: 50%;
+	min-width: 100px;
+	max-width: 399px;
+	padding: 2% 7.5vw 2% 7.5vw;
 }
 
 .navLinks{
-	position: absolute; 
-	left: -5vw;
+	position: absolute;
+	left: -8vw;
 }
 
 @media (max-width: 1000px) {
-	.wrapper{width: 105vh; max-width: 65%;}
-	.navBox{left: 2%;}
-	.navLinks{left: -12vw;}
+	.wrapper{width: 105vh; max-width: 75%;}
+	.navBox{max-width: 25%; left: -2vw;}
+	.navLinks{left: -8vw;}
 }
