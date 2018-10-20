@@ -6,11 +6,11 @@ This repository is a reflection of my web development practices. The site is dev
 
 ###CSS
 ------
-~1000 lines of CSS in the prebuilt flexible stylesheets
-Utilitzing 3 overarching themes titled:\
--StrictlyBusiness\
+*~1000+ lines of CSS (Divvied among multiple stylesheets)*\
+
+-StrictlyBusiness:\
   a Multi-page design for various usecases. Structured to support light and heavy content with a prominent navigation bar.\
--AdventFlat\
+-AdventFlat:\
   A flexible layout designed for single pages grouped together with various grid layouts.\
--FirstLanding\
-  Launching, landing, and maintence pages for portfoliios, concept designs, and products.\
+-FirstLanding:\
+  Launching, landing, and maintence pages for portfoliios, concept designs, and products.
