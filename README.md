@@ -6,7 +6,7 @@ This repository is a reflection of my web development practices. The site is dev
 
 ###CSS
 ------
-*~1000+ lines of CSS (Divvied among multiple stylesheets)*\
+*~1000+ lines of CSS (Divvied among multiple stylesheets)*
 
 -StrictlyBusiness:\
   a Multi-page design for various usecases. Structured to support light and heavy content with a prominent navigation bar.\
