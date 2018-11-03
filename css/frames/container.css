@@ -48,11 +48,11 @@ a{
 
 .navLinks{
 	position: absolute;
-	left: -8vw;
+	left: -6vw;
 }
 
 @media (max-width: 1000px) {
 	.wrapper{width: 105vh; max-width: 75%;}
 	.navBox{max-width: 25%; left: -2vw;}
-	.navLinks{left: -8vw;}
+	.navLinks{left: -6vw;}
 }
