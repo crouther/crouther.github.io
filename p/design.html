@@ -35,7 +35,7 @@
 	<title>MKC Designs</title>
 </head>
 
-<body>
+<body id="main">
 
 	<div class="fw-box white" id ="designDescription">
 		<div style="padding: 5%;">
@@ -89,6 +89,19 @@
 	</div>
 
 </body>
+
+<script>
+	var bod = document.getElementById("main");
+	if (!inIframe()) bod.classList.add("mw-box");
+
+	function inIframe() {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+</script>
 
 </html>
 
