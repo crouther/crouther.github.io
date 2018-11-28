@@ -62,7 +62,7 @@
 <script type="text/javascript">
 	(function(){
 		if ($(window).width() < 700) {
-			window.location.href = document.getElementById("iframe").contentDocument.location;
+			window.location.href = document.getElementById("iframe").contentWindow.location.href;
 		}// do some stuff
     setTimeout(arguments.callee, 500);
 	})();
