@@ -240,6 +240,6 @@ var json = {"items": [
     "description": "My journey through south east asia.",
     "color": "white",
     "img":"../img/bkg/koreaPan.jpg",
-    "url":"https://crouther.github.io/on/pictures"
+    "url":"https://crouther.github.io/on/photography"
    },
 ]};
