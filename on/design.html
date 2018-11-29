@@ -3,6 +3,7 @@
 <head>
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/i.js"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
@@ -35,8 +36,8 @@
 	<title>MKC Designs</title>
 </head>
 
-<body id="main">
-
+<body>
+<div id="main">
 	<div class="fw-box white" id ="designDescription">
 		<div style="padding: 5%;">
 		<a href="i.html#projImage"><h1 style="margin-bottom:0px;"><- Myles Crouther</h1></a>
@@ -87,21 +88,8 @@
 				<div class="topic-text">+</div></div></a>
 		</div>
 	</div>
-
+</div>
 </body>
-
-<script>
-	var bod = document.getElementById("main");
-	if (!inIframe()) bod.classList.add("mw-box");
-
-	function inIframe() {
-    try {
-        return window.self !== window.top;
-    } catch (e) {
-        return true;
-    }
-}
-</script>
 
 </html>
 
