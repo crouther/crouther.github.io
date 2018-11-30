@@ -22,7 +22,7 @@ var json = {"items": [
     "description": "Fact-finding analysis from academic studies",
     "color": "tan",
     "img":"../img/icon/rsch.jpg",
-    "url":"https://crouther.github.io/on/rsch"
+    "url":"https://crouther.github.io/on/research"
    },
 
     {
