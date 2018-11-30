@@ -53,12 +53,12 @@ function skipToAbout(){
 }
 
 function skipToWork(){
-	var element = document.getElementById("projImage");
+	var element = document.getElementById("work");
 	element.scrollIntoView({behavior: "smooth", block: "start"});
 }
 
 function skipToResearch(){
-	var element = document.getElementById("rschImgDes");
+	var element = document.getElementById("research");
 	element.scrollIntoView({behavior: "smooth", block: "start"});
 }
 
