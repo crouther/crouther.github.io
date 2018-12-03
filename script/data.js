@@ -22,7 +22,7 @@ var json = {"items": [
     "description": "Fact-finding analysis from academic studies",
     "color": "tan",
     "img":"../img/icon/rsch.jpg",
-    "url":"https://crouther.github.io/p/rsch"
+    "url":"https://crouther.github.io/on/research"
    },
 
     {
@@ -30,7 +30,7 @@ var json = {"items": [
     "description": "Inspirational creative releases to keep the mind busy",
     "color": "yellow",
     "img":"../img/icon/sc.png",
-    "url":"https://crouther.github.io/p/art"
+    "url":"https://crouther.github.io/on/art"
    },
 
   {
@@ -40,7 +40,7 @@ var json = {"items": [
     "img": "../img/icon/graphic-design.svg",
     "icon": "yes",
     "iconBkgc": "tomato",
-    "url":"https://crouther.github.io/p/design"
+    "url":"https://crouther.github.io/on/design"
    },
 
   {
@@ -50,7 +50,7 @@ var json = {"items": [
     "img":"../img/icon/hardware.svg",
     "icon":"yes",
     "iconBkgc": "limegreen",
-    "url":"https://crouther.github.io/p/hardware"
+    "url":"https://crouther.github.io/on/hardware"
    },
 
    {
@@ -60,7 +60,7 @@ var json = {"items": [
     "img":"../img/icon/coding.svg",
     "icon":"yes",
     "iconBkgc": "lightblue",
-    "url":"https://crouther.github.io/p/software"
+    "url":"https://crouther.github.io/on/software"
    },
 
   {
@@ -70,7 +70,7 @@ var json = {"items": [
     "img":"../img/icon/hpe.png",
     "icon":"yes",
     "iconBkgc": "darkGray",
-    "url":"https://crouther.github.io/p/hpe"
+    "url":"https://crouther.github.io/on/hpe"
    },
 
   {
@@ -80,7 +80,7 @@ var json = {"items": [
     "img":"../img/icon/hp.png",
     "icon":"yes",
     "iconBkgc": "white",
-    "url":"https://crouther.github.io/p/hp"
+    "url":"https://crouther.github.io/on/hp"
    },
 
   {
@@ -90,7 +90,7 @@ var json = {"items": [
     "img":"../img/icon/eit.png",
     "icon":"yes",
     "iconBkgc": "eit",
-    "url":"https://crouther.github.io/p/eit"
+    "url":"https://crouther.github.io/on/eit"
    },
 
   {
@@ -100,7 +100,7 @@ var json = {"items": [
     "img":"../img/icon/web-design.svg",
     "icon":"yes",
     "iconBkgc": "tomato",
-    "url":"https://crouther.github.io/p/web"
+    "url":"https://crouther.github.io/on/web"
    },
 
   {
@@ -110,7 +110,7 @@ var json = {"items": [
     "img":"../img/icon/logo.png",
     "icon":"yes",
     "iconBkgc": "lightgray",
-    "url":"https://crouther.github.io/p/wireframes"
+    "url":"https://crouther.github.io/on/wireframes"
    },
 
   {
@@ -120,7 +120,7 @@ var json = {"items": [
     "img":"../img/icon/cypher.png",
     "icon":"yes",
     "iconBkgc": "yellow",
-    "url":"https://crouther.github.io/p/cypher"
+    "url":"https://crouther.github.io/on/cypher"
 
    },
 
@@ -129,14 +129,14 @@ var json = {"items": [
     "description": "A deck you can touch, cards you can share.",
     "color": "dimgray",
     "img":"../img/icon/jc.png",
-    "url":"https://crouther.github.io/p/justCards"
+    "url":"https://crouther.github.io/on/justCards"
    },
 
   {
     "header": "Otterbourg",
     "description": "Concept web design for a law firm",
     "color": "lightblue",
-    "url":"https://crouther.github.io/p/otterbourg"
+    "url":"https://crouther.github.io/on/otterbourg"
    },
 
   {
@@ -146,7 +146,7 @@ var json = {"items": [
     "img":"../img/icon/apple-logo.png",
     "icon":"yes",
     "iconBkgc": "lightgray",
-    "url":"https://crouther.github.io/p/apple"
+    "url":"https://crouther.github.io/on/apple"
    },
 
   {
@@ -156,7 +156,7 @@ var json = {"items": [
     "img":"../img/icon/data.svg",
     "icon":"yes",
     "iconBkgc": "yellow",
-    "url":"https://crouther.github.io/p/server"
+    "url":"https://crouther.github.io/on/server"
    },
 
   {
@@ -166,7 +166,7 @@ var json = {"items": [
     "img":"../img/icon/processor.svg",
     "icon":"yes",
     "iconBkgc": "tan",
-    "url":"https://crouther.github.io/p/workstation"
+    "url":"https://crouther.github.io/on/workstation"
    },
 
   {
@@ -186,7 +186,7 @@ var json = {"items": [
     "img":"../img/icon/workbench.svg",
     "icon":"yes",
     "iconBkgc": "limegreen",
-    "url":"https://crouther.github.io/p/table"
+    "url":"https://crouther.github.io/on/table"
    },
 
   /**
@@ -232,7 +232,7 @@ var json = {"items": [
     "description": "Take A Trip, a pending novel by the works of Myles Crouther",
     "color": "tan",
     "img":"../img/bkg/book169.jpg",
-    "url":"https://crouther.github.io/p/book"
+    "url":"https://crouther.github.io/on/book"
    },
 
   {
@@ -240,6 +240,6 @@ var json = {"items": [
     "description": "My journey through south east asia.",
     "color": "white",
     "img":"../img/bkg/koreaPan.jpg",
-    "url":"https://crouther.github.io/p/pictures"
+    "url":"https://crouther.github.io/on/photography"
    },
 ]};
