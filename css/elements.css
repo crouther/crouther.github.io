@@ -9,6 +9,15 @@
   min-height: 100%;
 }
 
+.loadingAnimation{
+  background-image: url(../img/icon/loadingMKC.gif); 
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 10vh;
+}
+.HPEBars{background-image: url(../img/icon/loading.gif);}
+.MKCBars{background-image: url(../img/icon/loadingMKC.gif);}
+
 /**Universal Clickable Button**/
 .button {
     background-color: gray;
