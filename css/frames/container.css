@@ -21,22 +21,28 @@ a{
 
 /* True Page Body Content */
 .wrapper{
+	z-index: 500;
 	position: absolute; 
 	top: 0; 
 	right: 0%; 
 	width: 105vh;
-	//max-width: 60%;
+	max-width: 75%;
 	height: 100%;
 }
 
 /* Floating Navigation Box */
 .navBox{
+	z-index: 800;
 	position: absolute; 
-	top: 10%; 
+	top: 0;
+	left: 0; 
 	max-width: 40%;
+	min-width: 25%;
 	width: calc(100vw - 105vh);
 	height: auto;
+	padding-top: 5%;
 	padding-bottom: 150px;
+	background-color: white;
 }
 
 .navBox img{
@@ -48,11 +54,11 @@ a{
 
 .navLinks{
 	position: absolute;
-	left: -7.5vw;
+	left: -7vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	.wrapper{width: 105vh; max-width: 75%;}
 	.navBox{max-width: 25%; left: -2vw;}
-	.navLinks{left: -7.5vw;}
+	.navLinks{left: -7vw;}
 }
