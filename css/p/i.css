@@ -17,6 +17,20 @@
 	padding: 2%;
 }
 
+.nav404{
+	position: absolute;
+	width: 25%;
+	height: 50%;
+	
+	left: 50%; 
+	top: 50%;
+
+	margin-left: -12.5%;
+	margin-top: -25%;
+
+	z-index: 500;
+}
+
 .navigation{
 	position: absolute;
 	
