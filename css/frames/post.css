@@ -117,7 +117,6 @@ a, a:hover, a:visited, a:link a:active{
 	padding: 10%;
 	margin: 0%;
   	text-overflow: ellipsis;
-
 }
 
 .tbIcon {
@@ -287,35 +286,35 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 /* Colors */
-.purp{background-color:#d890ff;}
-.lightblue{background-color: #47e3ff;}
-.limegreen{background-color: #47ffbf;}
-.dimgray{background-color: #5b7278;}
-.yellow{background-color: #ffed47;}
-.tomato{background-color: #ff6347;}
+	.purp{background-color:#d890ff;}
+	.lightblue{background-color: #47e3ff;}
+	.limegreen{background-color: #47ffbf;}
+	.dimgray{background-color: #5b7278;}
+	.yellow{background-color: #ffed47;}
+	.tomato{background-color: #ff6347;}
 
-.tan{background-color: #D2B48C;}
-.darkTan{background-color: #695a46;}
+	.tan{background-color: #D2B48C;}
+	.darkTan{background-color: #695a46;}
 
-.white{background-color: #fff;}
-.lightgray{background-color: #e5e5e5;}
-.gray{background-color: #666666;}
-.darkGray{background-color: #999999;}
-.black{background-color: black;}
+	.white{background-color: #fff;}
+	.lightgray{background-color: #e5e5e5;}
+	.gray{background-color: #666666;}
+	.darkGray{background-color: #999999;}
+	.black{background-color: black;}
 
-.ducati{background-color: #d40000;}
-.github{background-color:#6e5494;}
+	.ducati{background-color: #d40000;}
+	.github{background-color:#6e5494;}
 
-.eit{background-color: #ffa500;}
-.hp{background-color: #0096d6;}
-.hpe{background-color: #0DAB7F;}
-.eit2{background: linear-gradient(to bottom right, #ff664c, #ffa500);}
+	.eit{background-color: #ffa500;}
+	.hp{background-color: #0096d6;}
+	.hpe{background-color: #0DAB7F;}
+	.eit2{background: linear-gradient(to bottom right, #ff664c, #ffa500);}
 
-.redTxt{color: tomato;}
-.ducatiTxt{color: #d40000;}
-.whiteTxt{color: #fff;}
-.blackTxt{color: #000;}
+	.redTxt{color: tomato;}
+	.ducatiTxt{color: #d40000;}
+	.whiteTxt{color: #fff;}
+	.blackTxt{color: #000;}
 
-.greenblue{background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
-.businessGray{background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
-.flColor{background: linear-gradient(to bottom right, #ffed47, #ffa500);}
+	.greenblue{background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
+	.businessGray{background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
+	.flColor{background: linear-gradient(to bottom right, #ffed47, #ffa500);}

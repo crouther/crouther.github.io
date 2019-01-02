@@ -4,20 +4,17 @@
 * Content heavily borrowed from W3Schools**/
 
 .row {
-    padding: 5px;
-    margin: 0 auto;
+    margin: 0px;
+    padding: 0px;
 }
+
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 23.5%;
-    padding: 5px;
+    width: 25%;
 }
 
-.column img {
-    margin-top: 5px;
-    width: 100%;
-}
+.column img {width: 96%; padding: 1%;}
 
 /* Clear floats after the columns */
 .row:after {
@@ -29,22 +26,18 @@
 /* Responsive layout - 
    makes a two column-layout instead of four columns */
 @media only screen and (max-width: 800px) {
-    body{
-        top: -100px;
-    }
+    /* Create four equal columns that floats next to each other */
     .column {
-        width: 47%;
+        float: left;
+        width: 50%;
     }
 }
 
 /* Responsive layout - 
-   makes the two columns stack on top of each other instead of next to each other */
+   Stacks all columns into a single list*/
 @media only screen and (max-width: 600px) {
-    body{
-        top: -200px;
-    }
-
     .column {
-        width: 95%;
+        float: left;
+        width: 100%;
    }
 }
