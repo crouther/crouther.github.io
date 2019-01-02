@@ -286,10 +286,11 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 /* Colors */
+	.dimgray{background-color: #5b7278;}
 	.purp{background-color:#d890ff;}
 	.lightblue{background-color: #47e3ff;}
 	.limegreen{background-color: #47ffbf;}
-	.dimgray{background-color: #5b7278;}
+	.yellowgreen{background-color: #a2b241;}
 	.yellow{background-color: #ffed47;}
 	.tomato{background-color: #ff6347;}
 
