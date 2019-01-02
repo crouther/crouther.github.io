@@ -180,13 +180,17 @@ a, a:hover, a:visited, a:link a:active{
 	max-width: 40vw;
 }
 
-
+.square{min-height: 50vw;}
 
 @media only screen and (orientation:portrait) {
 	#imIt{padding-top: 0%;}
 
 	.fb2c>div.item {
 		flex: 0 100%;
+	}
+
+	.square{
+		min-height: 100vw;
 	}
 
 	.embeddedItem img{
@@ -290,6 +294,7 @@ a, a:hover, a:visited, a:link a:active{
 	.purp{background-color:#d890ff;}
 	.lightblue{background-color: #47e3ff;}
 	.limegreen{background-color: #47ffbf;}
+	.lightyellowgreen{background-color: #d9e0b3;}
 	.yellowgreen{background-color: #a2b241;}
 	.yellow{background-color: #ffed47;}
 	.tomato{background-color: #ff6347;}
