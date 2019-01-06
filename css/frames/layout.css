@@ -5,7 +5,7 @@
 
 .row {
     margin: 0px;
-    padding: 0px;
+    padding: 1.5%;
 }
 
 /* Create four equal columns that floats next to each other */
@@ -14,7 +14,7 @@
     width: 25%;
 }
 
-.column img {width: 96%; padding: 1%;}
+.column img {width: 95%; padding: 2.5%;}
 
 /* Clear floats after the columns */
 .row:after {
