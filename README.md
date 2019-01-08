@@ -3,6 +3,11 @@ Readers,
 
 This repository is a reflection of my web development practices. The site is developed from scratch using personal knowledge and open resources. No major library or framework is leveraged. All powered by original code or fundamental HTML, CSS, or Javascript features. This is a digital portfolio of work I've done and a simple resume of my coding capabilities.
 
+#HTML
+------
+*~3000+ lines of HTML (Divvied among multiple, customized base templates)*
+
+-The majority of these pages follow the design guidelines listed below int he CSS stylesheet themes mentioned.
 
 #CSS
 ------
@@ -10,7 +15,9 @@ This repository is a reflection of my web development practices. The site is dev
 
 -StrictlyBusiness:\
   a Multi-page design for various usecases. Structured to support light and heavy content with a prominent navigation bar.\
+  
 -AdventFlat:\
   A flexible layout designed for single pages grouped together with various grid layouts.\
+  
 -FirstLanding:\
   Launching, landing, and maintence pages for portfoliios, concept designs, and products.
