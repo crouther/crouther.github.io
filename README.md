@@ -7,7 +7,8 @@ This repository is a reflection of my web development practices. The site is dev
 ------
 *~3000+ lines of HTML (Divvied among multiple, customized base templates)*
 
--The majority of these pages follow the design guidelines listed below int he CSS stylesheet themes mentioned.
+-The majority of these pages follow the design guidelines listed below in the CSS stylesheet themes mentioned.
+
 
 #CSS
 ------
