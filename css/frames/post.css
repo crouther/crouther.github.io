@@ -10,23 +10,28 @@ a, a:hover, a:visited, a:link a:active{
   color: black;
 }
 
-.mw-box{
-	width: 80%; 
-	padding-right: 10%; 
-	padding-left: 10%;
-}
-
+/* Full width centered box for organizing div content */
 .fw-box{
 	width: 100%;
 	margin: 0%;
 	padding: 0%;
 }
 
+/* Full width image container with no padding or margins */
 .fw-box img{
 	margin: 0%;
 	padding: 0%;
 }
 
+/* Medium width centered box for organizing div content */
+.mw-box{
+	width: 80%; 
+	padding-right: 10%; 
+	padding-left: 10%;
+}
+
+
+/* Small width box for organizing div content in columns of 3*/
 .sm-box{
 	width: 33.333%; 
 	padding-top: 33%; 
@@ -35,35 +40,71 @@ a, a:hover, a:visited, a:link a:active{
 	position: relative;
 }
 
+/* Textured small width buttons for organizing button content in columns of 3*/
+.sm-box-button{
+	width: 27%; 
+	padding-top: 27%;
+	//border-style: solid;
+	margin: 3vw;
+	border-color: white;
+	
+	float: left; 
+	position: relative;
+}
+.sbb-start {margin-left: 6vw; margin-right: 0vw;}
+.sbb-end   {margin-left: 0vw; margin-right: 6vw;}
+
+.sm-box-button:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5%;
+}
+
+/* Small width box for organizing div content in columns of 2, 
+   one elongated and twice the size fo the first */
+.dub-box{
+	margin: 0px;
+	width: 66.666%;
+	padding-top: 33%;
+
+	float: left;
+	position: relative;
+}
+
+/* Tiny width box for organizing div content in columns of 6*/
+.tiny-box{
+	width: 16.666%;
+	padding-top: 16.666%;
+
+	float: left;
+	position: relative;
+}
+
+/* Full page Flexbox container */
 .container-box{
     display: flex;
     flex-wrap: wrap
     width: 100%;
 }
 
+/* Single flexbox container */
 .box{
     flex: 1;
     width: 50%;
 }
 
-.item{
-  width: 100%;
-}
+/* Single container div for multimedia content */
+.item{	width: 100%;  }
 
+/* Default image container properties for multimedia content */
 .item img{
 	width: 100%;
 	margin: 0%;
 	padding: 0%;
 }
 
-.tileBlock{
-	width: 100%;
-	//max-width: 25vw;
-}
+.tileBlock{width: 100%;}
 
-.tbV{
-	width: 25%;
-}
+.tbV{width: 25%;}
 
 .tbV img{
 	width: 100%;
@@ -92,9 +133,7 @@ a, a:hover, a:visited, a:link a:active{
     flex-basis: 50%;
 }
 
-.tileImg{
-	min-height: 23vw;
-}
+.tileImg{min-height: 23vw;}
 
 .tileBlock img{
 	width: 100%;
@@ -124,9 +163,7 @@ a, a:hover, a:visited, a:link a:active{
 	padding: 25%;
 }
 
-.embeddedItem{
-	width: 100%;
-}
+.embeddedItem{width: 100%;}
 
 .embeddedItem img{
 	width: 94%;
@@ -139,13 +176,9 @@ a, a:hover, a:visited, a:link a:active{
   flex-wrap: wrap;
 }
 
-.fb2c>div.embeddedItem{
-  flex: 0 50%;
-}
+.fb2c>div.embeddedItem{flex: 0 50%;}
 
-.fb2c>div.item {
-  flex: 0 50%;
-}
+.fb2c>div.item {flex: 0 50%;}
 
 .fb4c {
   display: flex;
@@ -222,28 +255,12 @@ a, a:hover, a:visited, a:link a:active{
 	}
 }
 
-.dub-box{
-	margin: 0px;
-	width: 66.666%;
-	padding-top: 33%;
-
-	float: left;
-	position: relative;
-}
-
-.tiny-box{
-	width: 16.666%;
-	padding-top: 16.666%;
-
-	float: left;
-	position: relative;
-}
-
 .name{
 	top: 50%;
 	transform: translateY(-50%);
 }
 
+/* Simplified text formatting for small width boxes */
 .sm-text{
 	text-overflow: ellipsis;
 	position: absolute;
@@ -254,6 +271,7 @@ a, a:hover, a:visited, a:link a:active{
 	transform: translateY(-50%);
 }
 
+/* Text formatting for tiny width boxes */
 .sm-topic-text{
 	text-overflow: ellipsis;
 	text-align: center;
@@ -266,6 +284,7 @@ a, a:hover, a:visited, a:link a:active{
 	transform: translateY(-50%);
 }
 
+/* Text formatting for sm-box's in a md-box */
 .md-topic-text{
 	text-overflow: ellipsis;
 	text-align: center;
@@ -278,6 +297,7 @@ a, a:hover, a:visited, a:link a:active{
 	transform: translateY(-50%);
 }
 
+/* Text formatting for sm-box */
 .topic-text{
 	text-align: center;
 	margin-left: auto;
@@ -289,6 +309,9 @@ a, a:hover, a:visited, a:link a:active{
 	transform: translateY(-50%);
 }
 
+/* Text formatting for small width box buttons */
+.textInButton{font-size: 4vw;}
+
 /* Colors */
 	.dimgray{background-color: #5b7278;}
 	.purp{background-color:#d890ff;}
@@ -298,11 +321,12 @@ a, a:hover, a:visited, a:link a:active{
 	.yellowgreen{background-color: #a2b241;}
 	.yellow{background-color: #ffed47;}
 	.tomato{background-color: #ff6347;}
-
+	.fadedManila{background-color: #faf2de;}
 	.tan{background-color: #D2B48C;}
 	.darkTan{background-color: #695a46;}
 
 	.white{background-color: #fff;}
+	.offWhite{background-color: #f6f6f6;}
 	.lightgray{background-color: #e5e5e5;}
 	.gray{background-color: #666666;}
 	.darkGray{background-color: #999999;}
