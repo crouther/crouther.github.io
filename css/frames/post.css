@@ -81,8 +81,12 @@ a, a:hover, a:visited, a:link a:active{
 
 /* Full page Flexbox container */
 .container-box{
+	display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
     width: 100%;
 }
 
@@ -172,8 +176,11 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 .fb2c {
-  display: flex;
-  flex-wrap: wrap;
+	display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .fb2c>div.embeddedItem{flex: 0 50%;}
@@ -181,14 +188,21 @@ a, a:hover, a:visited, a:link a:active{
 .fb2c>div.item {flex: 0 50%;}
 
 .fb4c {
-  display: flex;
-  flex-wrap: wrap;
+	display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .fbv {
-	display: flex;
+	display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
 	flex-direction: column;
-	flex-wrap: wrap;
 }
 
 .fb4c>div.embeddedItem{
