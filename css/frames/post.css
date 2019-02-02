@@ -30,7 +30,6 @@ a, a:hover, a:visited, a:link a:active{
 	padding-left: 10%;
 }
 
-
 /* Small width box for organizing div content in columns of 3*/
 .sm-box{
 	width: 33.333%; 
@@ -360,6 +359,7 @@ a, a:hover, a:visited, a:link a:active{
 	.whiteTxt{color: #fff;}
 	.blackTxt{color: #000;}
 
+	.blush{background: radial-gradient(circle, #edfdfa, #ecfff8, #ffd0c7);}
 	.greenblue{background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
 	.businessGray{background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
 	.mkcDIYATX{background-image: radial-gradient(circle, ##e0e6e9, ##eff2f4, ##6b7379);}
