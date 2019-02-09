@@ -403,6 +403,10 @@ a, a:hover, a:visited, a:link a:active{
 /* Text formatting for small width box buttons */
 .textInButton{font-size: 4vw;}
 
+/* Footer tag line fext formatting */
+.ftl1{font-size: .8em; text-align: center;}
+.ftl2{font-size: .6em; text-align: center;}
+
 /* Colors */
 	.dimgray{background-color: #5b7278;}
 	.purp{background-color:#d890ff;}
