@@ -81,6 +81,9 @@ a, a:hover, a:visited, a:link a:active{
 	position: relative;
 }
 
+
+
+
 /* Full page Flexbox container */
 .container-box{
 	display: -webkit-flex;
@@ -275,7 +278,7 @@ a, a:hover, a:visited, a:link a:active{
 	max-width: 40vw;
 }
 
-.square{min-height: 50vw;}
+.square{min-height: 50vw; max-height: 50vw;max-width: 50vw;}
 
 @media only screen and (orientation:portrait) {
 	#imIt{padding-top: 0%;}
