@@ -278,7 +278,7 @@ a, a:hover, a:visited, a:link a:active{
 	max-width: 40vw;
 }
 
-.square{min-height: 50vw; max-height: 50vw;max-width: 50vw;}
+.square{min-height: 50vw; max-height: 50vw;}
 
 @media only screen and (orientation:portrait) {
 	#imIt{padding-top: 0%;}
@@ -293,6 +293,9 @@ a, a:hover, a:visited, a:link a:active{
 
 	.square{
 		min-height: 100vw;
+		max-height: 100vw;
+		min-width: 100vw;
+		max-width: 100vw;
 	}
 
 	.embeddedItem img{
