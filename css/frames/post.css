@@ -284,6 +284,7 @@ a, a:hover, a:visited, a:link a:active{
 
 .square{min-height: 50vw; max-height: 50vw;}
 .unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
+#hardwareGear{max-width: 20vw; max-height: 10vw;}
 
 .sqH2{
 	padding: 10% 10% 0 10%; 
@@ -331,6 +332,7 @@ a, a:hover, a:visited, a:link a:active{
 	}
 
 	#address{display: none;}
+	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 
 	.sqH2{
 		padding: 5% 10% 0 10%; 
