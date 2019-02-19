@@ -283,7 +283,7 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 .square{min-height: 50vw; max-height: 50vw;}
-.unorthodox{min-height: 50vw; max-height: 50vw;background-color: #ffcb66;}
+.unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
 
 .sqH2{
 	padding: 10% 10% 0 10%; 
