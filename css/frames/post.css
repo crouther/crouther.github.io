@@ -317,7 +317,7 @@ a, a:hover, a:visited, a:link a:active{
 	}
 
 	.unorthodox{
-		background-color: #fdd00b;
+		background-color: none;
 		min-height: 43.75vw;
 		max-height: 43.75vw;
 	}
@@ -329,6 +329,8 @@ a, a:hover, a:visited, a:link a:active{
 	.unorthodox p{
 		color: white;
 	}
+
+	#address{display: none;}
 
 	.sqH2{
 		padding: 5% 10% 0 10%; 
