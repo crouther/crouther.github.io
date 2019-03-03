@@ -300,7 +300,10 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 @media only screen and (orientation:portrait) {
+	
+	//Wireframes: Specific Element ID Stylings
 	#imIt{padding-top: 0%;}
+	#embeddedText{font-size: 2vw;}
 
 	.fb2c>div.item {
 		-webkit-box-flex: 0;
