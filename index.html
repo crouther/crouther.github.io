@@ -59,6 +59,7 @@
  -->
 </body>
 
+<!-- Responsive iFrame Top Window Forwarding/Matching -->
 <script type="text/javascript">
 	(function(){
 		var url = document.getElementById("iframe").contentWindow.location.href;
@@ -66,6 +67,17 @@
 		if ($(window).width() < 700) { window.location.href = url;}// do some stuff
     	setTimeout(arguments.callee, 500);
     })();
+</script>
+
+<!-- Responsive iFrame Layer Matching -->
+<script type="text/javascript">
+	(function DesktopView(){
+		
+		var currentURL = window.location.href;
+		var url = window.history.back();
+
+		if(currentURL == "https://myles.works#stuff") { document.getElementById('iframe').src= url;}// do some stuff
+	})
 </script>
 
 </html>
