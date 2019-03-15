@@ -42,6 +42,35 @@
 	float: left;
 }
 
+.tri-box img{
+	padding: 5%; 
+	width: 90%; 
+	height: auto;
+	border-radius: 5%;
+}
+
+@media (orientation: portrait) {
+	.tri-box{
+		width: 100%;
+	}
+
+	.tri-box img{
+		width: 80%;
+		padding: 10%;
+		border-radius: 0;
+	}
+
+	.tri-box h2{
+		width: 80%;
+		padding-left: 3%;
+	}
+
+	.tri-box ul{
+		width: 80%;
+		padding-left: 10%; 
+	}
+}
+
 .subTitle{font-size: 1.3em;}
 
 .specs{
