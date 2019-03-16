@@ -3,7 +3,7 @@
 <head>
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script/i.js"></script>
+	<script type="text/javascript" src="../script/i.js"></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
@@ -36,7 +36,69 @@
 	<title>MKC Designs</title>
 </head>
 
+
 <body>
+
+<div id = "isolated" class="fb2c">
+
+  <div class="item" style="padding-top: 5%;">
+	<div class="fw-box white" id ="designDescription">
+		<div style="padding: 0% 5% 5% 5%;">
+			<a href="me.html#projImage"><h1 style="margin-bottom:0px;"><- Myles Crouther</h1></a>
+			<h4  style="margin:.5em;"><i>Designer's visions turned into reality. Mentored Professionally.</i></h4>
+
+			<p>From the drawing board to code. A developer with a sense of aesthetics to comfortably convert <a class="redTxt">wireframes</a>, <a class="redTxt">mockups</a>, <a class="redTxt">prototypes</a>, and full page designs from creative tools such as Sketch and Adobe XD (or other Adobe Creative tools) to <a class="redTxt">HTML</a>, <a class="redTxt">CSS</a>, and <a class="redTxt">JavaScript</a>. Choose a section below to learn more about my work.</p>
+			<a class="redTxt"><i>*Keywords</i></a>
+		</div>
+	</div>
+  </div>
+
+
+	<div class="item square" style="padding-top: 5%;">
+		<div class="fw-box" id="projects">
+			<div style="padding: 0% 5% 5% 5%;">
+				<h1 style="margin-bottom:0px;">Clients, Employers &amp; Projects</h1>
+			</div>
+		</div>
+
+		<div class="mw-box">
+			<div class="fw-box">
+				<a href="../at/hpe.html"><div class="sm-box black">
+					<div class="topic-text"><img style="width: 80%;" src="../img/icon/hpe.png"></div></div></a>
+				<a href="itxrm.html" target="_blank"><div class="sm-box lightgray">
+					<div class="md-topic-text" style="font-size: .8em;"><img style="width: 65%;" src="../img/icon/itxrm.png"><br><br>Hewlett Packard <br>Enterprise</div></div></a>
+				<a href="../at/hp.html"><div class="sm-box white">
+					<div class="topic-text"><img style="width: 90%;" src="../img/icon/hp.png"></div></div></a>
+				
+			</div>
+		</div>
+
+		<div class="mw-box">
+			<div class="fw-box">
+				<a href="../at/eit.html"><div class="sm-box eit">
+					<div class="topic-text"><img style="width: 85%;" src="../img/icon/eit.png"></div></div></a>
+				<a href="wireframes.html"><div class="sm-box tomato">
+					<div class="topic-text"><img style="width: 80%;" src="../img/icon/whiteLogo.png"></div></div></a>
+				<a href="web.html"><div class="sm-box limegreen">
+					<div class="md-topic-text" style="font-size: 2vw;"><img src="../img/icon/web-design.svg" style="max-width: 45%;"><br>Web Templates</div></div></a>
+
+			</div>
+		</div>
+
+		<div class="mw-box">
+			<div class="fw-box" style="min-height: 30vh;">
+				<a href="https://myles.works/on/cypher" target="_blank"><div class="sm-box yellow">
+					<div class="topic-text" style="font-size: 2.3vw;"><img style="width: 4vw; height: 4vw; padding: 1vw; border-radius: 50%; background-color: white;" src="../img/icon/cypher.png"><div class="brushed" style="padding-top: .3em;">Cypher</div></div></div></a>
+				<a href="https://myles.works/on/justCards" target="_blank"><div class="sm-box dimgray">
+					<div class="topic-text"><img style="margin-top: 5%; width: 80%; border-radius: 50%;" src="../img/icon/jc.png"></div></div></a>
+				<a href="https://myles.works/on/otterbourg" target="_blank"><div class="sm-box lightblue">
+					<div class="sm-topic-text">Case <br>Studies</div></div></a>
+			</div>
+		</div>
+			</div>
+      </div>
+</div>
+
 <div id="main">
 	<div class="fw-box white" id ="designDescription">
 		<div style="padding: 5%;">
@@ -89,11 +151,30 @@
 		</div>
 	</div>
 </div>
+
 </body>
 
 </html>
 
+<script>
+	(function(){
+		var inFrame = inIframe();
+		
+		if (!inFrame && ($(window).height()*1.4 <= $(window).width())){
+			document.getElementById("main").style.display = "none";
+			document.getElementById("isolated").style.display = "flex";
+		}
+
+		else{
+			document.getElementById("isolated").style.display = "none";
+			document.getElementById("main").style.display = "block";
+		}
+
+		setTimeout(arguments.callee, 500);
+	})();
+</script>
+
 <!--Future Rows may show content for this:
-<a><div class="sm-box limegreen">
+	<a><div class="sm-box limegreen">
 				<div class="md-topic-text"><img src="../img/icon/smartphone.svg" style="max-width: 40%;"><br>Mobile<br>UI/UX<a href="https://www.flaticon.com/authors/eucalyp" target="_blank" style="font-size: 2.5vw;">©</a></div></div></a>
 -->

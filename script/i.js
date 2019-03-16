@@ -6,7 +6,7 @@ var isDesktop = true;
 /** Function inIframe checks if page is contained in Frame
 *   This done with a comparison of whether or not the
 *   current html window is main browser window **/
-function inIframe () {
+function inIframe(){
     try {return window.self !== window.top;} 
     catch (e) {return true;}
 }
@@ -43,8 +43,6 @@ function responsivePage(){
 	setTimeout(arguments.callee, 500);
 }
 
-//Function call initiates call loop to check if page needs adjustment
-responsivePage();
 
 
 function skipToAbout(){
