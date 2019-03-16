@@ -61,13 +61,7 @@
 
 <!-- Responsive iFrame Top Window Forwarding/Matching -->
 <script type="text/javascript">
-	
-
-
 	(function(){
-		//Function call initiates call loop to check if page needs adjustment
-		responsivePage();
-		
 		var url = document.getElementById("iframe").contentWindow.location.href;
 
 		if ($(window).width() < 700) { window.location.href = url;}// do some stuff
