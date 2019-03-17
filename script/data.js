@@ -70,7 +70,7 @@ var json = {"items": [
     "img":"../img/icon/hpe.png",
     "icon":"yes",
     "iconBkgc": "darkGray",
-    "url":"https://crouther.github.io/on/hpe"
+    "url":"https://crouther.github.io/at/hpe"
    },
 
   {
@@ -80,7 +80,7 @@ var json = {"items": [
     "img":"../img/icon/hp.png",
     "icon":"yes",
     "iconBkgc": "white",
-    "url":"https://crouther.github.io/on/hp"
+    "url":"https://crouther.github.io/at/hp"
    },
 
   {
@@ -90,7 +90,7 @@ var json = {"items": [
     "img":"../img/icon/eit.png",
     "icon":"yes",
     "iconBkgc": "eit",
-    "url":"https://crouther.github.io/on/eit"
+    "url":"https://crouther.github.io/at/eit"
    },
 
   {
@@ -146,7 +146,7 @@ var json = {"items": [
     "img":"../img/icon/apple-logo.png",
     "icon":"yes",
     "iconBkgc": "lightgray",
-    "url":"https://crouther.github.io/on/apple"
+    "url":"https://crouther.github.io/at/apple"
    },
 
   {
@@ -166,7 +166,7 @@ var json = {"items": [
     "img":"../img/icon/processor.svg",
     "icon":"yes",
     "iconBkgc": "tan",
-    "url":"https://crouther.github.io/on/workstation"
+    "url":"https://crouther.github.io/on/aDIYATX"
    },
 
   {
