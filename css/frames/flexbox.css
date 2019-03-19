@@ -1,0 +1,314 @@
+/** Flexbox.css
+*   This offers universal stylings for
+*   organizing content within a page
+*   There are various iterations of the flex
+*   box styling for different layouts and 
+*   content display methodologies **/
+
+
+/* Full page Flexbox container */
+.container-box{
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    width: 100%;
+}
+
+/* Single flexbox container */
+.box{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 50%;
+}
+
+/* Single container div for multimedia content */
+.item{	width: 100%;  }
+
+/* Default image container properties for multimedia content */
+.item img{
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+}
+
+.tileBlock{width: 100%;}
+
+.tbV{width: 25%;}
+
+.tbV img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2%;
+}
+
+.tbV h3{
+	width: 80%;
+	padding: 10%;
+	padding-top: 5%;
+	padding-bottom: 1%; 
+	margin: 0%;
+}
+
+.tbV p{
+	width: 80%;
+	min-height: 10vw;
+	max-height: 15vw;
+	padding: 10%;
+	margin: 0%;
+}
+
+.tbBig{
+	-webkit-flex-basis: 50%; /* Safari 6.1+ */
+    -ms-flex-preferred-size: 50%;
+	    flex-basis: 50%;
+}
+
+.tileImg{min-height: 23vw;}
+
+.tileBlock img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2%;
+}
+
+.tileBlock h3{
+	width: 80%;
+	padding: 10%;
+	padding-top: 5%;
+	padding-bottom: 1%; 
+	margin: 0%;
+}
+
+.tileBlock p{
+	width: 80%;
+	min-height: 10vw;
+	//max-height: 15vw;
+	padding: 10%;
+	margin: 0%;
+  	-o-text-overflow: ellipsis;
+  	   text-overflow: ellipsis;
+}
+
+.tbIcon {
+	width: 50%;
+	padding: 25%;
+}
+
+.embeddedItem{width: 100%;}
+
+.embeddedItem img{
+	width: 94%;
+	margin: 0%;
+	padding: 3%;
+}
+
+.fb2c {
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.fb2c>div.embeddedItem{
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 50%;
+	-moz-box-flex: 0;
+	-ms-flex: 0 50%;
+	flex: 0 50%;}
+
+.fb2c>div.item {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 50%;
+	-moz-box-flex: 0;
+	-ms-flex: 0 50%;
+	flex: 0 50%;}
+
+.fb4c {
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.fbv {
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	   -moz-box-orient: vertical;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.fb4c>div.embeddedItem{
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 25%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 25%;
+          flex: 0 25%;
+}
+
+.fb4c>div.item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 25%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 25%;
+          flex: 0 25%;
+}
+
+.fb4c>div.tileBlock {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 23%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 23%;
+          flex: 0 23%;
+  padding: 1%;
+}
+
+#imIt{padding-top: 6%;}
+
+#mainImage{
+	padding-left: 5vw; 
+	max-height: 100vh; 
+	width: auto; 
+	max-width: 40vw;
+}
+
+.square{min-height: 50vw; max-height: 50vw;}
+.unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
+#hardwareGear{max-width: 20vw; max-height: 10vw;}
+
+.sqH2{
+	padding: 10% 10% 0 10%; 
+	text-align: center;
+}
+
+.sqTxt{
+	padding: 5% 10% 5% 10%; 
+	text-overflow: ellipsis; 
+	text-align: center; 
+	max-height: 40%; 
+	color: black;
+}
+
+@media only screen and (orientation:portrait) {
+	
+	//Wireframes: Specific Element ID Stylings
+	#imIt{padding-top: 0%;}
+	#embeddedText{font-size: 2vw;}
+
+	.fb2c>div.item {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 100%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 100%;
+		        flex: 0 100%;
+	}
+
+	.square{
+		min-height: 100vw;
+		max-height: 100vw;
+		min-width: 100vw;
+		max-width: 100vw;
+	}
+
+	.unorthodox{
+		background-color: none;
+		min-height: 43.75vw;
+		max-height: 43.75vw;
+	}
+
+	.unorthodox img{
+		display: none;
+	}
+
+	.unorthodox p{
+		color: white;
+	}
+
+	#address{display: none;}
+	#hardwareGear{max-width: 20vw; max-height: 10vh;}
+
+	.sqH2{
+		padding: 5% 10% 0 10%; 
+		text-align: center;
+	}
+
+	.sqTxt{
+		padding:  3% 10% 0 10%; 
+		text-overflow: ellipsis; 
+		text-align: center; 
+		max-height: 40%; 
+		color: black;
+	}
+
+	.embeddedItem img{
+	width: 94%;
+	margin: 0%;
+	padding: 3%;
+	}
+
+	.fb4c>div.item {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 50%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 50%;
+		        flex: 0 50%;
+	}
+	.fb4c>div.embeddedItem {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 50%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 50%;
+		        flex: 0 50%;
+	}
+
+	.fb4c>div.tileBlock {
+  		-webkit-box-flex: 0;
+  		-webkit-flex: 0 48%;
+  		   -moz-box-flex: 0;
+  		    -ms-flex: 0 48%;
+  		        flex: 0 48%;
+  		padding: 1%;
+	}
+
+	.tileBlock p{
+		min-height: 30vw;
+	}
+
+	#mainImage{
+		width: 80vw;
+		max-width: 80vw;
+		padding-left: 10vw; 
+	}
+}

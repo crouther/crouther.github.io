@@ -32,6 +32,16 @@
 	height: auto;
 }
 
+.tri-box-ridgid{
+	width: 32%;
+	height: auto;
+
+	padding-left: 1%;
+	margin: 0;
+	
+	float: left;
+}
+
 .tri-box{
 	width: 32%;
 	height: auto;
