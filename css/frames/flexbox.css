@@ -241,12 +241,23 @@
 	color: black;
 }
 
+	.ord1{order: default;}
+	.ord2{order: default;}
+	.ord3{order: default;}
+	.ord4{order: default;}
+	.ord5{order: default;}
+	.ord6{order: default;}
+
 
 @media only screen and (orientation:portrait) {
 	
 	//Wireframes: Specific Element ID Stylings
 	#imIt{padding-top: 0%;}
 	#embeddedText{font-size: 2vw;}
+
+	//Apple or Page Specific Content
+	//#address{display: none;}
+	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 
 	.fb2c>div.item {
 		-webkit-box-flex: 0;
@@ -276,9 +287,6 @@
 	.unorthodox p{
 		color: white;
 	}
-
-	#address{display: none;}
-	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 
 	.sqH2{
 		padding: 5% 10% 0 10%; 
@@ -332,4 +340,12 @@
 		max-width: 80vw;
 		padding-left: 10vw; 
 	}
+
+	//Flexbox Items Organization Classes
+	.ord1{order: 1;}
+	.ord2{order: 2;}
+	.ord3{order: 3;}
+	.ord4{order: 4;}
+	.ord5{order: 5;}
+	.ord6{order: 6;}
 }
