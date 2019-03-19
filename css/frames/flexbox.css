@@ -215,22 +215,12 @@
   padding: 1%;
 }
 
-#imIt{padding-top: 6%;}
 
 #mainImage{
 	padding-left: 5vw; 
 	max-height: 100vh; 
 	width: auto; 
 	max-width: 40vw;
-}
-
-.square{min-height: 50vw; max-height: 50vw;}
-.unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
-#hardwareGear{max-width: 20vw; max-height: 10vw;}
-
-.sqH2{
-	padding: 10% 10% 0 10%; 
-	text-align: center;
 }
 
 .sqTxt{
@@ -241,12 +231,20 @@
 	color: black;
 }
 
-	.ord1{order: default;}
-	.ord2{order: default;}
-	.ord3{order: default;}
-	.ord4{order: default;}
-	.ord5{order: default;}
-	.ord6{order: default;}
+//Page or Item Specific Element Properties
+.square{min-height: 50vw; max-height: 50vw;}
+.unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
+#imIt{padding-top: 6%;}
+#hardwareGear{max-width: 20vw; max-height: 10vw;}
+#sqH2{display: none;}
+
+.ord1{order: default;}
+.ord2{order: default;}
+.ord3{order: default;}
+.ord4{order: default;}
+.ord5{order: default;}
+.ord6{order: default;}
+
 
 
 @media only screen and (orientation:portrait) {
@@ -258,7 +256,7 @@
 	//Apple or Page Specific Content
 	//#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
-
+	
 	.fb2c>div.item {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 100%;
