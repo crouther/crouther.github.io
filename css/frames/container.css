@@ -8,13 +8,12 @@ a{
 
 .anc {font-size: 1.8vw;}
 
-/* visited link */
-#ancAbout:visited {color: green;}
-#ancWork:visited {color: #999999;}
-#ancResa:visited {color: #D2B48C;}
-#ancArt:visited {color: #ff6347;}
-
 /* mouse over link */
+#ancAbout:hover {color: green;}
+#ancWork:hover {color: #999999;}
+#ancResa:hover {color: #D2B48C;}
+#ancArt:hover {color: #ff6347;}
+
 .anc a:hover {
     color: gray;
 }
