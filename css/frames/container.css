@@ -14,11 +14,6 @@ a{
 
 
 //Custom Anchor Styling
-#ancAbout {color: green;}
-#ancWork {color: #999999;}
-#ancResa {color: #D2B48C;}
-#ancArt {color: #ff6347;}
-
 /* mouse over link */
 #ancAbout:hover {color: green;}
 #ancWork:hover {color: #999999;}
@@ -185,40 +180,40 @@ a{
 	}
 
 	#ancArt{
-	    -webkit-animation: ccat 3s infinite;
-	    -moz-animation: ccat 3s infinite;
-	    -o-animation: ccat 3s infinite;
-	    -ms-animation: ccat 3s infinite;
-	    animation: ccat 3s infinite;
+	    -webkit-animation: ccat 6s infinite;
+	    -moz-animation: ccat 6s infinite;
+	    -o-animation: ccat 6s infinite;
+	    -ms-animation: ccat 6s infinite;
+	    animation: ccat 6s infinite;
 	}
 
 	@-webkit-keyframes ccat {
 	    0% { color: black; }
-	    112.5% { color: #ff6347; }
-	    150% { color: #ff6347; }
-	    187.5% { color: black; }
+	    56.25% { color: #ff6347; }
+	    75% { color: #ff6347; }
+	    93.75% { color: black; }
 	}
 	@-moz-keyframes ccat {
 	    0% { color: black; }
-	    112.5% { color: #ff6347; }
-	    150% { color: #ff6347; }
-	    187.5% { color: black; }
+	    56.25% { color: #ff6347; }
+	    75% { color: #ff6347; }
+	    93.75% { color: black; }
 	}
 	@-ms-keyframes ccat {
 	    0% { color: black; }
-	    112.5% { color: #ff6347; }
-	    150% { color: #ff6347; }
-	    187.5% { color: black; }
+	    56.25% { color: #ff6347; }
+	    75% { color: #ff6347; }
+	    93.75% { color: black; }
 	}
 	@-o-keyframes ccat {
 	    0% { color: black; }
-	    112.5% { color: #ff6347; }
-	    150% { color: #ff6347; }
-	    187.5% { color: black; }
+	    56.25% { color: #ff6347; }
+	    75% { color: #ff6347; }
+	    93.75% { color: black; }
 	}
 	@keyframes ccat {
 	    0% { color: black; }
-	    112.5% { color: #ff6347; }
-	    150% { color: #ff6347; }
-	    187.5% { color: black; }
+	    56.25% { color: #ff6347; }
+	    75% { color: #ff6347; }
+	    93.75% { color: black; }
 	}
