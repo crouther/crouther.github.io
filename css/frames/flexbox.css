@@ -37,6 +37,7 @@
 /* Default image container properties for multimedia content */
 .item img{
 	width: 100%;
+	height: auto;
 	margin: 0%;
 	padding: 0%;
 }
@@ -232,7 +233,7 @@
 }
 
 //Page or Item Specific Element Properties
-.square{min-height: 50vw; max-height: 50vw;}
+.square{height: 50vw; width: 50vw;}
 .unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
 #imIt{padding-top: 6%;}
 #hardwareGear{max-width: 20vw; max-height: 10vw;}
