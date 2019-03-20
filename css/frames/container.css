@@ -8,15 +8,23 @@ a{
 
 .anc {font-size: 1.8vw;}
 
+.anc a:hover {
+    color: gray;
+}
+
+
+//Custom Anchor Styling
+#ancAbout {color: green;}
+#ancWork {color: #999999;}
+#ancResa {color: #D2B48C;}
+#ancArt {color: #ff6347;}
+
 /* mouse over link */
 #ancAbout:hover {color: green;}
 #ancWork:hover {color: #999999;}
 #ancResa:hover {color: #D2B48C;}
 #ancArt:hover {color: #ff6347;}
 
-.anc a:hover {
-    color: gray;
-}
 
 /* True Page Body Content */
 .wrapper{
@@ -61,3 +69,156 @@ a{
 	.navBox{max-width: 25%; left: -2vw;}
 	.navLinks{left:-8vw;}
 }
+
+/** Anchor Text Animation
+*    Very specific to the index page **/
+	#ancAbout{
+	    -webkit-animation: ccaa 3s infinite;
+	    -moz-animation: ccaa 3s infinite;
+	    -o-animation: ccaa 3s infinite;
+	    -ms-animation: ccaa 3s infinite;
+	    animation: ccaa 3s infinite;
+	}
+
+	@-webkit-keyframes ccaa {
+	    0% { color: green; }
+	    37.5% { color: green; }
+	    100% { color: black; }
+	}
+	@-moz-keyframes ccaa {
+	    0% { color: green; }
+	    37.5% { color: green; }
+	    100% { color: black; }
+	}
+	@-ms-keyframes ccaa {
+	    0% { color: green; }
+	    37.5% { color: green; }
+	    100% { color: black; }
+	}
+	@-o-keyframes ccaa {
+	    0% { color: green; }
+	    37.5% { color: green; }
+	    100% { color: black; }
+	}
+	@keyframes ccaa {
+	    0% { color: green; }
+	    37.5% { color: green; }
+	    100% { color: black; }
+	}
+
+	#ancWork{
+	    -webkit-animation: ccaw 3s infinite;
+	    -moz-animation: ccaw 3s infinite;
+	    -o-animation: ccaw 3s infinite;
+	    -ms-animation: ccaw 3s infinite;
+	    animation: ccaw 3s infinite;
+	}
+
+	@-webkit-keyframes ccaw {
+	    0% { color: black; }
+	    37.5% { color: #999999; }
+	    75% { color:  #999999; }
+	    100% { color: black; }
+	}
+	@-moz-keyframes ccaw {
+	    0% { color: black; }
+	    37.5% { color: #999999; }
+	    75% { color:  #999999; }
+	    100% { color: black; }
+	}
+	@-ms-keyframes ccaw {
+	    0% { color: black; }
+	    37.5% { color: #999999; }
+	    75% { color:  #999999; }
+	    100% { color: black; }
+	}
+	@-o-keyframes ccaw {
+	    0% { color: black; }
+	    37.5% { color: #999999; }
+	    75% { color:  #999999; }
+	    100% { color: black; }
+	}
+	@keyframes ccaw {
+	    0% { color: black; }
+	    37.5% { color: #999999; }
+	    75% { color:  #999999; }
+	    100% { color: black; }
+	}
+
+	#ancResa{
+	    -webkit-animation: ccar 3s infinite;
+	    -moz-animation: ccar 3s infinite;
+	    -o-animation: ccar 3s infinite;
+	    -ms-animation: ccar 3s infinite;
+	    animation: ccar 3s infinite;
+	}
+
+	@-webkit-keyframes ccar {
+	    0% { color: black; }
+	    75% { color: #D2B48C; }
+	    112.5% { color: #D2B48C; }
+	    150% { color: black; }
+	}
+	@-moz-keyframes ccar {
+	    0% { color: black; }
+	    75% { color: #D2B48C; }
+	    112.5% { color: #D2B48C; }
+	    150% { color: black; }
+	}
+	@-ms-keyframes ccar {
+	    0% { color: black; }
+	    75% { color: #D2B48C; }
+	    112.5% { color: #D2B48C; }
+	    150% { color: black; }
+	}
+	@-o-keyframes ccar {
+	    0% { color: black; }
+	    75% { color: #D2B48C; }
+	    112.5% { color: #D2B48C; }
+	    150% { color: black; }
+	}
+	@keyframes ccar {
+	    0% { color: black; }
+	    75% { color: #D2B48C; }
+	    112.5% { color: #D2B48C; }
+	    150% { color: black; }
+	}
+
+	#ancArt{
+	    -webkit-animation: ccat 3s infinite;
+	    -moz-animation: ccat 3s infinite;
+	    -o-animation: ccat 3s infinite;
+	    -ms-animation: ccat 3s infinite;
+	    animation: ccat 3s infinite;
+	}
+
+	@-webkit-keyframes ccat {
+	    0% { color: black; }
+	    112.5% { color: #ff6347; }
+	    150% { color: #ff6347; }
+	    187.5% { color: black; }
+	}
+	@-moz-keyframes ccat {
+	    0% { color: black; }
+	    112.5% { color: #ff6347; }
+	    150% { color: #ff6347; }
+	    187.5% { color: black; }
+	}
+	@-ms-keyframes ccat {
+	    0% { color: black; }
+	    112.5% { color: #ff6347; }
+	    150% { color: #ff6347; }
+	    187.5% { color: black; }
+	}
+	@-o-keyframes ccat {
+	    0% { color: black; }
+	    112.5% { color: #ff6347; }
+	    150% { color: #ff6347; }
+	    187.5% { color: black; }
+	}
+	@keyframes ccat {
+	    0% { color: black; }
+	    112.5% { color: #ff6347; }
+	    150% { color: #ff6347; }
+	    187.5% { color: black; }
+	}
