@@ -234,7 +234,7 @@
 
 //Page or Item Specific Element Properties
 .square{height: 50vw; width: 50vw;}
-.unorthodox{min-height: 50vw; max-height: 50vw; background-color: #ffcb66;}
+.unorthodox{min-height: 50vw; max-height: 51vw; background-color: #ffcb66;}
 #imIt{padding-top: 6%;}
 #hardwareGear{max-width: 20vw; max-height: 10vw;}
 #sqH2{display: none;}
@@ -255,7 +255,7 @@
 	#embeddedText{font-size: 2vw;}
 
 	//Apple or Page Specific Content
-	//#address{display: none;}
+	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	
 	.fb2c>div.item {
