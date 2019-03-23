@@ -7,10 +7,7 @@ a{
 }
 
 .anc {font-size: 1.8vw;}
-
-.anc a:hover {
-    color: gray;
-}
+.anc a:hover {color: gray;}
 
 
 //Custom Anchor Styling
@@ -35,7 +32,7 @@ a{
 /* Floating Navigation Box */
 .navBox{
 	z-index: 800;
-	position: absolute; 
+	position: fixed; 
 	top: 0;
 	left: 0; 
 	max-width: 40%;
@@ -55,7 +52,7 @@ a{
 }
 
 .navLinks{
-	position: absolute;
+	position: fixed;
 	left: 0vw;
 }
 
