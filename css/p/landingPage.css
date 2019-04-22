@@ -168,18 +168,21 @@ p{
 
 .contentCenterRight{
 	position: absolute;
-	width: 40%; 
+	padding-right: 3%;
+	min-width: 45%; 
 	height: auto;
-
 	top: 5%;
-	left: 55%;
+	left: 50%;
 }
 
 .leftImage{
 	position: fixed; 
 	left: 10%; 
-	top: 10%; 
+	top: 13%; 
 
 	max-width: 40%; 
 	max-height: 80%;
 }
+
+@media only screen and (orientation:landscape){.contentCenterRight{max-width: 65%; left: 60vh;}}
+@media only screen and (orientation:portrait){.leftImage{left: 5%; top:20%;}}
