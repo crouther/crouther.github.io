@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 
 <head>
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../script/i.js"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -27,7 +30,7 @@
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="copyright" content="MKC is an unregistered trademark of MKC. A Crouther Company.">
-	<meta name="description" content="The Software section of my portfolio hosting various work from my industry experience, research, and side projects.">
+	<meta name="description" content="The software section of my portfolio hosting various work from my industry experience, research, and side projects.">
 	<meta name="keywords" content="myles crouther, crouther, myles, Software crouther, myles Software, myles crouther Software, Software, Software myles">
 	<meta name="robots" content="index,follow">
 	<meta name="DC.title" content="MKC Software">
@@ -39,9 +42,11 @@
 
 <body>
 
-<div id = "isolatedSoftware" class="fb2c">
-	<div class="item" style="padding-top: 5%;">
+<div id="isolatedSoftware" class="fb2c">
+
+	<div class="item square" style="padding-top: 5%;">
 		<div class="fw-box white" id="hardwareDescription">
+
 			<div style="padding: 0% 5% 5% 5%;">
 				<a href="me.html#projImage"><h1 style="margin-bottom:0px;">< Myles' Works</h1></a>
 				<h4  style="margin:.5em;"><i>Code committed. Terminal typist.</i></h4>
@@ -52,13 +57,16 @@
 		</div>
 	</div>
 
-	<div class="item" style="padding-top: 5%;">
+	<div class="item square" style="padding-top: 5%;">
+
+		<!-- Right Panel Title -->
 		<div class="fw-box" id="projects">
 			<div style="padding: 0% 5% 5% 5%;">
 				<h1 style="margin-bottom:0px;">Employer &amp; Projects</h1>
 			</div>
 		</div>
 
+		<!-- Right Panel Tiles -->
 		<div class="mw-box">
 			<div class="fw-box">
 				<a href="https://github.com/crouther" target="_blank"><div class="sm-box github">
@@ -81,8 +89,8 @@
 			</div>
 		</div>
 
-		<div class="mw-box" style="min-height: 85vw;">
-			<div class="fw-box" style="min-height: 30vw;">
+		<div class="mw-box">
+			<div class="fw-box" style="min-height: 65vh;">
 				<a href="workstation.html"><div class="sm-box eit">
 					<div class="md-topic-text" style="font-size: 1.6vw;"><img src="../img/icon/monitor.svg" style="max-width: 45%;"><br>Developer<br>Environment</div></div></a>
 			</div>
@@ -145,16 +153,15 @@
 	(function(){
 		var inFrame = inIframe();
 		
-		if (!inFrame && ($(window).height()*1.4 <= $(window).width())){
+		if (!inFrame && ($(window).height()*1.3 <= $(window).width())){
 			document.getElementById("mainSoftware").style.display = "none";
 			document.getElementById("isolatedSoftware").style.display = "flex";
 		}
-
 		else{
 			document.getElementById("isolatedSoftware").style.display = "none";
 			document.getElementById("mainSoftware").style.display = "block";
 		}
-
 		setTimeout(arguments.callee, 500);
 	})();
+</script>
 </script>
