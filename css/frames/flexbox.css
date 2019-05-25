@@ -259,7 +259,9 @@
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 
 	//Product Page Generic Elements
-	.brief h2{font-size: 3em;} p{font-size: 2em;} h6{font-size: 1.5em;}
+	.brief h2{font-size: 3em;} 
+	.brief p{font-size: 2em;} 
+	.brief h6{font-size: 1.5em;}}
 	
 	.fb2c>div.item {
 		-webkit-box-flex: 0;
