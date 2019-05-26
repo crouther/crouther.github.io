@@ -224,20 +224,16 @@
 	max-width: 40vw;
 }
 
-.sqTxt{
-	padding: 5% 10% 5% 10%; 
-	text-overflow: ellipsis; 
-	text-align: center; 
-	max-height: 40%; 
-	color: black;
-}
-
 //Page or Item Specific Element Properties
 .square{height: 50vw; width: 50vw;}
 .unorthodox{min-height: 50vw; max-height: 51vw; background-color: #ffcb66;}
-#imIt{padding-top: 6%;}
-#hardwareGear{max-width: 20vw; max-height: 10vw;}
-#sqH2{display: none;}
+.sqTxt{
+	text-overflow: ellipsis; 
+	color: black;
+	line-height: 1.5; 
+	display: inline-block; 
+	vertical-align: middle;
+}
 
 .ord1{order: default;}
 .ord2{order: default;}
@@ -246,7 +242,10 @@
 .ord5{order: default;}
 .ord6{order: default;}
 
-
+#imIt{padding-top: 6%;}
+#hardwareGear{max-width: 20vw; max-height: 10vw;}
+#sqH2{display: none;}
+.cTxt{line-height: 50vw; text-align: center;}
 
 @media only screen and (orientation:portrait) {
 	
@@ -254,9 +253,10 @@
 	#imIt{padding-top: 0%;}
 	#embeddedText{font-size: 2vw;}
 
-	//Apple or Page Specific Content
+	//Page Specific Content
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
+	.cTxt{line-height: 90vw; font-size: 1.75em;}
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
