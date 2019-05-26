@@ -256,7 +256,7 @@
 	//Page Specific Content
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
-	.cTxt{line-height: 90vw; font-size: 1.75em;}
+	.cTxt{line-height: 90vw;}
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
