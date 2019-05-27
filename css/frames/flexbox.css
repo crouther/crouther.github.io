@@ -237,10 +237,10 @@
 
 .imgTxtOverlay{
 	position: absolute;
-	top: 1.25vw; 
-	left: 7vw;
+	top: 4vw; 
+	left: 10vw;
 }
-p.imgTxtOverlay{font-size: 2.4vw;}
+p.imgTxtOverlay{font-size: 3vw;}
 
 .ord1{order: default;}
 .ord2{order: default;}
@@ -264,7 +264,7 @@ p.imgTxtOverlay{font-size: 2.4vw;}
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	.cTxt{line-height: 90vw;}
-	.imgTxtOverlay{left: 15vw; top: 2.5vw;}
+	.imgTxtOverlay{left: 20vw; top: 8vw;}
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
