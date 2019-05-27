@@ -140,12 +140,12 @@
   }
 
 
-/* Image Text Overlay Fade in and out loop */
+/** Image Text Overlay Fade in and out loop
   .imgTxtOverlay {
-     -webkit-animation: ito 3s infinite;
-     -moz-animation: ito 3s infinite;
-     -o-animation: ito 3s infinite;
-      animation: ito 3s infinite;
+     -webkit-animation: ito 5s infinite;
+     -moz-animation: ito 5s infinite;
+     -o-animation: ito 5s infinite;
+      animation: ito 5s infinite;
   }
 
   @keyframes ito {
@@ -167,4 +167,4 @@
     0%   { opacity:1; }
     65%  { opacity:0; }
     100% { opacity:1; }
-  }
+  } **/
