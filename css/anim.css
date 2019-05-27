@@ -167,3 +167,32 @@
     65%  { opacity:0; }
     100% { opacity:1; }
   }
+
+  /*Image Text Overlay Fade in and out loop */
+  .quickFlashingTxt {
+     -webkit-animation: qfTxt 3s infinite;
+     -moz-animation: qfTxt 3s infinite;
+     -o-animation: qfTxt 3s infinite;
+      animation: qfTxt 3s infinite;
+  }
+
+  @keyframes qfTxt {
+    0%   { opacity:1; }
+    65%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes qfTxt{
+    0%   { opacity:1; }
+    65%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes qfTxt{
+    0%   { opacity:1; }
+    65%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes qfTxt{
+    0%   { opacity:1; }
+    65%  { opacity:0; }
+    100% { opacity:1; }
+  }
