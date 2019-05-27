@@ -112,6 +112,22 @@ a, a:hover, a:visited, a:link a:active{
 }
 
 /* Text formatting for tiny width boxes */
+.tn-topic-text{
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	font-size: 2vw;
+	width: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+/* Text formatting for tiny width boxes */
 .sm-topic-text{
 	-o-text-overflow: ellipsis;
 	   text-overflow: ellipsis;
