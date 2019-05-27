@@ -70,7 +70,7 @@
 
 .tbBig{
 	-webkit-flex-basis: 50%; /* Safari 6.1+ */
-    -ms-flex-preferred-size: 50%;
+    -ms-flex-preferx-size: 50%;
 	    flex-basis: 50%;
 }
 
@@ -237,10 +237,10 @@
 
 .imgTxtOverlay{
 	position: absolute;
-	top: 4vw; 
-	left: 10vw;
+	top: 2.5vw; 
+	left: 13vw;
 }
-p.imgTxtOverlay{font-size: 3vw;}
+.imgTxtOverlay p{font-size: 2vw;}
 
 .ord1{order: default;}
 .ord2{order: default;}
@@ -264,7 +264,8 @@ p.imgTxtOverlay{font-size: 3vw;}
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	.cTxt{line-height: 90vw;}
-	.imgTxtOverlay{left: 20vw; top: 8vw;}
+	.imgTxtOverlay{left: 26vw; top: 5vw;}
+	.imgTxtOverlay p{font-size: 4vw;}
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
@@ -311,6 +312,7 @@ p.imgTxtOverlay{font-size: 3vw;}
 		text-align: center; 
 		max-height: 40%; 
 		color: black;
+		font-size: 3vw;
 	}
 
 	.embeddedItem img{
