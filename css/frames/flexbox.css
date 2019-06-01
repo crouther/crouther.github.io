@@ -237,10 +237,9 @@
 
 .imgTxtOverlay{
 	position: absolute;
-	top: 2.5vw; 
-	left: 13vw;
+	top: 1vw; 
 }
-.imgTxtOverlay p{font-size: 2vw;}
+.imgTxtOverlay p{font-size: 2vw; background-color: #000; padding: 1vw; padding-left: 5vw;}
 
 .ord1{order: default;}
 .ord2{order: default;}
@@ -264,8 +263,8 @@
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	.cTxt{line-height: 90vw;}
-	.imgTxtOverlay{left: 26vw; top: 5vw;}
-	.imgTxtOverlay p{font-size: 4vw;}
+	.imgTxtOverlay{top: 2.5vw;}
+	.imgTxtOverlay p{font-size: 4vw; background-color: #000; padding: 2vw; padding-left: 10vw; }
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
@@ -312,7 +311,7 @@
 		text-align: center; 
 		max-height: 40%; 
 		color: black;
-		font-size: 3vw;
+		font-size: 4.5vw;
 	}
 
 	.embeddedItem img{
