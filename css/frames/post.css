@@ -119,7 +119,7 @@ a, a:hover, a:visited, a:link a:active{
 	margin-left: auto;
 	margin-right: auto;
 	position: absolute;
-	font-size: 2vw;
+	font-size: 1.75vw;
 	width: 100%;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
