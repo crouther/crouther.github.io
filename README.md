@@ -21,4 +21,4 @@ This repository is a reflection of my web development practices. The site is dev
   A flexible layout designed for single pages grouped together with various grid layouts.
   
 -FirstLanding:\
-  Launching, landing, and maintence pages for portfoliios, concept designs, and products.
+  Launching, landing, and Maintenance pages for portfoliios, concept designs, and products.
