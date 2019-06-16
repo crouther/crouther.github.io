@@ -1,17 +1,13 @@
-.slideAnimate{
-	animation-duration: 3s;
-	animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
+/* Object Slides in from left of screen to right */
+  .slideAnimate{
+  	animation-duration: 3s;
+  	animation-name: slidein;
   }
 
-  to {
-    margin-left: 7%;
+  @keyframes slidein {
+    from {margin-left: 100%;}
+    to {margin-left: 7%;}
   }
-}
 
 @media only screen and (max-width: 400px) {
 	.caption{font-size: 1em;}
@@ -25,29 +21,29 @@
 	.caption{font-size: 3em;}
 }
 
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid tomato; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  //letter-spacing: .1em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
+/* Typewrite Text Print out Animation */
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid tomato; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    //letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: tomato; }
-}
-
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: tomato; }
+  }
 
 /** Picture Slideshow Animation
 *    Very specific to the workstation page **/
@@ -196,3 +192,99 @@
     65%  { opacity:0; }
     100% { opacity:1; }
   }
+
+/* Button or Text Border Animation  */
+  .borderLineAnime{
+    position: relative;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    font-size: 24px;
+    color: #262626;
+  }
+  .borderLineAnime:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  .borderLineAnime:hover:before{
+    animation: animate 1s linear forwards;
+  }
+  @keyframes bla{
+    0%{
+      width: 0;
+      height: 0;
+      border-top-color: #262626;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+    }
+    50%{
+      width: 100%;
+      height: 0;
+      border-top-color: #262626;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: #262626;
+    }
+    100%{
+      width: 100%;
+      height: 100%;
+      border-top-color: #262626;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: #262626;
+    }
+  }
+
+  .borderLineAnime:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  .borderLineAnime:hover:after{
+    animation: animate2 1s linear forwards;
+    animation-delay: 1s;
+  }
+  @keyframes bla{
+    0%{
+      width: 0;
+      height: 0;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: #262626;
+      border-right-color: transparent;
+    }
+    50%{
+      width: 0;
+      height: 100%;
+      border-top-color: transparent;
+      border-bottom-color: #262626;
+      border-left-color: #262626;
+      border-right-color: transparent;
+    }
+    100%{
+      width: 100%;
+      height: 100%;
+      border-top-color: transparent;
+      border-bottom-color: #262626;
+      border-left-color: #262626;
+      border-right-color: transparent;
+    }
+  }
+
+
+//The End
