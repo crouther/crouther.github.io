@@ -3,6 +3,11 @@ Readers,
 
 This repository is a reflection of my web development practices. The site is developed from scratch using personal knowledge and open resources. No major library or framework is leveraged. All powered by original code or fundamental HTML, CSS, or Javascript features. This is a digital portfolio of work I've done and a simple resume of my coding capabilities.
 
+
+### Documentation:
+
+-   Selection of resources incremental to the production of portfolio and my web development knowledge  <https://github.com/crouther/crouther.github.io/blob/master/web-resources.md>
+
 #HTML
 ------
 *~3000+ lines of HTML (Divvied among multiple, customized base templates)*
