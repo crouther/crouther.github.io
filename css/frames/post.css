@@ -232,6 +232,7 @@ a, a:hover, a:visited, a:link a:active{
 	.blackTxt{color: #000;}
 
 	.blush{background: -o-radial-gradient(circle, #edfdfa, #ecfff8, #ffd0c7);background: radial-gradient(circle, #edfdfa, #ecfff8, #ffd0c7);}
+	.faint-yg{background: -webkit-gradient(linear, left top, right bottom, from(#F1FFFA), to(#F1FFF3));background: -o-linear-gradient(top left, #F1FFFA, #F1FFF3);background: linear-gradient(to bottom right, #F1FFFA, #F1FFF3);}
 	.greenblue{background: -webkit-gradient(linear, left top, right bottom, from(#47e3ff), to(#47ffbf));background: -o-linear-gradient(top left, #47e3ff, #47ffbf);background: linear-gradient(to bottom right, #47e3ff, #47ffbf);}
 	.businessGray{background: -webkit-gradient(linear, left top, right bottom, from(#a9b2bc), to(#e2e5e8));background: -o-linear-gradient(top left, #a9b2bc, #e2e5e8);background: linear-gradient(to bottom right, #a9b2bc, #e2e5e8);}
 	.mkcDIYATX{background-image: -o-radial-gradient(circle, ##e0e6e9, ##eff2f4, ##6b7379);background-image: radial-gradient(circle, ##e0e6e9, ##eff2f4, ##6b7379);}
