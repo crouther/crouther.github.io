@@ -29,9 +29,15 @@ HTML  | CSS | JavaScript
 
 # Documentation
 
+<br/>
+
 This is a collection of documentation and resources I used to build each iteration of my portfolio and many other web stack applications and concepts.
 
+<br/>
+
 # Markup Languages:
+
+<br/><br/>
 
 HTML:
 -----
@@ -87,7 +93,11 @@ Transformations:
 
         -   http://bestfolios.com/casestudy/ebaycardpattern
 
-Scripting Languages:
+<br/>
+
+# Scripting Languages:
+
+<br/>
 
 JavaScript:
 -----------
