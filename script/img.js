@@ -1,4 +1,4 @@
-var img = {
+var gallery = {
 	"Journey" : "Asia",
 	"Date" : 2016,
 
@@ -158,7 +158,7 @@ var img = {
 		},
 		{
 			"name": "Vietnam",
-			"cities": [
+			"city": [
 				{
 					"name": "Saigon",
 					"images": [
@@ -173,7 +173,7 @@ var img = {
 		},
 		{
 			"name": "Culinary",
-			"cities": [
+			"city": [
 				{
 					"name": "South East Asia",
 					"images":[

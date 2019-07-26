@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <head>
+	<!-- Scripts -->
+	<script src="../script/img.js"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-114285924-1');
 	</script>
 
@@ -16,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/frames/post.css">
 	<link rel="stylesheet" type="text/css" href="../css/frames/layout.css">
 	<link rel="stylesheet" type="text/css" href="../css/frames/flexbox.css">
+	<style type="text/css">.headerImg{max-width: 100%; height: auto; padding: 2% 0% 2% 0%;}</style>
 
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -38,78 +41,20 @@
         <h1 id= "JourneyName" style="margin-bottom:0px;">Digital Nomad: Image Gallery</h1>
         <h4 id ="CityName" style="margin:.5em; margin-left: 0px;"><i></i></h4>
 
-        <p>A collection of images for viewing purposes only to acquire licensing- <a href="mailto:inbox@myles.works?Subject=Photography%20Purchase" target="_top" style="color: #ffbf47">learn more</a></p>
+        <p>A collection of images for viewing purposes only to acquire licensing - <a href="mailto:inbox@myles.works?Subject=Photography%20Purchase" target="_top" style="color: #ffbf47">learn more</a></p>
         
-        <a class="redTxt" href="dn-pnw-img.html" style="color: tomato; margin:.5em;">Narrative</a> &nbsp;
+        <a class="redTxt" href="travel/dn-pnw-img.html" style="color: tomato; margin:.5em;">Narrative</a> &nbsp;
         <a class="redTxt" href="https://myles.works" style="color: tomato; margin:.5em;">Sponsors</a></div>
     </div>
 
-
 <!-- Gallery Section -->
+<div class="fw-box" id="img-container"></div>
 
-<div class="fw-box" id="img-container">
-	<div class="mw-box">
-		<a id = "headImgAnc" href="" target="_blank"><img id= "headImg" src=""></a>
-
-		<div class="fb4c"> 
-			<div class="embeddedItem">
-				<a href="" target="_blank"><img src=""></a></div>
-			<div class="embeddedItem">
-				<a href="" target="_blank"><img src=""></a></div>
-			<div class="embeddedItem">
-				<a href="" target="_blank"><img src=""></a></div>
-			<div class="embeddedItem">
-				<a href="" target="_blank"><img src=""></a></div>
-		</div>
-	</div>
-</div>
-
-<div class="fw-box">
+<div class="fw-box" id = "moreGalleries">
 	<h1  style="text-align: center; color: tomato; margin: auto; padding-top: 5%; padding-bottom: 5%;"><a href="photography.html" style="color: tomato;"> < Photography Archieve & Portfolio ></a></h1>
 </div>
 
 </body>
+
 </html>
-
-<style type="text/css">
-
-.headerImg{
-	max-width: 100%; 
-	height: auto; 
-	padding: 2% 0% 2% 0%;
-}
-</style>
-
-<script type="text/javascript">
-
-var xmlhttp = new XMLHttpRequest();
-
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-
-    var myObj = JSON.parse(this.responseText);
-
-    document.getElementById("JourneyName").innerHTML = myObj.Country[0].name;
-    document.getElementById("CityName").innerHTML = myObj.Country[0].city[0].name;
-
-    var mwBox = document.createElement("div");
-    mwBox.setAttribute("class", "mw-box");
-
-    var img1 = new Image();
-    img1.src = myObj.Country[0].city[0].images[0];
-    img1.setAttribute("class", "headerImg");
-
-    var fb4c = document.createElement("div");
-    fb4c.setAttribute("class", "fb4c");
-
-
-
-
-  }
-};
-
-xmlhttp.open("GET", "http://myles.works/script/img.json", true);
-xmlhttp.send();
-
-
-</script>
+<script src="../script/gallery.js"></script>
