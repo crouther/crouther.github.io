@@ -1,13 +1,22 @@
 # Crouther.github.io
+
+<br/>
+
 ### Readers,
 
+<br/>
+
 This repository is a reflection of my web development practices. The site is developed from scratch using personal knowledge and open resources. No major library or framework is leveraged. The site is powered by original code or fundamental HTML, CSS, or Javascript features. This is a digital portfolio of work I've done and a simple resume of my coding capabilities.
+
+<br/><br/>
 
 ### [GitHub Stats (7/26/19)](https://sourcerer.io/crouther) -
 
 Commits  | Repos (Evaluated) | Lines of code
 -------- | ----------------- | -------------
 415      |        8          |  43788
+
+<br/>
 
 #### Custom Template Styleguides  
 *(Divvied among multiple, customized, base templates; such as AdvantFlat, StrictlyBusiness, and FirstLanding)*   
@@ -16,7 +25,7 @@ HTML  | CSS | JavaScript
 -------- | ----------------- | -------------
 ~3000+ lines | ~1000+ lines |  850+ lines    
 
-<br/><br/>
+<br/><br/><br/>
 
 # Documentation
 
