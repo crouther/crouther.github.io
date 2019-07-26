@@ -3,7 +3,7 @@
 
 This repository is a reflection of my web development practices. The site is developed from scratch using personal knowledge and open resources. No major library or framework is leveraged. The site is powered by original code or fundamental HTML, CSS, or Javascript features. This is a digital portfolio of work I've done and a simple resume of my coding capabilities.
 
-### [Stats (7/26/19)](https://sourcerer.io/crouther) -
+### [GitHub Stats (7/26/19)](https://sourcerer.io/crouther) -
 
 Commits  | Repos (Evaluated) | Lines of code
 -------- | ----------------- | -------------
