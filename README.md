@@ -16,13 +16,13 @@ HTML  | CSS | JavaScript
 -------- | ----------------- | -------------
 ~3000+ lines | ~1000+ lines |  850+ lines    
 
-<br/><br/><br/>
+<br/><br/>
 
 # Documentation
 
-## Markup Languages:
-
 This is a collection of documentation and resources I used to build each iteration of my portfolio and many other web stack applications and concepts.
+
+# Markup Languages:
 
 HTML:
 -----
