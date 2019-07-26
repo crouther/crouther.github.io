@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114285924-1');
+	</script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../css/anim.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/frames/post.css">
+	<link rel="stylesheet" type="text/css" href="../css/frames/layout.css">
+	<link rel="stylesheet" type="text/css" href="../css/frames/flexbox.css">
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8">
+	<meta name="copyright" content="MKC is an unregistered trademark of MKC. A Crouther Company.">
+	<meta name="description" content="A portfolio Webpage hosting projects from MKC.">
+	<meta name="keywords" content="gallery, image gallary, digital nomad, myles, crouther, myles crouther">
+	<meta name="robots" content="index,follow">
+	<meta name="DC.title" content="Digital Nomad Image Galleryr">
+	<meta name="author" content="Myles Crouther">
+
+	<link rel="icon" href="../img/icon/logoSQ.png">
+	<title>Gallery</title>
+</head>
+
+<body style="position: static;">
+
+    <div class="fw-box">
+        <div id ="name" style="padding: 5%;">
+        <h1 id= "JourneyName" style="margin-bottom:0px;">Digital Nomad: Image Gallery</h1>
+        <h4 id ="CityName" style="margin:.5em; margin-left: 0px;"><i></i></h4>
+
+        <p>A collection of images for viewing purposes only to acquire licensing- <a href="mailto:inbox@myles.works?Subject=Photography%20Purchase" target="_top" style="color: #ffbf47">learn more</a></p>
+        
+        <a class="redTxt" href="dn-pnw-img.html" style="color: tomato; margin:.5em;">Narrative</a> &nbsp;
+        <a class="redTxt" href="https://myles.works" style="color: tomato; margin:.5em;">Sponsors</a></div>
+    </div>
+
+
+<!-- Gallery Section -->
+
+<div class="fw-box" id="img-container">
+	<div class="mw-box">
+		<a id = "headImgAnc" href="" target="_blank"><img id= "headImg" src=""></a>
+
+		<div class="fb4c"> 
+			<div class="embeddedItem">
+				<a href="" target="_blank"><img src=""></a></div>
+			<div class="embeddedItem">
+				<a href="" target="_blank"><img src=""></a></div>
+			<div class="embeddedItem">
+				<a href="" target="_blank"><img src=""></a></div>
+			<div class="embeddedItem">
+				<a href="" target="_blank"><img src=""></a></div>
+		</div>
+	</div>
+</div>
+
+<div class="fw-box">
+	<h1  style="text-align: center; color: tomato; margin: auto; padding-top: 5%; padding-bottom: 5%;"><a href="photography.html" style="color: tomato;"> < Photography Archieve & Portfolio ></a></h1>
+</div>
+
+</body>
+</html>
+
+<style type="text/css">
+
+.headerImg{
+	max-width: 100%; 
+	height: auto; 
+	padding: 2% 0% 2% 0%;
+}
+</style>
+
+<script type="text/javascript">
+
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+
+    var myObj = JSON.parse(this.responseText);
+
+    var mwBox = document.createElement("div");
+    mwBox.setAttribute("class", "mw-box");
+
+    var img1 = new Image();
+    img1.src = myObj.Country[0].city[0].images[0];
+    img1.setAttribute("class", "headerImg");
+
+    var fb4c = document.createElement("div");
+    fb4c.setAttribute("class", "fb4c");
+  }
+};
+
+xmlhttp.open("GET", "../script/img.json", true);
+xmlhttp.send();
+
+
+</script>
