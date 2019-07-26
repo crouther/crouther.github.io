@@ -89,6 +89,9 @@ xmlhttp.onreadystatechange = function() {
 
     var myObj = JSON.parse(this.responseText);
 
+    document.getElementById("JourneyName").innerHTML = myObj.Country[0].name;
+    document.getElementById("CityName").innerHTML = myObj.Country[0].city[0].name;
+
     var mwBox = document.createElement("div");
     mwBox.setAttribute("class", "mw-box");
 
@@ -98,10 +101,14 @@ xmlhttp.onreadystatechange = function() {
 
     var fb4c = document.createElement("div");
     fb4c.setAttribute("class", "fb4c");
+
+
+
+
   }
 };
 
-xmlhttp.open("GET", "../script/img.json", true);
+xmlhttp.open("GET", "http://myles.works/script/img.json", true);
 xmlhttp.send();
 
 
