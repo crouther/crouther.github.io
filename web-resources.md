@@ -1,4 +1,4 @@
-Markup Languages:
+# Markup Languages:
 
 HTML:
 -----
@@ -150,6 +150,8 @@ like branches of a tree or roots growing and shrinking"
 Launch Animation- An object is selected form the header, the object drops like a
 diamond/raindrop, hits the bottom of the screen, bounces back up and opens the
 web page.
+
+The trick to fluid animations is the predication of motion on the display and hyperbolizing the motion to make the gesture more eccentric 
 
 Inspiration:
 ------------
