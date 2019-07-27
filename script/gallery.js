@@ -40,7 +40,7 @@ for (i = 1; i < gallery.Country[nation].city[town].images.length; i++) {
 
 	var tempIMG = new Image();
 	tempIMG.src = gallery.Country[nation].city[town].images[i];
-	tempIMG.setAttribute("class", "headerImg");
+	tempIMG.setAttribute("class", "MKCBars loadingAnimation");
 
 	embeddedItem.appendChild(tempIMG);
 	fb4c.appendChild(embeddedItem); 
@@ -50,7 +50,7 @@ for (i = 1; i < gallery.Country[nation].city[town].images.length; i++) {
 mwBox.appendChild(fb4c);
 document.getElementById("img-container").appendChild(mwBox);
 
-
+/** New Content Section **/
 
 //Places Container Created
 var placesmwBox = document.createElement("div");
@@ -71,7 +71,6 @@ for (j = 0; j < gallery.Country.length; j++) {
 
 	var a = document.createElement("a");
 	a.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + '0' )));
-	a.className += "galPage";
 
 	var h4 = document.createElement("h4");
 	h4.innerHTML = gallery.Country[j].name;
@@ -81,10 +80,15 @@ for (j = 0; j < gallery.Country.length; j++) {
 
 	//City List Population Loop
 	for(k = 0; k < gallery.Country[j].city.length; k++){
+
+		var aLi = document.createElement("a");
+		aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + k )));	
+
 		var li = document.createElement("li");
 		li.innerHTML = gallery.Country[j].city[k].name;
 
-		ul.appendChild(li);
+		aLi.appendChild(li);
+		ul.appendChild(aLi);
 	}
 
 	embeddedItem.appendChild(ul);
@@ -93,3 +97,14 @@ for (j = 0; j < gallery.Country.length; j++) {
 
 placesmwBox.appendChild(placesFb4c);
 document.getElementById("moreGalleries").appendChild(placesmwBox); 
+
+//Refresh and Update Page on Source Click
+let elementsArray = document.querySelectorAll("a");
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+    	window.scrollTo(0, 0);
+    	window.location.href = elem.getAttribute("href").toString();
+        location.reload();
+    });
+});
