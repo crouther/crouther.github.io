@@ -24,9 +24,11 @@ for (j = 0; j < gallery.Country.length; j++) {
 	embeddedItem.setAttribute("class", "embeddedItem");
 
 	var ul = document.createElement("ul");
-
 	var a = document.createElement("a");
-	a.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + '0' )));
+
+	//Confirms URL has hash tag or adjust anchor appropriately
+	if(document.location.href.toString().includes("#")){a.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + '0' )));}
+	else{a.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length) + "#" + j + '0' )));}
 
 	var h4 = document.createElement("h4");
 	h4.innerHTML = gallery.Country[j].name;
@@ -38,7 +40,10 @@ for (j = 0; j < gallery.Country.length; j++) {
 	for(k = 0; k < gallery.Country[j].city.length; k++){
 
 		var aLi = document.createElement("a");
-		aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + k )));	
+
+		//Confirms URL has hash tag or adjust anchor appropriately
+		if(document.location.href.toString().includes("#")){ aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + '0' )));}
+		else{aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length) + "#" + j + '0' )));}
 
 		var li = document.createElement("li");
 		li.innerHTML = gallery.Country[j].city[k].name;
@@ -65,46 +70,51 @@ elementsArray.forEach(function(elem) {
     });
 });
 
-/** New Content Section **/
+//Populate Images if selection was made
+try{ PopulateImages();}
+catch(error){console.log("The gallery homepage has no images currently");}
 
-//Find Gallery By Hash Tag
-var pathname = document.location.href.toString();
-var nation = pathname.substring(pathname.length-2, pathname.length-1);
-var town = pathname.substring(pathname.length-1, pathname.length);
+//PopulateImages(): Searchs through img.js dataset based on hashtag value and updates page to reflect selected town, country.
+function PopulateImages(){
+	//Find Gallery By Hash Tag
+	var pathname = document.location.href.toString();
+	var nation = pathname.substring(pathname.length-2, pathname.length-1);
+	var town = pathname.substring(pathname.length-1, pathname.length);
 
-//Title and Place Named
-document.getElementById("JourneyName").innerHTML = gallery.Country[nation].name;
-document.getElementById("CityName").innerHTML = gallery.Country[nation].city[town].name;
+	//Title and Place Named
+	document.getElementById("JourneyName").innerHTML = gallery.Country[nation].name;
+	document.getElementById("CityName").innerHTML = gallery.Country[nation].city[town].name;
 
-//Image Container Created
-var mwBox = document.createElement("div");
-mwBox.setAttribute("class", "mw-box");
+	//Image Container Created
+	var mwBox = document.createElement("div");
+	mwBox.setAttribute("class", "mw-box");
 
-//Primary Image Displayed
-var img1 = new Image();
-img1.src = gallery.Country[nation].city[town].images[0];
-img1.setAttribute("class", "headerImg");
+	//Primary Image Displayed
+	var img1 = new Image();
+	img1.src = gallery.Country[nation].city[town].images[0];
+	img1.setAttribute("class", "headerImg");
 
-mwBox.appendChild(img1); 
+	mwBox.appendChild(img1); 
 
-//Secondary Images Container
-var fb4c = document.createElement("div");
-fb4c.setAttribute("class", "fb4c");
+	//Secondary Images Container
+	var fb4c = document.createElement("div");
+	fb4c.setAttribute("class", "fb4c");
 
-//Secondary Images Population Loop
-for (i = 1; i < gallery.Country[nation].city[town].images.length; i++) {
+	//Secondary Images Population Loop
+	for (i = 1; i < gallery.Country[nation].city[town].images.length; i++) {
 
-	var embeddedItem = document.createElement("div");
-	embeddedItem.setAttribute("class", "embeddedItem");
+		var embeddedItem = document.createElement("div");
+		embeddedItem.setAttribute("class", "embeddedItem");
 
-	var tempIMG = new Image();
-	tempIMG.src = gallery.Country[nation].city[town].images[i];
-	tempIMG.setAttribute("class", "MKCBars loadingAnimation");
+		var tempIMG = new Image();
+		tempIMG.src = gallery.Country[nation].city[town].images[i];
+		tempIMG.setAttribute("class", "MKCBars loadingAnimation");
 
-	embeddedItem.appendChild(tempIMG);
-	fb4c.appendChild(embeddedItem); 
+		embeddedItem.appendChild(tempIMG);
+		fb4c.appendChild(embeddedItem); 
+	}
+
+	//Update Interface to Display Image Gallery
+	mwBox.appendChild(fb4c);
+	document.getElementById("img-container").appendChild(mwBox);
 }
-
-//Update Interface to Display Image Gallery
-mwBox.appendChild(fb4c);
-document.getElementById("img-container").appendChild(mwBox);
