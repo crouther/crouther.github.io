@@ -42,8 +42,8 @@ for (j = 0; j < gallery.Country.length; j++) {
 		var aLi = document.createElement("a");
 
 		//Confirms URL has hash tag or adjust anchor appropriately
-		if(document.location.href.toString().includes("#")){ aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + '0' )));}
-		else{aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length) + "#" + j + '0' )));}
+		if(document.location.href.toString().includes("#")){ aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length-2) + j + k )));}
+		else{aLi.setAttribute('href', ((document.location.href.toString().substring(0,document.location.href.toString().length) + "#" + j + k )));}
 
 		var li = document.createElement("li");
 		li.innerHTML = gallery.Country[j].city[k].name;
