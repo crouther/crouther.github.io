@@ -87,18 +87,24 @@ function PopulateImages(){
 
 	//Image Container Created
 	var mwBox = document.createElement("div");
+
 	mwBox.setAttribute("class", "mw-box");
+	mwBox.setAttribute('id', "headIMG");
 
 	//Primary Image Displayed
 	var img1 = new Image();
 	img1.src = gallery.Country[nation].city[town].images[0];
+
 	img1.setAttribute("class", "headerImg");
+	img1.setAttribute('id', "0");
 
 	mwBox.appendChild(img1); 
 
 	//Secondary Images Container
 	var fb4c = document.createElement("div");
+
 	fb4c.setAttribute("class", "fb4c");
+	fb4c.setAttribute('id', "supportIMG");
 
 	//Secondary Images Population Loop
 	for (i = 1; i < gallery.Country[nation].city[town].images.length; i++) {
@@ -108,7 +114,9 @@ function PopulateImages(){
 
 		var tempIMG = new Image();
 		tempIMG.src = gallery.Country[nation].city[town].images[i];
+
 		tempIMG.setAttribute("class", "MKCBars loadingAnimation");
+		tempIMG.setAttribute('id', i);
 
 		embeddedItem.appendChild(tempIMG);
 		fb4c.appendChild(embeddedItem); 
@@ -118,3 +126,40 @@ function PopulateImages(){
 	mwBox.appendChild(fb4c);
 	document.getElementById("img-container").appendChild(mwBox);
 }
+
+
+function shuffle(){
+	try{
+		//Refresh and Update Page on Source Click
+		let imgArray = document.querySelectorAll("img");
+
+		imgArray.forEach(function(chosenIMG) {
+		    chosenIMG.addEventListener("click", function() {
+
+		    	var IMGid = chosenIMG.id;
+		    	var IMGsrc = chosenIMG.src;
+		    	imgArray = [];
+
+		    	for (a = 0; a < 5; a++){
+		    		if (a != IMGid){ imgArray.push(document.getElementById(a).src); }
+		    	}
+
+		    	document.getElementById("0").src = IMGsrc;
+
+		    	for (b = 0; b < 4; b++){
+		    		var place = b + 1;
+		    		document.getElementById(place).src = imgArray[b];
+		    	}
+
+		    	imgArray = document.querySelectorAll("img");
+		    });
+		});
+	}
+
+	catch{
+		imgArray = document.querySelectorAll("img");
+		shuffle();
+	}
+}
+
+(shuffle())
