@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-114285924-1');
+	</script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../css/elements.css">
+	<link rel="stylesheet" type="text/css" href="../css/anim.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/frames/post.css">
+	<link rel="stylesheet" type="text/css" href="../css/frames/flexbox.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="copyright" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
+	<meta name="DC.title" content="">
+	<meta name="author" content="">
+
+	<!-- Tab Decorations -->
+	<link rel="icon" href="../img/icon/logoSQ.png">
+	<title></title>
+</head>
+
+<body style="background-image: linear-gradient(to bottom right, #fff, #8c8c9c); min-height: 100vh;">
+
+<!-- Page Logo and Title -->
+<div class="fw-box" id="" style="padding-top: 2%; padding-bottom: 2%;">
+	<a href="https://myles.works">
+		<img src="../img/icon/logoSQ.png" style="max-height: 5em; padding: 0 1.5em 1.5em 1.5em; position: absolute;"/></a>
+
+	<a href="#">
+		<h1 style="padding-left: 6em; color: tomato;">Motov</h1></a>
+
+	<div id="iconMenu" style="background-color: #3F8879; border-radius: 100%; right: 0; top: 0; margin: 1.5em; position: absolute; padding: 1em; z-index: 5;" onclick="openMenu();">
+		<img src="../img/icon/menu.png" style="height: 1.5em; width: 1.5em;"/></div>
+
+	<div id="textMenu" style="background-color: #919b9f; right: 0; top: 0; margin: 1.5em; position: absolute; padding: 2em; opacity: 0; z-index: 1;">
+
+		<ul style="list-style-type: none; line-height: 2em;">
+			<li><h2><a href="">About</a></h2></li>
+			<li><h2><a href="https://myles.works/on/motocluster">How</a></h2></li>
+			<li><h2><a href="mailto:inbox@myles.works">Contact</a></h2></li>
+		</ul>
+
+		<div style="position: absolute; bottom: 5; left: 5;" onclick="closeMenu();">x</div>
+	</div>
+</div>
+
+<!-- Product Photo and Title -->
+<div class="fw-box">
+	<div class="fb2c">
+
+		<div class="item weightedItem">
+			<a href=""><img style ="width: 90%; height: auto; padding: 5%;" src="../img/road.svg"></a>
+		</div>
+
+		<div class="brief item liteWeightedItem">
+			<div style="padding: 15%;">
+
+				<h2 style="line-height: 1.2em;">what's your motov?</h2>
+
+				<h5 style="max-height: 45vw; line-height: 1.4em;">Get there! Smart. Simple. Safe.<br>
+					by <span style="color: #3F8879;">it works</span><br>
+					<span class="redTxt" style="cursor: pointer;">Learn More > </span></h5>
+
+				<a href="mailto:inbox@myles.works" target="_blank" ><button class="button">Contact Us</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+	var opacity = 0;
+
+	function openMenu(){
+
+	   if (opacity<1) {
+	      opacity += .1;
+	      setTimeout(function(){openMenu()},100);
+	   }
+
+	   document.getElementById('textMenu').style.opacity = opacity;
+	   document.getElementById('iconMenu').style.zIndex = 0;
+	}
+
+	function closeMenu(){
+		document.getElementById('textMenu').style.opacity = 0;
+		document.getElementById('iconMenu').style.zIndex = 5;
+	}
+</script>
