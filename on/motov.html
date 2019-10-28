@@ -39,7 +39,7 @@
 
 <body>
 
-<!-- Page Logo and Title -->
+<!-- Navigation: Page Logo and Title -->
 <div class="fw-box" id="" style="padding-top: 2%; padding-bottom: 2%;">
 	<a href="https://myles.works">
 		<img src="https://myles.works/img/icon/logoSQ.png" style="max-height: 5em; padding: 0 1.5em 1.5em 1.5em; position: absolute;"/></a>
@@ -47,46 +47,46 @@
 	<a href="#">
 		<h1 style="padding-left: 6em; color: tomato;">Motov</h1></a>
 
-	<div id="iconMenu" style="background-color: #3F8879; border-radius: 100%; right: 0; top: 0; margin: 1.5em; position: absolute; padding: 1em; z-index: 5;" onclick="openMenu();">
+	<div id="iconMenu" onclick="openMenu();">
 		<img src="https://myles.works/img/icon/menu.png" style="height: 1.5em; width: 1.5em;"/></div>
 
-	<div id="textMenu" style="background-color: #919b9f; right: 0; top: 0; margin: 1.5em; position: fixed; padding: 2em; opacity: 0; z-index: 1;">
-
+	<div id="textMenu">
 		<ul style="list-style-type: none; line-height: 3em;">
-			<li><h2><a href="myles.works/it" style="font-size: inherit;"><br>About</a></h2></li>
+			<li><h2><a href="https://myles.works/on/it" style="font-size: inherit;"><br>About</a></h2></li>
 			<li><h2><a href="https://myles.works/on/motocluster" style="font-size: inherit;">How</a></h2></li>
 			<li><h2><a href="mailto:inbox@myles.works" style="font-size: inherit;">Contact</a></h2></li>
 		</ul>
-
-		<div onclick="closeMenu();"><h2 style="position: fixed; top: 0; right: 0; padding-right: 1em;" >x<h2></div>
 	</div>
 </div>
 
-<!-- Product Photo and Title -->
-<div class="fw-box">
-	<div class="fb2c">
+<div id="pageContent" onclick="closeMenu();">
 
-		<div class="item weightedItem">
-			<a href=""><img style ="width: 90%; height: auto; padding: 5%;" src="https://myles.works/img/road.svg"></a>
-		</div>
+	<!-- Product Photo and Title -->
+	<div class="fw-box">
+		<div class="fb2c">
 
-		<div class="brief item liteWeightedItem">
-			<div class="itemFrame">
+			<div class="item weightedItem">
+				<a href=""><img style ="width: 90%; height: auto; padding: 5%;" src="https://myles.works/img/road.svg"></a>
+			</div>
 
-				<h2 style="line-height: 1.2em;">what's your motov?</h2>
+			<div class="brief item liteWeightedItem">
+				<div class="itemFrame">
 
-				<h5 style="max-height: 45vw; line-height: 1.4em;">Get there! Smart. Simple. Safe.<br>
-					by <a href="https://myles.works/it" style="color: #3F8879; text-decoration: underline; font-size: inherit;"> "it works"!</a><br>
-					<span class="redTxt" style="cursor: pointer; font-size: inherit;">Learn More > </span></h5>
+					<h2 style="line-height: 1.2em;">what's your motov?</h2>
 
-				<a href="mailto:inbox@myles.works" target="_blank" ><button class="button" style="font-size: inherit;">Contact us</button></a>
+					<h5 style="max-height: 45vw; line-height: 1.4em;">Get there! Smart. Simple. Safe.<br>
+						by <a href="https://myles.works/on/it" style="color: #3F8879; text-decoration: underline; font-size: inherit;"> "it works"!</a><br>
+						<a href="https://myles.works/on/motocluster"><span class="redTxt" style="cursor: pointer; font-size: inherit;">Learn More > </span></a></h5>
+
+					<a href="mailto:inbox@myles.works" target="_blank" ><button class="button" style="font-size: inherit;">Contact us</button></a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="grab" style="position: fixed; right: 0; bottom: 0; ">
-	<a href="https://forms.gle/ZnMxQbWJ7oXDbjRdA"><img src="https://myles.works/img/icon/pre-o-app-store.svg" style="height: 5vh; width: auto; padding: 1vh; float: center;"><img src="https://myles.works/img/icon/google-play-badge.png" style="height: 7vh; width: auto; float: center;"></a></div>
+	<div class="grab" style="position: fixed; right: 0; bottom: 0; ">
+		<a href="https://forms.gle/ZnMxQbWJ7oXDbjRdA"><img src="https://myles.works/img/icon/pre-o-app-store.svg" style="height: 5vh; width: auto; padding: 1vh; float: center;"><img src="https://myles.works/img/icon/google-play-badge.png" style="height: 7vh; width: auto; float: center;"></a></div>
+</div>
 
 </body>
 
@@ -113,6 +113,31 @@
 </script>
 
 <style type="text/css">
+	#textMenu{
+		background-color: #919b9f; 
+		right: 0; 
+		top: 0; 
+		margin: 1.5em; 
+		position: fixed; 
+		padding: 2em; 
+		opacity: 0; 
+		z-index: 1;
+	}
+
+	#iconMenu{
+		background-color: #3F8879;
+		border-radius: 100%; 
+		right: 0; 
+		top: 0; 
+		margin: 1.5em; 
+		position: absolute; 
+		padding: 1em; 
+		z-index: 5;
+	}
+	img.#iconMenu{
+
+	}
+
 	.itemFrame{padding: 15%;}
 
 	@media screen and (orientation: portrait) {
