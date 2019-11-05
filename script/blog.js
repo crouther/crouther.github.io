@@ -3,13 +3,6 @@ var items = json.items;
 var maxLength = (items.length) / 4;
 
 for( var i = 0; i < items.length; i++) {
-  /**
-    
-    if (i < maxLength) {var tile = start;}
-    if ((maxLength <= i) && (i < maxLength*2)) {var tile = document.getElementsByClassName("blogc2")[0];}
-    if ((maxLength*2 <= i) && (i < maxLength*3)) {var tile = document.getElementsByClassName("blogc3")[0];}
-    if ((maxLength*3 <= i) && (i < maxLength*4)) {var tile = document.getElementsByClassName("blogc4")[0];}
-  **/
 
 	var div = document.createElement("div");
 	div.classList.add("tileBlock");
@@ -28,10 +21,12 @@ for( var i = 0; i < items.length; i++) {
   }
 
   if(items[i].img != null){
+
     var img = document.createElement("img");
     img.setAttribute("src", items[i].img);
 
     if(items[i].icon != null){
+      
       var inDiv = document.createElement("div");
       inDiv.classList.add("tbIcon");
 
