@@ -71,10 +71,10 @@ elementsArray.forEach(function(elem) {
 });
 
 //Populate Images if selection was made
-try{ PopulateImages();}
+try{PopulateImages();}
 catch(error){console.log("The gallery homepage has no images currently");}
 
-//PopulateImages(): Searchs through img.js dataset based on hashtag value and updates page to reflect selected town, country.
+//PopulateImages(): Searches through img.js dataset based on hashtag value and updates page to reflect selected town, country.
 function PopulateImages(){
 	//Find Gallery By Hash Tag
 	var pathname = document.location.href.toString();
