@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+	<!-- Javascript -->
+	<script src="../../script/motov-time.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-114285924-1');
+	</script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/elements.css">
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/anim.css">
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/frames/post.css">
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/frames/flexbox.css">
+	<link rel="stylesheet" type="text/css" href="https://myles.works/css/frames/w3-timeline.css">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
+
+	<!-- Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="copyright" content="">
+	<meta name="description" content="Modern transpotation features retro-fitted to your life">
+	<meta name="keywords" content=" Modern, transpotation,  retro-fitted, motov, motocluster, app, digital instrument cluster, guages, OBD, reverse engineering">
+	<meta name="robots" content="index,follow">
+	<meta name="DC.title" content="Motov">
+	<meta name="author" content="it works">
+
+	<!-- Tab Decorations -->
+	<link rel="icon" href="https://myles.works/img/icon/logoSQ.png">
+	<title>Timeline - Motov</title>
+</head>
+
+<body>
+
+<!-- Navigation: Page Logo and Title -->
+<div class="fw-box" id="" style="padding-top: 2%; padding-bottom: 2%;">
+	<a href="https://myles.works">
+		<img src="https://myles.works/img/icon/whiteLogo.png" style="max-height: 5em; padding: 0 1.5em 1.5em 1.5em; position: absolute;"/></a>
+
+	<a href="#">
+		<h1 style="padding-left: 6em; color: #fff;">Motov</h1></a>
+
+	<div id="iconMenu" onclick="openMenu();">
+		<img src="https://myles.works/img/icon/menu.png" style="height: 1.5em; width: 1.5em;"/></div>
+
+	<div id="textMenu">
+		<ul style="list-style-type: none; line-height: 3em;">
+			<li><h2><a href="https://myles.works/on/it" style="font-size: inherit;"><br>About</a></h2></li>
+			<li><h2><a href="https://myles.works/on/motocluster" style="font-size: inherit;">How</a></h2></li>
+			<li><h2><a href="mailto:inbox@myles.works" style="font-size: inherit;">Contact</a></h2></li>
+		</ul>
+	</div>
+</div>
+
+<div class="fw-box" style="padding-bottom: 5%;">
+	<p class="bMain" style="background-color: #fff;">Motov is a universal information system platform. The system is designed to increase the safety, simplicity, and feature sets of any vehicle through artificial intelligence and modern services.  <br><br> Shown below is a simple business plan designed to express the road map for Motov. Each milestone addresses key performance metrics, features, and business goals. Everything from potential customers, services, projected revenue and future business models to expand and grow Motov are being considered.</p>
+</div>
+
+<div id="pageContent" onclick="closeMenu();">
+
+<div class="timeline" id="w3-timeline">
+</div>
+
+</div>
+
+</body>
+
+</html>
+<script src="../../script/timeline.js"></script>
+<script type="text/javascript">Timeline(motovTimeline,"w3-timeline")</script>
+
+<script type="text/javascript">
+	var opacity = 0;
+
+	function openMenu(){
+
+	   if (opacity<1) {
+	      opacity += .1;
+	      setTimeout(function(){openMenu()},100);
+	   }
+
+	   document.getElementById('textMenu').style.opacity = opacity;
+	   document.getElementById('iconMenu').style.zIndex = 0;
+	}
+
+	function closeMenu(){
+		document.getElementById('textMenu').style.opacity = 0;
+		document.getElementById('iconMenu').style.zIndex = 5;
+	}
+</script>
+
+<style type="text/css">
+	#textMenu{
+		background-color: #919b9f; 
+		right: 0; 
+		top: 0; 
+		margin: 1.5em; 
+		position: fixed; 
+		padding: 2em; 
+		opacity: 0; 
+		z-index: 1;
+	}
+
+	#iconMenu{
+		background-color: #3F8879;
+		border-radius: 100%; 
+		right: 0; 
+		top: 0; 
+		margin: 1.5em; 
+		position: absolute; 
+		padding: 1em; 
+		z-index: 5;
+	}
+	img.#iconMenu{
+
+	}
+
+	.itemFrame{padding: 15%;}
+
+	@media screen and (orientation: portrait) {
+		*{font-size: 2.5vw;}
+		a{font-size: inherit;}
+		h1{font-size: 6vw;}
+		h2{font-size: 8vw;}
+		h5{font-size: 4vw;}
+		.itemFrame{padding-top: 2%;}
+	}
+</style>

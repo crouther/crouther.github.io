@@ -21,10 +21,12 @@ for( var i = 0; i < items.length; i++) {
   }
 
   if(items[i].img != null){
+
     var img = document.createElement("img");
     img.setAttribute("src", items[i].img);
 
     if(items[i].icon != null){
+      
       var inDiv = document.createElement("div");
       inDiv.classList.add("tbIcon");
 
