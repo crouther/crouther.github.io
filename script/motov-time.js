@@ -22,9 +22,14 @@ var motovTimeline = {
 			"link" : "https://motov.app",
 		},
 		{
-			"date" : "October - November 2019",
-			"brief" : "Research: Additional Features <br><br>Considering the feedback and input of my audiences to gauge which additional smart features could be implemented to benifit the user experience.",
+			"date" : "October 2019",
+			"brief" : "Research (Additional Features): <br><br>Considering the feedback and input of my audiences to gauge which additional smart features could be implemented to benifit the user experience.",
 			"link" : "https://myles.works/on/motocluster",
+		},
+		{
+			"date" : "November 2019",
+			"brief" : "Business Evaluation: <br><br> Gauging business opportunities, investors, plans, launch dates, and growth strategies for a 2020 release. Considering foundations for the company, a business structure, and financial needs. Overviewing industry requirements, permits, licenses and tax responsibilities.",
+			"link" : "https://myles.works/on/motov/timeline",
 		},
 		{
 			"date" : "December - January 2020",
