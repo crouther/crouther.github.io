@@ -184,5 +184,5 @@ p{
 	max-height: 80%;
 }
 
-@media only screen and (orientation:landscape){.contentCenterRight{max-width: 65%; left: 60vh;}}
+@media only screen and (orientation:landscape){.contentCenterRight{top: 20%;max-width: 65%; left: 60vh;}}
 @media only screen and (orientation:portrait){.leftImage{left: 5%; top:20%;}}
