@@ -60,7 +60,7 @@
 	padding: 0%;
 }
 
-.tileBlock{width: 100%;}
+.tileBlock{width: 100%; padding-bottom: 100%;}
 
 .tbV{width: 25%;}
 
@@ -95,6 +95,7 @@
 .tileImg{min-height: 23vw;}
 
 .tileBlock img{
+	background: 50% 50% no-repeat;
 	width: 100%;
 	height: auto;
 	margin-bottom: -2%;
