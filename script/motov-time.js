@@ -33,7 +33,7 @@ var motovTimeline = {
 		},
 		{
 			"date" : "December - January 2020",
-			"brief" : "Peripherals: <br><br> designing the neccessary support hardware to reverse engineer universal locomotive support for the application.",
+			"brief" : "Peripherals: <br><br> Designing the neccessary support hardware to reverse engineer universal locomotive support for the application.",
 			"link" : "https://myles.works/on/motocluster#mvHDWE",
 		},
 		{
