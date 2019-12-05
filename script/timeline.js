@@ -20,12 +20,12 @@ function Timeline(event, target){
 		var p = document.createElement("p");
 
 		//Milestone Variable Styles
-		content.setAttribute("class", "content");
+		content.setAttribute("class", "tlContent");
 
 		if( t > 0 && t % 2 == 1)	// if odd (position right)
-			container.setAttribute("class", "container right");
+			container.setAttribute("class", "tlContainer tlRight");
 		else
-			container.setAttribute("class", "container left");
+			container.setAttribute("class", "tlContainer tlLeft");
 		
 		h3.innerHTML = event.milestone[t].date;
 		p.innerHTML = event.milestone[t].brief;

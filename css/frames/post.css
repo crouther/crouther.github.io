@@ -76,12 +76,13 @@ a, a:hover, a:visited, a:link a:active{
 	margin: 0px;
 	width: 66.666%;
 	padding-top: 33%;
+	display: inline-block;
 
 	float: left;
 	position: relative;
 }
 
-/* Tiny width box for organizing div content in columns of 6*/
+/* Tiny width box for organizing div content in columns of 6 */
 .tiny-box{
 	width: 16.666%;
 	padding-top: 16.666%;
@@ -90,6 +91,7 @@ a, a:hover, a:visited, a:link a:active{
 	position: relative;
 }
 
+/* Centered Text for full width boxes and image splash graphics */
 .name{
 	top: 50%;
 	-webkit-transform: translateY(-50%);

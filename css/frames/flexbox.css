@@ -5,6 +5,7 @@
 *   box styling for different layouts and 
 *   content display methodologies **/
 
+/******************************************************************************/
 
 /* Full page Flexbox container */
 .container-box{
@@ -15,8 +16,8 @@
     display: flex;
 
     -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+        	flex-wrap: wrap;
 
     width: 100%;
 }
@@ -24,28 +25,30 @@
 /* Single flexbox container */
 .box{
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
+    	-webkit-flex: 1;
        -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+        	-ms-flex: 1;
+            	flex: 1;
     width: 50%;
 }
 
+/* Full width row, flex box item */
 .fbr{
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
+    	-webkit-flex: 1;
        -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+        	-ms-flex: 1;
+            	flex: 1;
     width: 100%;
 }
 
+/* Flex box item container which transforms to a full row on mobile */
 .item2Row{
--webkit-box-flex: 1;
-    -webkit-flex: 1;
-   -moz-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+	-webkit-box-flex: 1;
+    	-webkit-flex: 1;
+	   -moz-box-flex: 1;
+        	-ms-flex: 1;
+            	flex: 1;
     width: 50%;
 }
 
@@ -124,8 +127,10 @@
 	padding: 25%;
 }
 
+/* Item container for layering content within a flex box */
 .embeddedItem{width: 100%;}
 
+/* embeddedItem padding for images, an optional visual preference for spacing */
 .embeddedItem img{
 	width: 94%;
 	margin: 0%;
@@ -146,6 +151,7 @@
         flex-wrap: wrap;
 }
 
+/* Full width row, flex box item */
 .fb2c>div.fbr{
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 100%;
@@ -174,6 +180,7 @@
 	-ms-flex: 0 50%;
 	flex: 0 50%;}
 
+/* Flex box item which is slightly larger (66%) or 2x liteWeightedItem */
 .fb2c>div.weightedItem {
 	//margin: -4px;
 	padding: 0%;
@@ -183,6 +190,7 @@
 	-ms-flex: 0 66%;
 	flex: 0 66%;}
 
+/* Flex box item which is slightly smaller (34%) or 1/2 weightedItem */
 .fb2c>div.liteWeightedItem {
 	margin: none;
 	padding: 0%;
@@ -212,18 +220,21 @@
     display: flex;
 
     -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+        	flex-wrap: wrap;
 
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
+	  -webkit-box-orient: vertical;
+	  	 -moz-box-orient: vertical;
+
+	 -webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	   -moz-box-orient: vertical;
-	   -moz-box-direction: normal;
+	   	 
+	   	-moz-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
 
+/* 4 column flex box item which converts to 2 columns in portrait */
 .fb4c>div.embeddedItem{
   -webkit-box-flex: 0;
   -webkit-flex: 0 25%;
@@ -232,6 +243,7 @@
           flex: 0 25%;
 }
 
+/* 4 column flex box item which converts to 2 columns in portrait */
 .fb4c>div.item {
   -webkit-box-flex: 0;
   -webkit-flex: 0 25%;
@@ -274,6 +286,8 @@
 }
 .imgTxtOverlay p{font-size: 2vw; background-color: #000; padding: 1vw; padding-left: 5vw;}
 
+
+/* Default flex box item ordering, shown as written */
 .ord1{order: default;}
 .ord2{order: default;}
 .ord3{order: default;}
@@ -297,7 +311,8 @@
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	.cTxt{line-height: 100vw;}
 	.imgTxtOverlay{top: 2.5vw;}
-	.imgTxtOverlay p{font-size: 4vw; background-color: #000; padding: 2vw; padding-left: 10vw; }
+	.imgTxtOverlay p{font-size: 4vw; background-color: #000; 
+						padding: 2vw; padding-left: 10vw; }
 
 	//Product Page Generic Elements
 	.brief h2{font-size: 3em;} 
@@ -363,12 +378,14 @@
 		font-size: 4.5vw;
 	}
 
+	/* Doubles Width in portrait to 50% display size keeps image padding */
 	.embeddedItem img{
 		width: 94%;
 		margin: 0%;
 		padding: 3%;
 	}
 
+	/* Doubles Width in portrait to 50% display size */
 	.fb4c>div.item {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 50%;
@@ -376,6 +393,8 @@
 		    -ms-flex: 0 50%;
 		        flex: 0 50%;
 	}
+
+	/* Doubles Width in portrait to 50% display size keeps image padding */
 	.fb4c>div.embeddedItem {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 50%;
