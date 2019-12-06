@@ -37,38 +37,47 @@
 
 	<div id="content">
 
-		<div id="viewer" style="background-color: #f3f3; width: 50vw; min-height: 66vh; margin: 5vw; display: inline-block; position: absolute; top: 0; left: 0;">
+		<!-- viewer: displaying Web Components visually and their code -->
+		<div id="viewer">
 
 			<iframe width="100%" height="80%" src="playground.html"></iframe>
-			
+
 		</div>
 
+		<!-- CompnentList: The compnent object list for selection and description-->
+		<div id="componentList">
 
-		<div id="componentList" style="background-color: #f1f1; width: 35vw; margin: 5vw;  min-height: 66vh; display: inline-block; position: absolute; top: 0; right: 0;">
-
+			<!-- Navigation Bar for Searching, Sorting & View Style Preferences -->
 			<div class="row" style="text-align: center;">
+
 				<div class="column"><p><img style="max-height: 1em; width: auto;" src="../../img/icon/search.png"></p></div>
 				<div class="column"><p>Sort</p></div>
-				<div class="column"><p><a href="#" onclick="hideTile(); showBank();">Text</a></p></div>
-				<div class="column"><p><a href="#"  onclick="hideBank(); showTile();"> Tiles</a></p></div>
+				<div class="column"><p><a href="#text" onclick="hideTile(); showBank();">Text</a></p></div>
+				<div class="column"><p><a href="#tile"  onclick="hideBank(); showTile();"> Tiles</a></p></div>
+
 			</div>
 
-			<h2 id="objTitle" style="text-align: center;">Object</h2>
+			<!-- objTitle: Selected Object Title -->
+			<h2 id="objTitle" style="text-align: center;">Component List</h2>
 
+			<!-- txtBank: Link List of web component objects -->
 			<ul id="txtBank" style="background-color: gray;">
+
 				<li style="width: inherit; min-height: 2em; background-color: lightgray; padding: .5em;">Hi</li>
+
 			</ul>
 
+			<!-- imgGrid: Image graphics of web components for visual selection -->
 			<div id="imgGrid" class="row">
+
 				<div class="column"><img src="../../img/icon/eth.png"></div>
 				<div class="column"><img src="../../img/icon/cdc.png"></div>
 				<div class="column"><img src="../../img/icon/cc.png"></div>
 				<div class="column"><img src="../../img/icon/ba.png"></div>
-			</div>
 
+			</div>
 		</div>
-		
-	</div>
+	</div> <!-- End of Content -->
 
 	<div class="fw-box" style="position: absolute; bottom: 0;">
 
@@ -85,24 +94,46 @@
 				<br>RESEARCH &emsp; ARTS
 			</p>
 		</div>
-
-	</div>
+	</div> <!-- End of Footer -->
 
 </body>
 
 </html>
 
-<script type="text/javascript">
-	function hideBank(){document.getElementById("txtBank").style.display = "none";}
-	function showBank(){document.getElementById("txtBank").style.display = "block";
+<style type="text/css">
+	#viewer{
+		background-color: #f3f3; 
+		width: 50vw; 
+		min-height: 66vh; 
+		margin: 5vw; 
+		display: inline-block; 
+		position: absolute; 
+		top: 0; 
+		left: 0;
 	}
 
-	function hideTile(){
-		var tileGrid = document.getElementById("imgGrid");
-		tileGrid.style.display = "none";
+	#componentList{
+		background-color: #f1f1; 
+		width: 35vw; 
+		margin: 5vw;  
+		min-height: 66vh; 
+		display: inline-block; 
+		position: absolute; 
+		top: 0; 
+		right: 0;
 	}
-	function showTile(){
-		var tileGrid = document.getElementById("imgGrid");
-		tileGrid.style.display = "block";
+</style>
+
+<script type="text/javascript">
+	function hideBank(){document.getElementById("txtBank").style.display = "none";}
+	function showBank(){document.getElementById("txtBank").style.display = "block";}
+	function hideTile(){document.getElementById("imgGrid").style.display = "none";}
+	function showTile(){document.getElementById("imgGrid").style.display = "block";}
+
+	function defaultView(){
+		if ( location.hash.substring(0, 4).localeCompare("#tile") == 0) { hideBank(); showTile();}
+		else{ showBank(); hideTile(); }
 	}
+	(defaultView())
 </script>
+
