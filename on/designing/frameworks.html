@@ -87,11 +87,11 @@
 
 		</div>
 
-		<div id="footerLeft" class="sm-box"style="background-color: #FFF; padding-top: 0px;">
+		<div id="footerLeft" class="sm-box"style="background-color: #FFF; padding-top: 0px; opacity: 75%;">
 
-			<p style="text-align: center;">ABOUT &emsp; &emsp; WORK <br>
-				<img src="../../img/icon/logoSQ.png" style="max-width: 10vh;">
-				<br>RESEARCH &emsp; ARTS
+			<p style="text-align: center;"><a class="bNavi" href="../me.html#about">ABOUT</a> &emsp; &emsp; <a class="bNavi" href="../me.html#work">WORK</a><br>
+				<a class="bNavi" href="../me.html"><img src="../../img/icon/logoSQ.png" style="max-width: 10vh;"></a>
+				<br><a class="bNavi" href="../me.html#research">RESEARCH</a> &emsp; <a class="bNavi" href="../me.html#art">ARTS</a>
 			</p>
 		</div>
 	</div> <!-- End of Footer -->
@@ -101,6 +101,9 @@
 </html>
 
 <style type="text/css">
+
+	.bNavi:hover{color: tomato;
+	}
 	#viewer{
 		background-color: #f3f3; 
 		width: 50vw; 
@@ -125,15 +128,19 @@
 </style>
 
 <script type="text/javascript">
+
+	/* Toggle Text or Tile View of Web Component Object Selction in componentList */
 	function hideBank(){document.getElementById("txtBank").style.display = "none";}
 	function showBank(){document.getElementById("txtBank").style.display = "block";}
 	function hideTile(){document.getElementById("imgGrid").style.display = "none";}
 	function showTile(){document.getElementById("imgGrid").style.display = "block";}
 
+	/* Checks initial Hash Tag value to set conponentList Viewer List styling  */
 	function defaultView(){
 		if ( location.hash.substring(0, 4).localeCompare("#tile") == 0) { hideBank(); showTile();}
 		else{ showBank(); hideTile(); }
 	}
-	(defaultView())
+
+	(defaultView()) //Auto Magically Run Function onLoad
 </script>
 
