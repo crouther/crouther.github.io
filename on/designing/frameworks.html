@@ -49,8 +49,8 @@
 			<div class="row" style="text-align: center;">
 				<div class="column"><p><img style="max-height: 1em; width: auto;" src="../../img/icon/search.png"></p></div>
 				<div class="column"><p>Sort</p></div>
-				<div class="column"><p>Text</p></div>
-				<div class="column"><p>Tiles</p></div>
+				<div class="column"><p><a href="#" onclick="hideTile(); showBank();">Text</a></p></div>
+				<div class="column"><p><a href="#"  onclick="hideBank(); showTile();"> Tiles</a></p></div>
 			</div>
 
 			<h2 id="objTitle" style="text-align: center;">Object</h2>
@@ -91,3 +91,18 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+	function hideBank(){document.getElementById("txtBank").style.display = "none";}
+	function showBank(){document.getElementById("txtBank").style.display = "block";
+	}
+
+	function hideTile(){
+		var tileGrid = document.getElementById("imgGrid");
+		tileGrid.style.display = "none";
+	}
+	function showTile(){
+		var tileGrid = document.getElementById("imgGrid");
+		tileGrid.style.display = "block";
+	}
+</script>
