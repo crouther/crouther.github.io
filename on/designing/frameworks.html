@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,9 +52,9 @@
 			<div class="row" style="text-align: center;">
 
 				<div class="column"><p><img style="max-height: 1em; width: auto;" src="../../img/icon/search.png"></p></div>
-				<div class="column"><p>Sort</p></div>
-				<div class="column"><p><a href="#text" onclick="hideTile(); showBank();">Text</a></p></div>
-				<div class="column"><p><a href="#tile"  onclick="hideBank(); showTile();"> Tiles</a></p></div>
+				<div class="column"><p onclick="startSort();">Sort</p></div>
+				<div class="column"><p><a href="#text" onclick="addContent(); hideTile(); showBank();">Text</a></p></div>
+				<div class="column"><p><a href="#tile"  onclick="addContent(); hideBank(); showTile();"> Tiles</a></p></div>
 
 			</div>
 
@@ -61,27 +62,10 @@
 			<h2 id="objTitle" style="text-align: center;">Component List</h2>
 
 			<!-- txtBank: Link List of web component objects -->
-			<ul id="txtBank" style="background-color: gray; list-style-type:none; overflow: scroll; max-height: 40vh;">
-
-				<li class="wctbLink">This</li>
-				<li class="wctbLink">is</li>
-				<li class="wctbLink">the</li>
-				<li class="wctbLink">story</li>
-				<li class="wctbLink">of</li>
-				<li class="wctbLink">the</li>
-				<li class="wctbLink">world.</li>
-				<li class="wctbLink">Hi!</li>
-			</ul>
+			<ul id="txtBank" style=""></ul>
 
 			<!-- imgGrid: Image graphics of web components for visual selection -->
-			<div id="imgGrid" class="row">
-
-				<div class="column"><img src="../../img/icon/eth.png"></div>
-				<div class="column"><img src="../../img/icon/cdc.png"></div>
-				<div class="column"><img src="../../img/icon/cc.png"></div>
-				<div class="column"><img src="../../img/icon/ba.png"></div>
-
-			</div>
+			<div id="imgGrid" class="row"></div>
 		</div>
 	</div> <!-- End of Content -->
 
@@ -106,16 +90,18 @@
 
 </html>
 
+
 <style type="text/css">
 
 	.bNavi:hover{color: tomato;}
 
 	.wctbLink{
 		width: inherit; 
-		min-height: 2em; 
+		min-height: 2em;
 		background-color: lightgray; 
 		padding: .5em;
 	}
+
 	#viewer{
 		background-color: #f3f3; 
 		width: 50vw; 
@@ -126,7 +112,6 @@
 		top: 0; 
 		left: 0;
 	}
-
 	#componentList{
 		background-color: #f1f1; 
 		width: 35vw; 
@@ -137,8 +122,20 @@
 		top: 0; 
 		right: 0;
 	}
+	#txtBank{
+		background-color: gray; 
+		list-style-type:none; 
+		overflow: scroll; 
+		max-height: 40vh;
+	}
+
+	div#imgGrid.column{
+		width: 250px;
+  		height: 250px;
+	}
 </style>
 
+<script src="../../script/data/frameworks.js"></script>
 <script type="text/javascript">
 
 	/* Toggle Text or Tile View of Web Component Object Selction in componentList */
@@ -149,10 +146,75 @@
 
 	/* Checks initial Hash Tag value to set conponentList Viewer List styling  */
 	function defaultView(){
-		if ( location.hash.substring(0, 4).localeCompare("#tile") == 0) { hideBank(); showTile();}
-		else{ showBank(); hideTile(); }
+		if (window.location.hash.substring(0, 5).localeCompare("#tile") == 0) 
+			{ hideBank();	showTile(); }
+		else{ showBank();	hideTile(); }
+		
+	}(defaultView()) //onLoad: Auto Magically Run Function
+
+
+	/* Populates Component List Field and Image Grid  */
+	function populateComponentList(listOf){
+
+		for (index = 0; index < listOf.obj.length; index++) {
+
+			var li = document.createElement("li");
+			li.setAttribute("class", "wctbLink");
+
+			li.innerHTML = listOf.obj[index].title;
+
+			var col = document.createElement("div");
+			col.setAttribute("class", "column");
+
+			var img = document.createElement("img");
+			img.src = listOf.obj[index].image;
+
+			col.appendChild(img);
+
+			document.getElementById("txtBank").appendChild(li);
+			document.getElementById("imgGrid").appendChild(col);
+
+		}
+
+	}(populateComponentList(exampleWBCP)) //onLoad: Populate Component List Field
+
+	// Initiates populateComponentList() if no content is available 
+	function addContent(){
+		if(!document.getElementById("imgGrid").hasChildNodes()){
+			removeContent();	populateComponentList(exampleWBCP);
+			document.getElementById("objTitle").innerHTML = "Component List";
+		}
 	}
 
-	(defaultView()) //Auto Magically Run Function onLoad
-</script>
+	// Clears componentList for new content
+	function removeContent(){
+		var bank = document.getElementById("txtBank");
+		while (bank.firstChild) { bank.removeChild(bank.firstChild); }
 
+		var grid = document.getElementById("imgGrid");
+		while (grid.firstChild) { grid.removeChild(grid.firstChild); }
+	}
+
+	// Changes Component List View to Sort Options
+	function startSort(){
+
+		hideTile();		showBank();
+		window.location.hash = "";
+
+		var arr = ["title", "type", "parent", "line"];
+		document.getElementById("objTitle").innerHTML = "By: ";
+
+		removeContent();
+
+		for (b = 0; b < 4; b++){
+
+			var sortLi = document.createElement("li");
+			sortLi.setAttribute("class", "wctbLink sort");
+
+			sortLi.innerHTML = arr[b].toUpperCase();
+
+			document.getElementById("txtBank").appendChild(sortLi);
+
+		}
+	}
+</script>
