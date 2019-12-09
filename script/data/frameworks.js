@@ -47,7 +47,7 @@ var exampleWBCP = {
 				{
 					"title": "Flexbox (2 Column)",
 					"type": "Grid - Frame",
-					"parent": "fb2c",
+					"parent": "Boxes",
 					"brief": "Flexbox (2 Column): item grid for organizing web content in 2 columns while landscape and a single column while portrait",
 					"image": "../../img/icon/cc.png",
 					"line": "47",
@@ -58,7 +58,7 @@ var exampleWBCP = {
 				{
 					"title": "Flexbox (4 Column)",
 					"type": "Grid - Frame",
-					"parent": "fb4c",
+					"parent": "Boxes",
 					"brief": "Flexbox (4 Column): item grid for organizing web content in 4 columns while landscape and 2 columns while portrait",
 					"image": "../../img/icon/cc.png",
 					"line": "47",
