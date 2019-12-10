@@ -21,7 +21,7 @@ function defaultView(){
 		{ hideBank();	showTile(); }
 	else{ showBank();	hideTile(); }
 	
-}(defaultView()) //onLoad: Auto Magically Run Function
+}(defaultView()) // onLoad: Auto Magically Run Function
 
 
 // Populates Component List Field and Image Grid
@@ -47,7 +47,7 @@ function populateComponentList(listOf){
 
 	}
 
-}(populateComponentList(exampleWBCP)) //onLoad: Populate Component List Field
+}(populateComponentList(exampleWBCP)) // onLoad: Populate Component List Field
 
 // Initiates populateComponentList() if no content is available 
 function addContent(){
@@ -118,13 +118,29 @@ function search(){
 	imgG = document.getElementById("imgGrid");
 	imgList = imgG.getElementsByTagName("div");
 
-	// Loops through liList array list and compares string contained with keyword
+	// Loops through liList array and compares string contained with keyword
 	for (i = 0; i < liList.length; i++) {
 		liTxt = liList[i].textContent || liList[i].innerText;
 
-		if (liTxt.toUpperCase().indexOf(keyword) > -1)
-			{ liList[i].style.display = ""; imgList[i].style.display = ""; }
+		if (liTxt.toUpperCase().indexOf(keyword) > -1){ 
+			liList[i].style.display = ""; 
+			imgList[i].style.display = ""; 
+		}
 
-    	else { liList[i].style.display = "none"; imgList[i].style.display = "none"; }
+    	else { 
+    		liList[i].style.display = "none"; 
+    		imgList[i].style.display = "none"; 
+    	}
     }
 }
+
+// Event Listener for Component Selected and populates viewer with example
+let listItems = document.querySelectorAll("li div.col");
+
+listItems.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+
+    	// do stuff
+
+    });
+});

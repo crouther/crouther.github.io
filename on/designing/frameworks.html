@@ -36,6 +36,7 @@
 
 <body>
 
+	<!-- Frame: Full Page content frame -->
 	<div id="content">
 
 		<!-- viewer: displaying Web Components visually and their code -->
@@ -54,14 +55,14 @@
 
 			</div>
 
-			<div id="searchBar" style="display: none;"><p style="text-align: center; margin: 0;"><input type="text" id="searchField" onkeyup="search()" placeholder="Search for.."></p></div>
+			<div id="searchBar" style="display: none;"><p style="text-align: center; margin: 0;"><input type="text" id="searchField" onkeyup="search()" placeholder="Type: ..."></p></div>
 			
 
 			<!-- objTitle: Selected Object Title -->
 			<h2 id="objTitle" style="text-align: center; cursor: pointer;" onclick="addContent();">Component List</h2>
 
 			<!-- txtBank: Link List of web component objects -->
-			<ul id="txtBank" style=""></ul>
+			<ul id="txtBank"></ul>
 
 			<!-- imgGrid: Image graphics of web components for visual selection -->
 			<div id="imgGrid" class="row"></div>
@@ -70,12 +71,13 @@
 
 	<div class="fw-box" style="position: absolute; bottom: 0;">
 
+		<!-- Footer: Description on the right -->
 		<div id="footerRight" class="dub-box" style="background-color: #FFF5; padding-top: 0px;">	
 
 			<div class="bMain ftl1"><br>A functional modern web framework written from scratch to meet low overhead, fundamental, vanilla JavaScript needs of a freelancer and technical consultants<br><br><a href="../web.html" style="color: tomato;">View Templates</a> - <a href="../web.html#fwcOV" style="color: #398778;">Overview</div>
-
 		</div>
 
+		<!-- Footer: Navigation and logo -->
 		<div id="footerLeft" class="sm-box"style="background-color: #FFF; padding-top: 0px; opacity: 75%;">
 
 			<p style="text-align: center;"><a class="bNavi" href="../me.html#about">ABOUT</a> &emsp; &emsp; <a class="bNavi" href="../me.html#work">WORK</a><br>
@@ -86,12 +88,25 @@
 	</div> <!-- End of Footer -->
 
 </body>
+
 </html>
 
 
 <style type="text/css">
 
 	.bNavi:hover{color: tomato;}
+
+	#searchField{
+	  background-image: url('../../img/icon/search.png'); /* Add a search icon to input */
+	  background-position: 10px 12px; /* Position the search icon */
+	  background-repeat: no-repeat; /* Do not repeat the icon image */
+	  background-size: 1em;
+	  width: 60%; /* Full-width */
+	  font-size: 16px; /* Increase font-size */
+	  padding: 12px 20px 12px 40px; /* Add some padding */
+	  border: 1px solid #ddd; /* Add a grey border */
+	  margin-bottom: 12px; /* Add some space below the input */
+	}
 
 	.wctbLink{
 		width: inherit; 
@@ -128,7 +143,7 @@
 		overflow: scroll; 
 		max-height: 40vh;
 	}
-
+	#imgGrid{overflow: scroll;}
 	div#imgGrid.column{
 		width: 250px;
   		height: 250px;
