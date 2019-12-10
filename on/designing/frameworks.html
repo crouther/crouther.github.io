@@ -39,27 +39,26 @@
 	<div id="content">
 
 		<!-- viewer: displaying Web Components visually and their code -->
-		<div id="viewer">
-
-			<iframe width="100%" height="80%" src="playground.html"></iframe>
-
-		</div>
+		<div><iframe id="viewer" width="100%" height="50%"></iframe></div>
 
 		<!-- CompnentList: The compnent object list for selection and description-->
 		<div id="componentList">
 
 			<!-- Navigation Bar for Searching, Sorting & View Style Preferences -->
-			<div class="row" style="text-align: center;">
+			<div class="row" id="navi" style="text-align: center;">
 
-				<div class="column"><p><img style="max-height: 1em; width: auto;" src="../../img/icon/search.png"></p></div>
-				<div class="column"><p onclick="startSort();">Sort</p></div>
+				<div class="column"><p><a onclick="toggleSearchBar();">Search</a></p></div>
+				<div class="column"><p href="" onclick="startSort();">Sort</p></div>
 				<div class="column"><p><a href="#text" onclick="addContent(); hideTile(); showBank();">Text</a></p></div>
-				<div class="column"><p><a href="#tile"  onclick="addContent(); hideBank(); showTile();"> Tiles</a></p></div>
+				<div class="column"><p><a href="#tile" onclick="addContent(); hideBank(); showTile();"> Tiles</a></p></div>
 
 			</div>
 
+			<div id="searchBar" style="display: none;"><p style="text-align: center; margin: 0;"><input type="text" id="searchField" onkeyup="search()" placeholder="Search for.."></p></div>
+			
+
 			<!-- objTitle: Selected Object Title -->
-			<h2 id="objTitle" style="text-align: center;">Component List</h2>
+			<h2 id="objTitle" style="text-align: center; cursor: pointer;" onclick="addContent();">Component List</h2>
 
 			<!-- txtBank: Link List of web component objects -->
 			<ul id="txtBank" style=""></ul>
@@ -87,7 +86,6 @@
 	</div> <!-- End of Footer -->
 
 </body>
-
 </html>
 
 
@@ -101,6 +99,8 @@
 		background-color: lightgray; 
 		padding: 1em .5em 0em .5em;
 	}
+
+	.wctbLink:hover{cursor: pointer;}
 
 	#viewer{
 		background-color: #f3f3; 

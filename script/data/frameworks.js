@@ -9,7 +9,7 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "header",
-			"ex": "<div id=\"header\"></div>",
+			"ex": "<div class=\"header\"></div>",
 		},
 		{
 			"title": "Menu",
@@ -20,7 +20,7 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "menu",
-			"ex": "<div id=\"textMenu\"></div>",
+			"ex": "<div class=\"textMenu\"></div>",
 		},
 		{
 			"title": "Frames",
@@ -77,7 +77,7 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "footer",
-			"ex": "<div id=\"footer\"></div>",
+			"ex": "<div class=\"footer\"></div>",
 		},
 		{
 			"title": "Text",
