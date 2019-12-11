@@ -8,15 +8,15 @@
 **/
 
 
-//Places Container Created
+// Places Container Created
 var placesmwBox = document.createElement("div");
 placesmwBox.setAttribute("class", "mw-box");
 
-//Groups List Container
+// Groups List Container
 var placesFb4c = document.createElement("div");
 placesFb4c.setAttribute("class", "fb4c");
 
-//Places Population Loop
+// Places Population Loop
 for (j = 0; j < gallery.Country.length; j++) {
 
 	//Variables
@@ -59,7 +59,7 @@ for (j = 0; j < gallery.Country.length; j++) {
 placesmwBox.appendChild(placesFb4c);
 document.getElementById("moreGalleries").appendChild(placesmwBox); 
 
-//Refresh and Update Page on Source Click
+// Refresh and Update Page on Source Click
 let elementsArray = document.querySelectorAll("a");
 
 elementsArray.forEach(function(elem) {
@@ -70,11 +70,12 @@ elementsArray.forEach(function(elem) {
     });
 });
 
-//Populate Images if selection was made
+// Populate Images if selection was made
 try{PopulateImages();}
 catch(error){console.log("The gallery homepage has no images currently");}
 
-//PopulateImages(): Searches through img.js dataset based on hashtag value and updates page to reflect selected town, country.
+// PopulateImages(): Searches through img.js dataset based on hashtag value and 
+//                   updates page to reflect selected town, country.
 function PopulateImages(){
 	//Find Gallery By Hash Tag
 	var pathname = document.location.href.toString();
@@ -160,6 +161,4 @@ function shuffle(){
 		imgArray = document.querySelectorAll("img");
 		shuffle();
 	}
-}
-
-(shuffle())
+}(shuffle()) // onLoad: start listener for image rearrangement on user click

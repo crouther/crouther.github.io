@@ -9,7 +9,8 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "header",
-			"ex": "<div class=\"header\"></div>",
+			"ex": "<div class=\"header\" style=\"background-color:black; height: 100px;\"></div>",
+			"children": [],
 		},
 		{
 			"title": "Menu",
@@ -21,6 +22,7 @@ var exampleWBCP = {
 			"link": "AdvantFlat.css",
 			"abrv": "menu",
 			"ex": "<div class=\"textMenu\"></div>",
+			"children": [],
 		},
 		{
 			"title": "Frames",
@@ -31,7 +33,8 @@ var exampleWBCP = {
 			"line": "47",
 			"link": "AdvantFlat.css",
 			"abrv": "fb2c",
-			"ex": "<div class=\"fb2c\"><div class=\"item\"><div class=\"item\" id=\"imIt\"\></div>",
+			"ex": "<div class=\"fb2c\"><div class=\"item square fadedManila\" style=\"height: 100px;\"></div><div class=\"item square darkTan\" style=\"height: 100px;\"></div>",
+			"children": [],
 		},
 		{
 			"title": "Boxes",
@@ -42,29 +45,31 @@ var exampleWBCP = {
 			"line": "47",
 			"link": "AdvantFlat.css",
 			"abrv": "fb2c",
-			"ex": "<div class=\"fb2c\"><div class=\"item\"><div class=\"item\" id=\"imIt\"\></div>",
-			"childern": [
+			"ex": "<div class=\"fb2c\"><div class=\"item square limegreen\" style=\"height: 100px;\"></div><div class=\"item square greenSpring\" style=\"height: 100px;\"></div>",
+			"children": [
 				{
 					"title": "Flexbox (2 Column)",
-					"type": "Grid - Frame",
+					"type": "child",
 					"parent": "Boxes",
 					"brief": "Flexbox (2 Column): item grid for organizing web content in 2 columns while landscape and a single column while portrait",
 					"image": "../../img/icon/cc.png",
 					"line": "47",
 					"link": "AdvantFlat.css",
 					"abrv": "fb2c",
-					"ex": "<div class=\"fb2c\"><div class=\"item\"><div class=\"item\" id=\"imIt\"\></div>",
+					"ex": "<div class=\"fb2c\"><div class=\"item square yellow\"></div><div class=\"item square yellowgreen\"></div>",
+					"children": [],
 				},
 				{
 					"title": "Flexbox (4 Column)",
-					"type": "Grid - Frame",
+					"type": "child",
 					"parent": "Boxes",
 					"brief": "Flexbox (4 Column): item grid for organizing web content in 4 columns while landscape and 2 columns while portrait",
 					"image": "../../img/icon/cc.png",
 					"line": "47",
 					"link": "AdvantFlat.css",
 					"abrv": "fb4c",
-					"ex": "<div class=\"fb4c\"><div class=\"embeddedItem\"><div class=\"embeddedItem\"><div class=\"embeddedItem\"><div class=\"embeddedItem\"></div>",
+					"ex": "<div class=\"fb4c\"><div class=\"embeddedItem yellow\"><div class=\"embeddedItem yellowgreen\"><div class=\"embeddedItem greenSpring\"><div class=\"embeddedItem limegreen\"></div>",
+					"children": [],
 				},
 			]
 		},
@@ -77,7 +82,8 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "footer",
-			"ex": "<div class=\"footer\"></div>",
+			"ex": "<div class=\"footer\" style=\"background-color: #fff; height: 50px; padding-top: 250px; position: fixed; bottom: 0;\"></div>",
+			"children": [],
 		},
 		{
 			"title": "Text",
@@ -88,7 +94,8 @@ var exampleWBCP = {
 			"line": "47",
 			"link": "AdvantFlat.css",
 			"abrv": "txt",
-			"ex": "<p class =\"bMain\"> </p>",
+			"ex": "<p class =\"bMain\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+			"children": [],
 		},
 		{
 			"title": "Button",
@@ -100,6 +107,7 @@ var exampleWBCP = {
 			"link": "AdvantFlat.css",
 			"abrv": "button",
 			"ex": "<button class=\"button\">Get Advising</button>",
+			"children": [],
 		},
 		{
 			"title": "Timeline",
@@ -111,6 +119,7 @@ var exampleWBCP = {
 			"link": "AdvantFlat.css",
 			"abrv": "timeline",
 			"ex": "<div class=\"timeline\" id=\"w3-timeline\"></div>",
+			"children": [],
 		},
 		{
 			"title": "Theme Color List",
@@ -122,6 +131,7 @@ var exampleWBCP = {
 			"link": "AdvantFlat.css",
 			"abrv": "txt",
 			"ex": "<p class =\"redTxt\"> </p>",
+			"children": [],
 		}
 	]
 }

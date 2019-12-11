@@ -16,6 +16,7 @@
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../../css/anim.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/elements.css">
 	<link rel="stylesheet" type="text/css" href="../../css/frames/post.css">
 	<link rel="stylesheet" type="text/css" href="../../css/frames/layout.css">
 	<link rel="stylesheet" type="text/css" href="../../css/frames/flexbox.css">
@@ -39,8 +40,8 @@
 	<!-- Frame: Full Page content frame -->
 	<div id="content">
 
-		<!-- viewer: displaying Web Components visually and their code -->
-		<div><iframe id="viewer" width="100%" height="50%"></iframe></div>
+		<!-- viewer: displaying Web Components visually and their code<div ></div> -->
+		<div id="viewer"><iframe id="vTarget" frameborder="0" width="100%" height="80vh"></iframe> </div>
 
 		<!-- CompnentList: The compnent object list for selection and description-->
 		<div id="componentList">
@@ -59,7 +60,7 @@
 			
 
 			<!-- objTitle: Selected Object Title -->
-			<h2 id="objTitle" style="text-align: center; cursor: pointer;" onclick="addContent();">Component List</h2>
+			<h2 id="objTitle" style="text-align: center; cursor: pointer;" onclick="removeContent(); addContent(); choiceListener();">Component List</h2>
 
 			<!-- txtBank: Link List of web component objects -->
 			<ul id="txtBank"></ul>
@@ -105,7 +106,6 @@
 	  font-size: 16px; /* Increase font-size */
 	  padding: 12px 20px 12px 40px; /* Add some padding */
 	  border: 1px solid #ddd; /* Add a grey border */
-	  margin-bottom: 12px; /* Add some space below the input */
 	}
 
 	.wctbLink{
@@ -114,12 +114,11 @@
 		background-color: lightgray; 
 		padding: 1em .5em 0em .5em;
 	}
-
 	.wctbLink:hover{cursor: pointer;}
 
 	#viewer{
 		background-color: #f3f3; 
-		width: 50vw; 
+		width: 50vw;
 		min-height: 66vh; 
 		margin: 5vw; 
 		display: inline-block; 
@@ -127,6 +126,9 @@
 		top: 0; 
 		left: 0;
 	}
+	#vTarget > img{width: 90%; padding: 5%; height: auto;}
+	#vTarget > p{background-color: #C3CEC5;}
+
 	#componentList{
 		background-color: #f1f1; 
 		width: 35vw; 
@@ -137,17 +139,21 @@
 		top: 0; 
 		right: 0;
 	}
+
 	#txtBank{
 		background-color: gray; 
 		list-style-type:none; 
 		overflow: scroll; 
 		max-height: 40vh;
 	}
-	#imgGrid{overflow: scroll;}
+
+	.igI{} .ischi{}
+	
 	div#imgGrid.column{
 		width: 250px;
   		height: 250px;
 	}
+	#imgGrid{overflow: scroll;}
 </style>
 
 

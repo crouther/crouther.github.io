@@ -9,6 +9,11 @@
 **/
 
 
+var parent = true;
+var parentName = "";
+var parentIndex = 0;
+
+
 // Toggle Text or Tile View of Web Component Object Selction in componentList 
 function hideBank(){document.getElementById("txtBank").style.display = "none";}
 function showBank(){document.getElementById("txtBank").style.display = "block";}
@@ -35,7 +40,7 @@ function populateComponentList(listOf){
 		li.innerHTML = listOf.obj[index].title;
 
 		var col = document.createElement("div");
-		col.setAttribute("class", "column");
+		col.setAttribute("class", "column igI");
 
 		var img = document.createElement("img");
 		img.src = listOf.obj[index].image;
@@ -64,6 +69,8 @@ function removeContent(){
 
 	var grid = document.getElementById("imgGrid");
 	while (grid.firstChild) { grid.removeChild(grid.firstChild); }
+
+	parent = true;
 }
 
 
@@ -134,13 +141,104 @@ function search(){
     }
 }
 
+
 // Event Listener for Component Selected and populates viewer with example
-let listItems = document.querySelectorAll("li div.col");
+function choiceListener(){
 
-listItems.forEach(function(elem) {
-    elem.addEventListener("click", function() {
+	// Specific to text Component List
+	let imgGridList = document.querySelectorAll("div.igI");
 
-    	// do stuff
+	imgGridList.forEach(function(elem) {
+	    elem.addEventListener("click", function() {
 
-    });
-});
+	    	document.getElementById("vTarget").innerHTML = elem.innerHTML;
+
+	    });
+	});
+
+	// Specific to Image Grid Component List
+	let txtBankList = document.querySelectorAll("li");
+
+	txtBankList.forEach(function(elem) {
+	    elem.addEventListener("click", function() {
+
+	    	let index;
+
+	    	if (parent) {
+	    		index = findIndex(exampleWBCP, elem.innerHTML);
+		    	var doc = document.getElementById("vTarget").contentWindow.document;
+				doc.open();
+				doc.write('<!DOCTYPE html><head><link rel="stylesheet" type="text/css" href="https://myles.works/css/AdvantFlat.css"></head><body></body></html>');
+				doc.close();
+				doc.body.innerHTML = getEx(exampleWBCP, index);
+
+				parentIndex = index;
+				updateWithChildren(exampleWBCP, index);
+	    	}
+
+	    	else{
+
+	    		//Finds Index of current node in children list
+	    		var i = 0;
+				while( (elem = elem.previousSibling) != null ) { i++; }
+
+				//Updates iFrame with child node example content
+		    	document.getElementById("vTarget").innerHTML = exampleWBCP.obj[parentIndex].children[i].ex; ;
+	    	}	
+	    });
+	});
+} (choiceListener()) // onLoad: Listen for user specific choice
+
+//Get the Example text of a dataset item given array and item index
+function getEx(listOf, index){return listOf.obj[index].ex;}
+
+//Get the item index given the name of the dataset and keyword / item title
+function findIndex(listOf, key){
+	for(d = 0; d < listOf.obj.length; d++){
+		if (listOf.obj[d].title.toUpperCase().indexOf(key.toUpperCase()) > -1)
+			return d;
+	}
+}
+
+// Starts the children funciton to populate Component List Field and Image Grid
+function updateWithChildren(listOf, key){
+	parentName = listOf.obj[key].title;
+
+	// Confirms child nodes exist and populates list with them
+	if (listOf.obj[key]['children'].length > 0) 
+		children(listOf.obj[key]['children']);
+
+	else{console.log(parentName + " has no children");}
+}
+
+// Populates Component List Field and Image Grid with children
+function children(listOf){
+
+	removeContent();
+	document.getElementById("objTitle").innerHTML = "<span class=\"flashingTxt\"><</span>  Children / Support: ";
+
+	// Creates, updates and styles each link or node in child list from parent item
+	for (index = 0; index < listOf.length; index++) {
+
+		var li = document.createElement("li");
+		var str = "wctbLink " + "parentIs" + listOf[index].parent;
+		li.setAttribute("class", str);
+		li.innerHTML = listOf[index].title;
+
+		var col = document.createElement("div");
+		col.setAttribute("class", "column igI");
+		col.setAttribute("class", "parentIs" + listOf[index].parent);
+
+		var img = document.createElement("img");
+		img.src = listOf[index].image;
+
+		col.appendChild(img);
+
+		document.getElementById("txtBank").appendChild(li);
+		document.getElementById("imgGrid").appendChild(col);
+	}
+
+	parent = false;
+	console.log("children present and populated for parent: " + parentName);
+	choiceListener();
+}
