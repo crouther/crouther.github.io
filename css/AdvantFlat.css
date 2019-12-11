@@ -24,9 +24,21 @@
 * offering a uniform and familiar appeal. **/
 
 
-* {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+*{
+	text-decoration: none;
+	-webkit-text-decoration-color: none;
+	   -moz-text-decoration-color: none;
+	        text-decoration-color: none;
+	font-family: 'Anonymous Pro', monospace;
 }
+
+/* unvisited link */
+a, a:hover, a:visited, a:link a:active{
+  text-decoration: none;
+  color: black;
+}
+
 
 @font-face {
     font-family: brushed;
@@ -65,12 +77,6 @@ body {
 
 * {
   box-sizing: border-box;
-}
-
-/* Set a background color */
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -212,12 +218,6 @@ body {
 
 
 
-*{font-family: 'Anonymous Pro', monospace;}
-
-a{
-    text-decoration: none;
-    color: black;
-}
 
 .anc {font-size: 1.8vw;}
 .anc a:hover {color: gray;}
@@ -867,19 +867,6 @@ a{
 *	included. **/
 
 
-*{
-	text-decoration: none;
-	-webkit-text-decoration-color: none;
-	   -moz-text-decoration-color: none;
-	        text-decoration-color: none;
-	font-family: 'Anonymous Pro', monospace;
-}
-
-/* unvisited link */
-a, a:hover, a:visited, a:link a:active{
-  text-decoration: none;
-  color: black;
-}
 
 /* Full width centered box for organizing div content */
 .fw-box{
