@@ -19,10 +19,8 @@
 
 /** Universal Style Defaults ::
 *
-* The group of style properties listed below
-* are custom default settings for the site layout
-* offering a uniform and familiar appeal. **/
-
+*	The group of style properties listed below are custom default settings for
+* 	the site layout offering a uniform and familiar appeal. **/
 
 
 *{
@@ -33,21 +31,16 @@
 	font-family: 'Anonymous Pro', monospace;
 }
 
-/* unvisited link */
 a, a:hover, a:visited, a:link a:active{
   text-decoration: none;
   color: black;
 }
 
-
 @font-face {
     font-family: brushed;
     src: url(../fonts/brushed.ttf);
 }
-
-.brushed{
-	font-family: brushed;
-}
+.brushed{ font-family: brushed; }
 
 body {
   left: 0;
@@ -73,6 +66,7 @@ body {
 *
 *	Javascript Object (JSON) datasets leveraged to populate 
 *	a vertically expanding timeline. **/
+
 
 
 * {
@@ -213,10 +207,11 @@ body {
 
 
 
-
-/*container.css*/
-
-
+/** container.css (Web Styling) ::
+*
+*	Frame style guide for full, single page layouts. One main panel and
+*	a side navigational panel visible on desktop or landscape. When display 
+*	is vertical or in portrait the navigational panel disappears. **/
 
 
 .anc {font-size: 1.8vw;}
@@ -437,10 +432,14 @@ body {
 
 
 
+/** Anim.css  (Web Styling) ::
+*
+*	Object specific style guides for a variety of different animation css
+*	properties leveraging timing and transitions **/
 
-/* Anim.css */
 
-	/* Object Slides in from left of screen to right */
+
+/* Object Slides in from left of screen to right */
   .slideAnimate{
   	animation-duration: 3s;
   	animation-name: slidein;
@@ -452,17 +451,19 @@ body {
   }
 
 
-@media only screen and (max-width: 400px) {
-	.caption{font-size: 1em;}
-}
+/* Caption size adjustment based on display size */
+	@media only screen and (max-width: 400px) {
+		.caption{font-size: 1em;}
+	}
 
-@media only screen and (max-width: 600px) {
-	.caption{font-size: 2em;}
-}
+	@media only screen and (max-width: 600px) {
+		.caption{font-size: 2em;}
+	}
 
-@media only screen and (max-width: 800px) {
-	.caption{font-size: 3em;}
-}
+	@media only screen and (max-width: 800px) {
+		.caption{font-size: 3em;}
+	}
+
 
 /* Typewrite Text Print out Animation */
   .typewriter h1 {
@@ -487,6 +488,7 @@ body {
     from, to { border-color: transparent }
     50% { border-color: tomato; }
   }
+
 
 /** Picture Slideshow Animation
 *    Very specific to the workstation page **/
@@ -578,6 +580,7 @@ body {
     100% { content:url("https://lh3.googleusercontent.com/qPeC-cerEvVgXWSE6IoqDwtpjYuc_2b4izWesOZxTqhUESgIy_UEqCKzy-W9-1mOdoaOLhNTZ4-x_519Xy3Kx0CeW0NWJQrX2taOZyA_hNgK6F08_ZmBH4QVH1xnrwLODaf_0A0_6WqEhMHkaR-ZobNkkjwK--Be1T99BKATK3Yw2NjiFb7NtW4IdwNBXbmlZgcfJk_LIVG5WVfz8AoP5CHmmMe3cyGfRGu1PNRNxSzVn_WDPSlU9wfFIYJGZ-Y7qXcHGQzlCX1Bps8X8_xEvc2zh0wmyDe7OHA2pR4VWl-H3r7pDT_esrPZ3ibxcv8ueWhXQ_kNgthv2VUnXeGdVzSBWobDG9hCorDbkcsHt9ooP84HOzQIT7q2lZ-ZjDGQN536U5IZSIjhriW0UpQPRYPd8Z9xmY3krJ5uw9F4y4xrO3PoufyTmFEVGQ3WhiwXhajd5gH9NPGrodNBZin5y03r2g-xvLWiwNZr5Ko8Qsvw2inLkyX1bzm_--dhbSHzcZrX5ttMGZC5s38Sj43h3jellA2sij8s2fOv9-5r6DPIMirnHK2e-gc-a-crt0C8TGtmjbvGCUBy4HOvO45_VLLbPmFsv5iHFbofbFZUw8ld4skTOA5tpaEYKAs7YW_yFa1W7_XyaoOSVGMkUdvJCFzyUjxvPOrXUiS6xynmM2TWhD_2fXbuj-DcC5sw5F3FM6hsoqsHd_SIQTW5AoXlUCo3og=w1560-h878-no"); }
   }
 
+
 /*Image Text Overlay Fade in and out loop */
   .flashingTxt {
      -webkit-animation: fTxt 5s infinite;
@@ -635,6 +638,7 @@ body {
     65%  { opacity:0; }
     100% { opacity:1; }
   }
+
 
 /* Button or Text Border Animation  */
   .borderLineAnime{
@@ -738,9 +742,10 @@ body {
 
 
 
-/* Elements.css */
-
-
+/** Elements.css  (Web Styling) ::
+*
+*	Object specific style guides for a variety of different display css
+*	properties leveraging space and cosmetics **/
 
 
 /**Full Screen scaling image background**/
@@ -857,14 +862,11 @@ body {
 
 
 
-
-/** Post.css
-*   This offers universal stylings for
-*   organizing content within a page
-*   vertically. Sectioning off areas and
-*   grouping together content. Color 
-*   styling, text, and spacing are 
-*	included. **/
+/** Post.css ::
+*
+*   This offers universal stylings for organizing content within a page
+*   vertically. Sectioning off areas and grouping together content. Color
+*   styling, text, and spacing are included. **/
 
 
 
@@ -1101,8 +1103,6 @@ body {
 * Content heavily borrowed from W3Schools**/
 
 
-
-
 .row {
     margin: 0px;
     padding: 1.5%;
@@ -1124,7 +1124,6 @@ body {
 }
 
 
-
 /* Responsive layout - 
    makes a two column-layout instead of four columns */
 @media only screen and (max-width: 800px) {
@@ -1134,7 +1133,6 @@ body {
         width: 50%;
     }
 }
-
 
 
 /* Responsive layout - 
@@ -1154,13 +1152,11 @@ body {
 
 
 
-
 /** Flexbox.css
-*   This offers universal stylings for
-*   organizing content within a page
-*   There are various iterations of the flex
-*   box styling for different layouts and 
-*   content display methodologies **/
+*   
+*   This offers universal stylings for organizing content within a page
+*   There are various iterations of the flex box styling for different layouts 
+*   and content display methodologies **/
 
 
 /* Full page Flexbox container */
@@ -1596,8 +1592,11 @@ body {
 
 
 
-
-/* Details.css */
+/** Details.css
+*   
+*   This offers universal stylings for organizing content within a page
+*   There are various iterations of the box styling for different layouts 
+*   and content display methodologies **/
 
 
 .content{
@@ -1610,7 +1609,6 @@ body {
 	background-color: #fff;
 }
 
-/* Specific to Hardware Page */
 .caption{
 	position: absolute;
 	margin-left: 7%;

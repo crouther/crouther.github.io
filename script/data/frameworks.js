@@ -56,7 +56,7 @@ var exampleWBCP = {
 					"line": "47",
 					"link": "AdvantFlat.css",
 					"abrv": "fb2c",
-					"ex": "<div class=\"fb2c\"><div class=\"item square yellow\"></div><div class=\"item square yellowgreen\"></div>",
+					"ex": "<div class=\"fb2c\"><div class=\"item square yellow\" style=\"height: 100px;\"></div><div class=\"item square yellowgreen\" style=\"height: 100px;\"></div>",
 					"children": [],
 				},
 				{
@@ -68,7 +68,7 @@ var exampleWBCP = {
 					"line": "47",
 					"link": "AdvantFlat.css",
 					"abrv": "fb4c",
-					"ex": "<div class=\"fb4c\"><div class=\"embeddedItem yellow\"><div class=\"embeddedItem yellowgreen\"><div class=\"embeddedItem greenSpring\"><div class=\"embeddedItem limegreen\"></div>",
+					"ex": "<div class=\"fb4c\"><div class=\"embeddedItem yellow\" style=\"height: 100px;\"></div><div class=\"embeddedItem yellowgreen\" style=\"height: 100px;\"></div><div class=\"embeddedItem greenSpring\" style=\"height: 100px;\"></div><div class=\"embeddedItem limegreen\" style=\"height: 100px;\"></div></div>",
 					"children": [],
 				},
 			]
@@ -82,7 +82,7 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "footer",
-			"ex": "<div class=\"footer\" style=\"background-color: #fff; height: 50px; padding-top: 250px; position: fixed; bottom: 0;\"></div>",
+			"ex": "<div style=\"height: 80vh; background-color: #f3f;\"></div><div class=\"footer\" style=\"background-color: #fff; height: 4em;\"><p class= \"ftl1\"><br><br>Footer Placed Here!</p></div>",
 			"children": [],
 		},
 		{

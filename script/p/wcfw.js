@@ -171,10 +171,10 @@ function choiceListener(){
 
 	    	if (parent) {
 	    		index = findIndex(exampleWBCP, elem.innerHTML);
-				doc.body.innerHTML = getEx(exampleWBCP, index);
-
 				parentIndex = index;
+
 				updateWithChildren(exampleWBCP, index);
+				doc.body.innerHTML = getEx(exampleWBCP, index);
 	    	}
 
 	    	else{
@@ -185,7 +185,9 @@ function choiceListener(){
 				while( (child = child.previousSibling) != null ) { i++; }
 
 				//Updates iFrame with child node example content
-		    	document.getElementById("vTarget").innerHTML = exampleWBCP.obj[parentIndex].children[i].ex; ;
+		    	doc.body.innerHTML = exampleWBCP.obj[parentIndex].children[i].ex;
+		    	console.log(exampleWBCP.obj[parentIndex].children[i].ex);
+		    	console.log(doc);
 	    	}	
 	    });
 	});
@@ -210,7 +212,7 @@ function updateWithChildren(listOf, key){
 	if (listOf.obj[key]['children'].length > 0) 
 		children(listOf.obj[key]['children']);
 
-	else{console.log(parentName + " has no children");}
+	else{console.log(parentName + " has no children"); parent =  true;}
 }
 
 // Populates Component List Field and Image Grid with children
