@@ -145,14 +145,19 @@ function search(){
 // Event Listener for Component Selected and populates viewer with example
 function choiceListener(){
 
+	//Initiate iFrame Content
+	var doc = document.getElementById("vTarget").contentWindow.document;
+	doc.open();
+	doc.write('<!DOCTYPE html><head><link rel="stylesheet" type="text/css" href="https://myles.works/css/AdvantFlat.css"></head><body></body></html>');
+	doc.close();
+
 	// Specific to text Component List
 	let imgGridList = document.querySelectorAll("div.igI");
 
 	imgGridList.forEach(function(elem) {
 	    elem.addEventListener("click", function() {
 
-	    	document.getElementById("vTarget").innerHTML = elem.innerHTML;
-
+	    	doc.body.innerHTML ="<div class=\"row\"><div class=\"column\">" + elem.innerHTML + "</div></div>";
 	    });
 	});
 
@@ -166,10 +171,6 @@ function choiceListener(){
 
 	    	if (parent) {
 	    		index = findIndex(exampleWBCP, elem.innerHTML);
-		    	var doc = document.getElementById("vTarget").contentWindow.document;
-				doc.open();
-				doc.write('<!DOCTYPE html><head><link rel="stylesheet" type="text/css" href="https://myles.works/css/AdvantFlat.css"></head><body></body></html>');
-				doc.close();
 				doc.body.innerHTML = getEx(exampleWBCP, index);
 
 				parentIndex = index;
@@ -180,7 +181,8 @@ function choiceListener(){
 
 	    		//Finds Index of current node in children list
 	    		var i = 0;
-				while( (elem = elem.previousSibling) != null ) { i++; }
+	    		var child = elem;
+				while( (child = child.previousSibling) != null ) { i++; }
 
 				//Updates iFrame with child node example content
 		    	document.getElementById("vTarget").innerHTML = exampleWBCP.obj[parentIndex].children[i].ex; ;
@@ -221,13 +223,13 @@ function children(listOf){
 	for (index = 0; index < listOf.length; index++) {
 
 		var li = document.createElement("li");
-		var str = "wctbLink " + "parentIs" + listOf[index].parent;
-		li.setAttribute("class", str);
+		var liStr = "wctbLink " + "parentIs" + listOf[index].parent;
+		li.setAttribute("class", liStr);
 		li.innerHTML = listOf[index].title;
 
 		var col = document.createElement("div");
-		col.setAttribute("class", "column igI");
-		col.setAttribute("class", "parentIs" + listOf[index].parent);
+		colStr = "column igI " + "parentIs" + listOf[index].parent;
+		col.setAttribute("class", colStr);
 
 		var img = document.createElement("img");
 		img.src = listOf[index].image;
@@ -239,6 +241,5 @@ function children(listOf){
 	}
 
 	parent = false;
-	console.log("children present and populated for parent: " + parentName);
 	choiceListener();
 }
