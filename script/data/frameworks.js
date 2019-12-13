@@ -21,7 +21,7 @@ var exampleWBCP = {
 			"line": "766",
 			"link": "AdvantFlat.css",
 			"abrv": "menu",
-			"ex": "<div class=\"textMenu\"></div>",
+			"ex": "<div id=\"iconMenu\" style=\"background-color: #3F8879; border-radius: 100%; right: 0; top: 0; margin: 1.5em; position: absolute; padding: 1em; z-index: 5;\" onclick=\"openMenu();\"><img src=\"../../img/icon/menu.png\" style=\"height: 1.5em; width: 1.5em;\"/></div><div id=\"textMenu\" style=\"background-color: #919b9f; right: 0; top: 0; margin: 1.5em; position: absolute; padding: 2em; opacity: 0; z-index: 1;\"><ul style=\"list-style-type: none; line-height: 2em;\"><li><h3><a href=\"#about\">About</a></h3></li><li><h3><a href=\"#work\">Work</a></h3></li><li><h3><a href=\"mailto:email@motov.app\" target=\"_blank\">Contact</a></h3></li></ul><div style=\"position: absolute; bottom: 5; left: 5;\" onclick=\"closeMenu();\">x</div></div>",
 			"children": [],
 		},
 		{
