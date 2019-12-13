@@ -33,7 +33,7 @@ var exampleWBCP = {
 			"line": "47",
 			"link": "AdvantFlat.css",
 			"abrv": "fb2c",
-			"ex": "<div class=\"fb2c\"><div class=\"item square fadedManila\" style=\"height: 100px;\"></div><div class=\"item square darkTan\" style=\"height: 100px;\"></div>",
+			"ex": "<div class=\"header\" style=\"background-color:black; height: 100px;\"></div><div class=\"fb4c\"><div class=\"embeddedItem yellow\" style=\"height: 100px;\"></div><div class=\"embeddedItem yellowgreen\" style=\"height: 100px;\"></div><div class=\"embeddedItem greenSpring\" style=\"height: 100px;\"></div><div class=\"embeddedItem limegreen\" style=\"height: 100px;\"></div></div><div class=\"fb2c\"><div class=\"item fadedManila\" style=\"height: 100px;\"></div><div class=\"item darkTan\" style=\"height: 100px;\"></div>",
 			"children": [],
 		},
 		{
@@ -45,7 +45,7 @@ var exampleWBCP = {
 			"line": "47",
 			"link": "AdvantFlat.css",
 			"abrv": "fb2c",
-			"ex": "<div class=\"fb2c\"><div class=\"item square limegreen\" style=\"height: 100px;\"></div><div class=\"item square greenSpring\" style=\"height: 100px;\"></div>",
+			"ex": "<div class=\"fb4c\"><div class=\"embeddedItem yellow\" style=\"height: 100px;\"></div><div class=\"embeddedItem yellowgreen\" style=\"height: 100px;\"></div><div class=\"embeddedItem greenSpring\" style=\"height: 100px;\"></div><div class=\"embeddedItem limegreen\" style=\"height: 100px;\"></div></div><div class=\"fb2c\"><div class=\"item limegreen\" style=\"height: 100px;\"></div><div class=\"item fadedManila\" style=\"height: 100px;\"></div>",
 			"children": [
 				{
 					"title": "Flexbox (2 Column)",
