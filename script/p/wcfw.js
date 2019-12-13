@@ -9,6 +9,8 @@
 **/
 
 
+
+// Global Variables
 var parent = true;
 var parentName = "";
 var parentIndex = 0;
@@ -154,6 +156,7 @@ function choiceListener(){
 	// Specific to text Component List
 	let imgGridList = document.querySelectorAll("div.igI");
 
+	// Event Listener for each image to populate viewer with content
 	imgGridList.forEach(function(elem) {
 	    elem.addEventListener("click", function() {
 
@@ -164,15 +167,18 @@ function choiceListener(){
 	// Specific to Image Grid Component List
 	let txtBankList = document.querySelectorAll("li");
 
+	// Event Listener for each text brief to populate viewer with example
 	txtBankList.forEach(function(elem) {
 	    elem.addEventListener("click", function() {
 
 	    	let index;
-
 	    	if (parent) {
+
+	    		// Finds elem index in list (symetrical to json / js aray)
 	    		index = findIndex(exampleWBCP, elem.innerHTML);
 				parentIndex = index;
 
+				//Checks for children, updates iFrame with Parent content
 				updateWithChildren(exampleWBCP, index);
 				doc.body.innerHTML = getEx(exampleWBCP, index);
 	    	}
@@ -186,8 +192,6 @@ function choiceListener(){
 
 				//Updates iFrame with child node example content
 		    	doc.body.innerHTML = exampleWBCP.obj[parentIndex].children[i].ex;
-		    	console.log(exampleWBCP.obj[parentIndex].children[i].ex);
-		    	console.log(doc);
 	    	}	
 	    });
 	});
@@ -203,6 +207,7 @@ function findIndex(listOf, key){
 			return d;
 	}
 }
+
 
 // Starts the children funciton to populate Component List Field and Image Grid
 function updateWithChildren(listOf, key){
@@ -224,20 +229,23 @@ function children(listOf){
 	// Creates, updates and styles each link or node in child list from parent item
 	for (index = 0; index < listOf.length; index++) {
 
+		// Creates List Items
 		var li = document.createElement("li");
 		var liStr = "wctbLink " + "parentIs" + listOf[index].parent;
+
 		li.setAttribute("class", liStr);
 		li.innerHTML = listOf[index].title;
 
+		// Creates Image Grid Items
 		var col = document.createElement("div");
+		var img = document.createElement("img");
+
 		colStr = "column igI " + "parentIs" + listOf[index].parent;
 		col.setAttribute("class", colStr);
-
-		var img = document.createElement("img");
 		img.src = listOf[index].image;
 
+		// Adds content to respective containers on page
 		col.appendChild(img);
-
 		document.getElementById("txtBank").appendChild(li);
 		document.getElementById("imgGrid").appendChild(col);
 	}
