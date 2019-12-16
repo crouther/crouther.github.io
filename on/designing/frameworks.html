@@ -28,7 +28,7 @@
 	<meta name="description" content="Custom web templates and content">
 	<meta name="keywords" content="web design, web development, custom, templates, custom design, html, css, javascript, live links, demo, prototype, portfolio">
 	<meta name="robots" content="index,follow">
-	<meta name="DC.title" content="Custom Templates">
+	<meta name="DC.title" content="Web Components">
 	<meta name="author" content="Myles Crouther">
 
 	<link rel="icon" href="../../img/icon/logoSQ.png">
@@ -47,13 +47,11 @@
 		<div id="componentList">
 
 			<!-- Navigation Bar for Searching, Sorting & View Style Preferences -->
-			<div class="row" id="navi" style="text-align: center;" onclick="choiceListener();">
-
+			<div class="row" id="navi" style="text-align: center;">
 				<div class="column"><p><a onclick="toggleSearchBar();">Search</a></p></div>
 				<div class="column"><p href="" onclick="startSort();">Sort</p></div>
-				<div class="column"><p><a href="#text" onclick="addContent(); hideTile(); showBank();">Text</a></p></div>
-				<div class="column"><p><a href="#tile" onclick="addContent(); hideBank(); showTile();"> Tiles</a></p></div>
-
+				<div class="column"><p><a href="#text" onclick="addContent(); hideTile(); showBank(); choiceListener();">Text</a></p></div>
+				<div class="column"><p><a href="#tile" onclick="addContent(); hideBank(); showTile(); choiceListener();"> Tiles</a></p></div>
 			</div>
 
 			<div id="searchBar" style="display: none;"><p style="text-align: center; margin: 0;"><input type="text" id="searchField" onkeyup="search()" placeholder="Type: ..."></p></div>

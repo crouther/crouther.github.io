@@ -16,6 +16,30 @@ var parentName = "";
 var parentIndex = 0;
 
 
+/* Page Content Population Functions and Support functions */
+
+// Makes Full Roster of all Framework Items
+function Roster(listOf){
+
+	// The Return array created listOf parameter
+	var arr = [];
+
+	// Loop through main items
+	for ( e = 0; e < listOf.obj.length; e++ ) {
+		arr.push(listOf.obj[e]);
+
+		// Loop through any child items
+		if ( listOf.obj[e]['children'] != null ) {
+
+			for ( f = 0; f < listOf.obj[e]['children'].length; f++ ) {
+				arr.push(listOf.obj[e]['children'][f])
+			} 
+		}
+	}
+	return arr;
+}
+
+
 // Toggle Text or Tile View of Web Component Object Selction in componentList 
 function hideBank(){document.getElementById("txtBank").style.display = "none";}
 function showBank(){document.getElementById("txtBank").style.display = "block";}
@@ -56,6 +80,51 @@ function populateComponentList(listOf){
 
 }(populateComponentList(exampleWBCP)) // onLoad: Populate Component List Field
 
+// Starts the children funciton to populate Component List Field and Image Grid
+function updateWithChildren(listOf, key){
+	parentName = listOf.obj[key].title;
+
+	// Confirms child nodes exist and populates list with them
+	if (listOf.obj[key]['children'].length > 0) 
+		children(listOf.obj[key]['children']);
+
+	else{console.log(parentName + " has no children"); parent =  true;}
+}
+
+// Populates Component List Field and Image Grid with children
+function children(listOf){
+
+	removeContent();
+	document.getElementById("objTitle").innerHTML = "<span class=\"flashingTxt\"><</span>  Children / Support: ";
+
+	// Creates, updates and styles each link or node in child list from parent item
+	for (index = 0; index < listOf.length; index++) {
+
+		// Creates List Items
+		var li = document.createElement("li");
+		var liStr = "wctbLink " + "parentIs" + listOf[index].parent;
+
+		li.setAttribute("class", liStr);
+		li.innerHTML = listOf[index].title;
+
+		// Creates Image Grid Items
+		var col = document.createElement("div");
+		var img = document.createElement("img");
+
+		colStr = "column igI " + "parentIs" + listOf[index].parent;
+		col.setAttribute("class", colStr);
+		img.src = listOf[index].image;
+
+		// Adds content to respective containers on page
+		col.appendChild(img);
+		document.getElementById("txtBank").appendChild(li);
+		document.getElementById("imgGrid").appendChild(col);
+	}
+
+	parent = false;
+	choiceListener();
+}
+
 // Initiates populateComponentList() if no content is available 
 function addContent(){
 	if(!document.getElementById("imgGrid").hasChildNodes()){
@@ -75,6 +144,13 @@ function removeContent(){
 	parent = true;
 }
 
+
+
+/* Sort:
+* Sort and Sort Support Functions
+*
+* Multi fuction call to populate children, return array list of items 
+* and choose item order based on sort key phrase */
 
 // Changes Component List View to Sort Options
 function startSort(){
@@ -96,21 +172,44 @@ function startSort(){
 
 		document.getElementById("txtBank").appendChild(sortLi);
 	}
+	sort();
+}
+
+// Update Page based on user sort preferences
+function sort(){
+
+	// Specific to Sort Text in Component List
+	let sortList = document.querySelectorAll("li.sort");
+
+	// Event Listener for each sort choice to populate viewer with content
+	sortList.forEach(function(elem) {
+	    elem.addEventListener("click", function() {
+	    	children(bubbleSort(Roster(exampleWBCP), elem.innerHTML.toLowerCase())); 
+	    });
+	});
+}
+
+// Organizes list based on sort variables (line, title, etc.)
+function bubbleSort(arr, category){
+	var list = arr;
+
+	for (g = 0; g < list.length; g++){
+		for (h = 0; h < list.length - g - 1; h++){
+
+			if (list[h][category] > list[h + 1][category]){
+
+				var temp = list[h]; 
+                list[h] = list[h + 1]; 
+                arr[h + 1] = temp; 
+			}
+		}
+	}
+	return list;
 }
 
 
-// Toggle Search Field Visibility
-function toggleSearchBar(){
-	if (document.getElementById("searchBar").style.display == "none") 
-		showSearchBar();
-	else { hideSearchBar(); }
-}
-
-function hideSearchBar(){
-	document.getElementById("searchBar").style.display = "none"; }
-
-function showSearchBar(){
-	document.getElementById("searchBar").style.display = "block"; }
+/* Search ::
+*  A collection of sequential search and support functions */
 
 // Find keywords or user input that matches component briefs
 function search(){
@@ -133,16 +232,28 @@ function search(){
 
 		if (liTxt.toUpperCase().indexOf(keyword) > -1){ 
 			liList[i].style.display = ""; 
-			imgList[i].style.display = ""; 
+			if (imgList[i] != null) imgList[i].style.display = ""; 
 		}
 
     	else { 
     		liList[i].style.display = "none"; 
-    		imgList[i].style.display = "none"; 
+    		if (imgList[i] != null) imgList[i].style.display = "none"; 
     	}
     }
 }
 
+// Toggle Search Field Visibility with Hide / Show Search Bar functions
+function toggleSearchBar(){
+	if (document.getElementById("searchBar").style.display == "none") 
+		showSearchBar();
+	else { hideSearchBar(); }
+}
+
+function hideSearchBar(){
+	document.getElementById("searchBar").style.display = "none"; }
+
+function showSearchBar(){
+	document.getElementById("searchBar").style.display = "block"; }
 
 // Event Listener for Component Selected and populates viewer with example
 function choiceListener(){
@@ -198,7 +309,7 @@ function choiceListener(){
 } (choiceListener()) // onLoad: Listen for user specific choice
 
 //Get the Example text of a dataset item given array and item index
-function getEx(listOf, index){return listOf.obj[index].ex;}
+function getEx(listOf, index) { return listOf.obj[index].ex; }
 
 //Get the item index given the name of the dataset and keyword / item title
 function findIndex(listOf, key){
@@ -206,50 +317,4 @@ function findIndex(listOf, key){
 		if (listOf.obj[d].title.toUpperCase().indexOf(key.toUpperCase()) > -1)
 			return d;
 	}
-}
-
-
-// Starts the children funciton to populate Component List Field and Image Grid
-function updateWithChildren(listOf, key){
-	parentName = listOf.obj[key].title;
-
-	// Confirms child nodes exist and populates list with them
-	if (listOf.obj[key]['children'].length > 0) 
-		children(listOf.obj[key]['children']);
-
-	else{console.log(parentName + " has no children"); parent =  true;}
-}
-
-// Populates Component List Field and Image Grid with children
-function children(listOf){
-
-	removeContent();
-	document.getElementById("objTitle").innerHTML = "<span class=\"flashingTxt\"><</span>  Children / Support: ";
-
-	// Creates, updates and styles each link or node in child list from parent item
-	for (index = 0; index < listOf.length; index++) {
-
-		// Creates List Items
-		var li = document.createElement("li");
-		var liStr = "wctbLink " + "parentIs" + listOf[index].parent;
-
-		li.setAttribute("class", liStr);
-		li.innerHTML = listOf[index].title;
-
-		// Creates Image Grid Items
-		var col = document.createElement("div");
-		var img = document.createElement("img");
-
-		colStr = "column igI " + "parentIs" + listOf[index].parent;
-		col.setAttribute("class", colStr);
-		img.src = listOf[index].image;
-
-		// Adds content to respective containers on page
-		col.appendChild(img);
-		document.getElementById("txtBank").appendChild(li);
-		document.getElementById("imgGrid").appendChild(col);
-	}
-
-	parent = false;
-	choiceListener();
 }
