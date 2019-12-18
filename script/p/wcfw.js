@@ -208,6 +208,7 @@ function bubbleSort(arr, category){
 }
 
 
+
 /* Search ::
 *  A collection of sequential search and support functions */
 
@@ -255,7 +256,12 @@ function hideSearchBar(){
 function showSearchBar(){
 	document.getElementById("searchBar").style.display = "block"; }
 
-// Event Listener for Component Selected and populates viewer with example
+
+
+/* Activity listerner ::
+*  A collection of event listeners and support functions */
+
+// Component List Selection Listener; populates viewer with example
 function choiceListener(){
 
 	//Initiate iFrame Content
@@ -281,6 +287,30 @@ function choiceListener(){
 	// Event Listener for each text brief to populate viewer with example
 	txtBankList.forEach(function(elem) {
 	    elem.addEventListener("click", function() {
+
+	    	// Resets Parent Boolen to based off selected list item
+	    	try{
+		    	if (exampleWBCP.obj[findIndex(exampleWBCP, elem.innerHTML)].title.toUpperCase() == 
+		    		exampleWBCP.obj[findIndex(exampleWBCP, elem.innerHTML)].parent.toUpperCase() )
+		    		parent = true;
+		    }
+		    catch(error){
+
+		    	parent = false;
+		    	var list = Roster(exampleWBCP);
+
+		    	// Finds Selected Item from Full Roster
+		    	for(j = 0; j < list.length; j++){
+
+		    		// Compares roster and item titles, retrieves parent name
+		    		if (list[j].title == elem.innerHTML)
+		    			parentName = list[j].parent;
+		    	}
+
+		    	// Finds Parent of Selected Item or set's to 0
+		    	try{ parentIndex = findIndex(exampleWBCP, parentName); }
+		    	catch(error){ parentIndex = 0;}
+		    }
 
 	    	let index;
 	    	if (parent) {

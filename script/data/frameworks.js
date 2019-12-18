@@ -76,7 +76,7 @@ var exampleWBCP = {
 		{
 			"title": "Footer",
 			"type": "Web Object",
-			"parent": "footer",
+			"parent": "Footer",
 			"brief": "Footer: Site navigational tool",
 			"image": "../../img/icon/cypher.png",
 			"line": "7",
@@ -88,7 +88,7 @@ var exampleWBCP = {
 		{
 			"title": "Text",
 			"type": "Text",
-			"parent": "text",
+			"parent": "Text",
 			"brief": "Text: Text formatting, structure and responsive properties for various layouts",
 			"image": "../../img/icon/btc.png",
 			"line": "8",
@@ -100,7 +100,7 @@ var exampleWBCP = {
 		{
 			"title": "Button",
 			"type": "Web Object",
-			"parent": "button",
+			"parent": "Button",
 			"brief": "Button: Standard single click, single function button",
 			"image": "../../img/icon/ducati.png",
 			"line": "56",
