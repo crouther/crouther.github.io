@@ -277,7 +277,7 @@ function choiceListener(){
 	imgGridList.forEach(function(elem) {
 	    elem.addEventListener("click", function() {
 
-	    	doc.body.innerHTML ="<div class=\"row\"><div class=\"column\">" + elem.innerHTML + "</div></div>";
+	    	doc.body.innerHTML ="<style type=\"text/css\">#vTarget > img{width: 100%; padding: 5%; height: auto;}</style><div id=\"vTarget\">" + elem.innerHTML + "</div>";
 	    });
 	});
 
