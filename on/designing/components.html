@@ -68,7 +68,7 @@
 		</div>
 	</div> <!-- End of Content -->
 
-	<div class="fw-box" style="position: absolute; bottom: 0;">
+	<div id = "footer" class="fw-box" style="position: absolute; bottom: 0;">
 
 		<!-- Footer: Description on the right -->
 		<div id="footerRight" class="dub-box" style="background-color: #FFF5; padding-top: 0px;">	
@@ -85,6 +85,10 @@
 			</p>
 		</div>
 	</div> <!-- End of Footer -->
+
+	<div id="footer2" class="fw-box" style="position: absolute; bottom: 0; height: 10vh; text-align: center; width: 100vh;">
+		<p class="button" onclick="Toggle();" style="text-align: center; z-index: 300;">Change View</p>
+	</div>
 
 </body>
 
@@ -153,8 +157,29 @@
   		height: 250px;
 	}
 	#imgGrid{overflow: scroll;}
+
+
+	@media only screen and (orientation:portrait) {
+
+		#viewer{width: 90vw; height: 80vh; z-index: 100;}
+		#txtBank{ max-height: 53vh; }
+		#componentList{width: 90vw; height: 70vh;  z-index: 200;}
+		#footer{display: none;}
+		#footer2{display: block;}
+
+	}
 </style>
 
+
+<script type="text/javascript">
+	(function(){
+		if(window.innerHeight > window.innerWidth){
+			document.getElementById("footer2").style.display = "";}
+		else{document.getElementById("footer2").style.display = "none";}
+
+    	setTimeout(arguments.callee, 500);
+    })();
+</script>
 
 <script src="../../script/data/frameworks.js"></script>
 <script src="../../script/p/wcfw.js"></script>

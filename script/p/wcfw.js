@@ -348,3 +348,23 @@ function findIndex(listOf, key){
 			return d;
 	}
 }
+
+
+//Mobile Content Switcher
+function Toggle(){
+
+	//Evaluates Top Container
+	if (document.getElementById("viewer").style.zIndex 
+		> document.getElementById("componentList").style.zIndex) {
+
+		//Swaps Layers
+		document.getElementById("viewer").style.zIndex = "0";
+		document.getElementById("componentList").style.zIndex = "100";
+	}
+
+	else{
+		//Inverted Layer Swaps
+		document.getElementById("viewer").style.zIndex = "100";
+		document.getElementById("componentList").style.zIndex = "0";
+	}
+}
