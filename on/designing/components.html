@@ -159,7 +159,7 @@
 	#imgGrid{overflow: scroll;}
 
 
-	@media only screen and (orientation:portrait) {
+	/**@media only screen and (orientation:portrait) {
 
 		#viewer{width: 90vw; height: 80vh; z-index: 100;}
 		#txtBank{ max-height: 53vh; }
@@ -168,13 +168,16 @@
 		#footer2{display: block;}
 		body{max-height: 110vh;}
 
-	}
+	}**/
 </style>
 
 
 <script type="text/javascript">
-	if(window.innerHeight > window.innerWidth){alert("Work in Progress - Avoid Portrait");}
+	
 	(function(){
+		if(window.innerHeight > window.innerWidth){alert("Avoid Portrait - Unlike the framework the browser is a work in progress");}
+
+
 		if(window.innerHeight > window.innerWidth){
 			document.getElementById("footer2").style.display = "";}
 		else{document.getElementById("footer2").style.display = "none";}
