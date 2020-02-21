@@ -229,7 +229,7 @@ var json = {"items": [
 
   {
     "header": "Book",
-    "description": "Take A Trip, a pending novel by the works of Myles Crouther",
+    "description": "Living Vicariously, a pending novel by the works of Myles Crouther",
     "color": "tan",
     "img":"../img/bkg/book169.jpg",
     "url":"https://crouther.github.io/on/book"
