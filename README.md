@@ -273,5 +273,3 @@ Topics:
 <https://arxiv.org/pdf/1806.00923.pdf>  
 <http://omdbapi.com/>  
 <http://github.com/joeldevlearning/javascript-2>
-
-https://drive.google.com/file/d/13E6E_XcRxqVCNYCZUPvuUZ6xk22gPGGt/view?usp=sharing
