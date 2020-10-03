@@ -39,12 +39,12 @@ var motovTimeline = {
 		{
 			"date" : "Spring 2020",
 			"brief" : "<a href=\"https://myles.works/on/it\"><img style =\"width: 100%; height: auto; padding: 5%;\" src=\"https://myles.works/img/road.svg\"></a> Grand Release",
-			"link" : "https://myles.works/on/it",
+			"link" : "https://myles.works/on/it/index",
 		},
 		{
 			"date" : "Summer 2020",
 			"brief" : "Post Launch Update (AI Tiers of Influence): <br><ul><li>Core mvp (w/ engine stethoscope)</li><li>Moto cluster removal kit</li><li>Auto.motov (w/ obd reader)</li><li>Awareness System</li><li>Assisted driver</li><li>Electric Motorcycle</li></ul>",
-			"link" : "https://myles.works/on/it",
+			"link" : "https://myles.works/on/it/index",
 		}
 	]
 }
