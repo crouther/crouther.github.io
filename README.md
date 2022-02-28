@@ -19,7 +19,7 @@ Commits  | Repos (Evaluated) | Lines of code
 <br/>
 
 #### Custom Template Styleguides  
-*(Divvied among multiple, customized, base templates; such as AdvantFlat, StrictlyBusiness, and FirstLanding)*   
+*(Divvied among multiple, customized, base templates; such as AvantFlat, StrictlyBusiness, and FirstLanding)*   
 
 HTML  | CSS | JavaScript
 -------- | ----------------- | -------------
