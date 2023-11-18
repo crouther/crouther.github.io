@@ -5,7 +5,7 @@
 *	various page specific web components. Review frameworks.html
 *
 *	Author: @2MylesAway
-*	Portfolio: https://myles.works
+*	Portfolio: https://crouther.github.io
 **/
 
 
@@ -267,7 +267,7 @@ function choiceListener(){
 	//Initiate iFrame Content
 	var doc = document.getElementById("vTarget").contentWindow.document;
 	doc.open();
-	doc.write('<!DOCTYPE html><head><link rel="stylesheet" type="text/css" href="https://myles.works/css/AvantFlat.css"></head><body></body></html>');
+	doc.write('<!DOCTYPE html><head><link rel="stylesheet" type="text/css" href="https://crouther.github.io/css/AvantFlat.css"></head><body></body></html>');
 	doc.close();
 
 	// Specific to text Component List

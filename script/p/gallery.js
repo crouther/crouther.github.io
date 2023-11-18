@@ -4,7 +4,7 @@
 *	data set stored in img.js
 *
 *	Author: @2MylesAway
-*	Portfolio: https://myles.works
+*	Portfolio: https://crouther.github.io
 **/
 
 

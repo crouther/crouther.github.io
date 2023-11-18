@@ -5,7 +5,7 @@
 *	a vertically expanding timeline.
 *
 *	Author: @2MylesAway
-*	Portfolio: https://myles.works
+*	Portfolio: https://crouther.github.io
 **/
 
 function Timeline(event, target){
