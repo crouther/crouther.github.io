@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Scripts (External and Internal)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-114285924-1');
+    </script>
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/anim.css">
+    <link rel="stylesheet" type="text/css" href= "../../css/frames/layout.css">
+    <link rel="stylesheet" type="text/css" href="../../css/frames/post.css">
+    <link rel="stylesheet" type="text/css" href="../../css/frames/flexbox.css">
+
+
+   
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="MKC is an unregistered trademark of MKC. A Crouther Company.">
+    <meta name="description" content="Revature - Tech Talent Enablement Compnay">
+    <meta name="keywords" content="myles crouther, crouther, myles, revature, careers, innovation, technology, it, consultant, systems integrators, training">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="Revature">
+    <meta name="author" content="Myles Crouther">
+
+    <link rel="icon" href="../../img/icon/revature.jpg">
+    <title>Myles at Revature</title>
+</head>
+
+<style type="text/css">a:hover{color: tomato;} .bMain{max-width: 38rem;padding: 2rem;margin: auto;}</style>
+
+<body>
+
+    <div class="mw-box white" id="mobileName">
+        <div id ="name" style="padding: 5%;">
+        <h1 style="margin-bottom:0px;"><a href="../on/software.html"><span class="flashingTxt"><</span> Revature</a></h1>
+        <h4  style="margin:.5em; margin-left: 0px;"><i>Notes Excerpt</i></h4>
+
+        <!-- Places Image Galleries on Descriptions -->
+        <div class="fb2c">
+            <div class="fbr ord3">
+                <p style="text-align: center; font-size: 1.2em;">
+                <img style="max-width: 100%;" alt="../img/bkg/revatureCover.png" src="../../img/bkg/revatureCover.png">
+                <br><br>The world's leading tech talent enablement company.</p>
+            </div>
+        </div>
+
+        <p class="bMain" id="#revText"><pre>
+            OOP SECTION
+
+            Pillars of OOP - Inheritance, Polymorphism, Encapsulation, Abstraction
+            
+            Inheritance - is-a relationship. Can not inherit more than one. Hierarchy structure.
+            
+            Interfaces can only have method signatures and data members. Interfaces are implemented and the child or inherited class must define constructor and methods.
+            
+            Example:
+            
+            public class square implements rectangle {} 
+            or
+            public interface square extends rectangle {} 
+            
+            Polymorphism - Overloading methods, declaring multiple method declarations with a variety of input parameters
+            Polymorphism - Overriding methods, allowing child classes to rewrite method functionality of a parent class
+            
+            
+            Encapsulation - Data hiding, private methods, private data members, read only (only getter methods) write only classes (only setter methods)
+            Java Access Modifiers - private (class), default (typically package), protected (by sub class or package), public (any);
+            
+            Abstraction - a programming technique with the intent of only showing essential functionality or details. 
+            
+            Abstract classes must be extended, can’t be instantiated, and need methods implemented. Abstract classes can have constructors, methods, and data members.
+            
+            Objects - entities with States and Behaviors.
+            
+            Constructors - named after class, cannot be final, abstract, synchronized or, static, constructor does not return a value.
+            
+            Types of constructors - default, no-argument, parameterized
+            
+            
+            Example:
+            
+            public class child extends parent {} 
+            
+            
+            
+            Java
+            Example:
+            
+            public class Test {
+               public static void main(String args[]) {
+                    System.out.print(“Hello World”);
+            }
+            }
+            
+            
+            Condition Statements:
+            Enhanced for Loop Example
+            
+            for(declaration : expression) {
+               // Statements
+            }
+            
+            
+            int [] numbers = {10, 20, 30, 40, 50};
+            for(int x : numbers ) {
+                 System.out.print( x );
+                 System.out.print(",");
+            }
+            
+            Exceptions:
+            java.lang.Object.Throwable.Exceptions
+            
+            Checked Exceptions are thrown at compile
+            Unchecked Exceptions occur at runtime or are not checked by the compiler.
+            
+            Types:
+            Runtime Exceptions
+            Other Exceptions
+            
+            Handle Exceptions with Try, Catch statements. Cause exceptions with the Throw keyword. 
+            Finally Block of Try, Catch Statements always executes regardless of any exceptions.
+            
+            Keywords:
+            this - class specific
+            super - parent reference
+            Final - can not be overridden or changed.
+            
+            
+            
+            Data Structures (available in java.util):
+            Collection
+            Queue
+            Set (can not have duplicate items)
+            Array
+            Array (only primitive data types)
+            ArrayList (can contain objects)
+            Map
+            Map (stores keys to data locations)
+            
+            Database/SQL
+            Acronym:
+            
+            SQL - Structured Query Language
+            RDMS - Relational Database Management System
+            
+            SQL Sub-Languages: 
+            
+            DDL - Data Definition Language - CREATE, ALTER, DROP
+            DML - Data Manipulation Language - SELECT, INSERT, UPDATE, DELETE
+            DCL - Data Control Language - GRANT, REVOKE
+            TCL - Transaction Control Language - SAVEPOINT, ROLLBACK, COMMIT 
+            
+            
+            Vocabulary:
+            
+            Primary Key - a field or entry on a table that must contain an unique identifying value. Primary Key can not be null.
+            
+            Foreign Key - the linking entry on a table to an external database or table. 
+            Foreign Keys enable databases to link one table inside another table if the stored values match the internal field’s primary key type.
+            
+            
+            Example Queries:
+            
+            SELECT column1, column2, columnN FROM table_name;
+            SELECT * FROM table_name;
+            
+            WHERE:
+            SELECT column1, column2, columnN
+            FROM table_name
+            WHERE [condition]
+            
+            SELECT CUSTOMERS.AGE from CUSTOMERS where AGE > 20; // DB name is prefix before column
+            
+            INSERT:
+            INSERT INTO TABLE_NAME (column1, column2, column3,...columnN) 
+            VALUES (value1, value2, value3,...valueN);
+            
+            INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
+            VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
+            
+            JOIN:
+            SELECT ID, NAME, AGE, AMOUNT
+              FROM CUSTOMERS INNER JOIN ORDERS
+              ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID
+            </pre>
+        </p>
+
+        <!-- City Image Galleries -->
+        <div class="fb4c">
+            <div class="embeddedItem">
+                <a href ="https://github.com/crouther/Crouther_Brock_Client-T_p1" target="_blank">
+                <img class="MKCBars loadingAnimation" src="../../img/icon/githubHD.png">
+                <h5 style="text-align: center;">GitHub</h5></a>
+            </div>
+
+            <div class="embeddedItem">
+                <a href="#cogn">
+                <img class="MKCBars loadingAnimation" src="../../img/icon/cognizant.png">
+                <h5 style="text-align: center;">Cognizant</h5></a>
+            </div>
+
+            <div class="embeddedItem">
+                <a href="../../at/revature.html">
+                <img class="MKCBars loadingAnimation" src="../../img/icon/rev.jpg">
+                <h5 style="text-align: center;">Revature</h5></a>
+            </div>
+
+            <div class="embeddedItem">
+                <a href="../on/software.html" target="_blank">
+                <img class="MKCBars loadingAnimation" src="../../img/stock/more.png">
+                <h5 style="text-align: center;">More</h5></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
