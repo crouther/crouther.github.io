@@ -23,8 +23,6 @@
     <link rel="stylesheet" type="text/css" href="../../css/frames/flexbox.css">
 
 
-   
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
@@ -39,7 +37,7 @@
     <meta name="author" content="Myles Crouther">
 
     <link rel="icon" href="../../img/icon/revature.jpg">
-    <title>Myles at Revature</title>
+    <title>Revature Notes</title>
 </head>
 
 <style type="text/css">a:hover{color: tomato;} .bMain{max-width: 38rem;padding: 2rem;margin: auto;}</style>
@@ -60,146 +58,107 @@
             </div>
         </div>
 
-        <p class="bMain" id="#revText"><pre>
-            OOP SECTION
+        <div class="bMain" id="#revText">
+            <h2>OOP SECTION</h2>
+            <p><br>Pillars of OOP - <b>Inheritance, Polymorphism, Encapsulation, Abstraction</b><br><br>            
+            <b>Inheritance</b> - is-a relationship. Can not inherit more than one. Hierarchy structure.<br><br>            
+            Interfaces can only have method signatures and data members. Interfaces are implemented and the child or inherited class must define constructor and methods.<br><br>
+            &emsp; Example:<br>            
+            &emsp; public class square implements rectangle {} <br>&emsp; or<br>
+            &emsp; public interface square extends rectangle {} <br><br><br>          
+            <b>Polymorphism</b> - Overloading methods, declaring multiple method declarations with a variety of input parameters<br>
+            Polymorphism - Overriding methods, allowing child classes to rewrite method functionality of a parent class<br><br>
+            <b>Encapsulation</b> - Data hiding, private methods, private data members, read only (only getter methods) write only classes (only setter methods)<br>
+            Java Access Modifiers - private (class), default (typically package), protected (by sub class or package), public (any);<br><br>
+            <b>Abstraction</b> - a programming technique with the intent of only showing essential functionality or details.<br><br>            
+            Abstract classes must be extended, can’t be instantiated, and need methods implemented. Abstract classes can have constructors, methods, and data members.<br><br>
+            &emsp; Example:<br>            
+            &emsp; public class child extends parent {} <br><br><br><br> 
+            Objects - entities with States and Behaviors.<br><br>         
+            Constructors - named after class, cannot be final, abstract, synchronized or, static, constructor does not return a value.<br><br>            
+            Types of constructors - default, no-argument, parameterized<br><br><br></p>
+            
 
-            Pillars of OOP - Inheritance, Polymorphism, Encapsulation, Abstraction
+            <h2>Java</h2>
+            <p><br><b>Example:</b><br><br>
+            public class Test {<br>
+                &emsp; public static void main(String args[]) {<br>
+                &emsp; &emsp; System.out.print(“Hello World”);<br>
+                &emsp; }<br>
+            }<br><br>
+            <b>Condition Statements:</b><br><br>
+            Enhanced for Loop Example<br><br>
+            for(declaration : expression) {<br>
+                &emsp;<span style="color: tomato;">// Statements</span><br>
+            }<br><br>
+            int [] numbers = {10, 20, 30, 40, 50};<br><br>
+            for(int x : numbers ) {<br>
+                &emsp; System.out.print( x );<br>
+                &emsp; System.out.print(",");<br>
+            }<br><br><br>
             
-            Inheritance - is-a relationship. Can not inherit more than one. Hierarchy structure.
+            <b>Exceptions:</b><br><br>
+            java.lang.Object.Throwable.Exceptions<br><br>
+            Checked Exceptions are thrown at compile<br>
+            Unchecked Exceptions occur at runtime or are not checked by the compiler.<br><br>
+            Types:<br>
+            Runtime Exceptions<br>
+            Other Exceptions<br><br>
+            Handle Exceptions with Try, Catch statements. Cause exceptions with the Throw keyword. <br>
+            Finally Block of Try, Catch Statements always executes regardless of any exceptions.<br><br><br>
             
-            Interfaces can only have method signatures and data members. Interfaces are implemented and the child or inherited class must define constructor and methods.
+            <b>Keywords:</b><br>
+            this - class specific<br>
+            super - parent reference<br>
+            Final - can not be overridden or changed.<br><br><br>
             
-            Example:
-            
-            public class square implements rectangle {} 
-            or
-            public interface square extends rectangle {} 
-            
-            Polymorphism - Overloading methods, declaring multiple method declarations with a variety of input parameters
-            Polymorphism - Overriding methods, allowing child classes to rewrite method functionality of a parent class
-            
-            
-            Encapsulation - Data hiding, private methods, private data members, read only (only getter methods) write only classes (only setter methods)
-            Java Access Modifiers - private (class), default (typically package), protected (by sub class or package), public (any);
-            
-            Abstraction - a programming technique with the intent of only showing essential functionality or details. 
-            
-            Abstract classes must be extended, can’t be instantiated, and need methods implemented. Abstract classes can have constructors, methods, and data members.
-            
-            Objects - entities with States and Behaviors.
-            
-            Constructors - named after class, cannot be final, abstract, synchronized or, static, constructor does not return a value.
-            
-            Types of constructors - default, no-argument, parameterized
-            
-            
-            Example:
-            
-            public class child extends parent {} 
-            
-            
-            
-            Java
-            Example:
-            
-            public class Test {
-               public static void main(String args[]) {
-                    System.out.print(“Hello World”);
-            }
-            }
-            
-            
-            Condition Statements:
-            Enhanced for Loop Example
-            
-            for(declaration : expression) {
-               // Statements
-            }
-            
-            
-            int [] numbers = {10, 20, 30, 40, 50};
-            for(int x : numbers ) {
-                 System.out.print( x );
-                 System.out.print(",");
-            }
-            
-            Exceptions:
-            java.lang.Object.Throwable.Exceptions
-            
-            Checked Exceptions are thrown at compile
-            Unchecked Exceptions occur at runtime or are not checked by the compiler.
-            
-            Types:
-            Runtime Exceptions
-            Other Exceptions
-            
-            Handle Exceptions with Try, Catch statements. Cause exceptions with the Throw keyword. 
-            Finally Block of Try, Catch Statements always executes regardless of any exceptions.
-            
-            Keywords:
-            this - class specific
-            super - parent reference
-            Final - can not be overridden or changed.
-            
-            
-            
-            Data Structures (available in java.util):
-            Collection
-            Queue
-            Set (can not have duplicate items)
-            Array
-            Array (only primitive data types)
-            ArrayList (can contain objects)
-            Map
-            Map (stores keys to data locations)
-            
-            Database/SQL
-            Acronym:
-            
-            SQL - Structured Query Language
-            RDMS - Relational Database Management System
-            
-            SQL Sub-Languages: 
-            
-            DDL - Data Definition Language - CREATE, ALTER, DROP
-            DML - Data Manipulation Language - SELECT, INSERT, UPDATE, DELETE
-            DCL - Data Control Language - GRANT, REVOKE
-            TCL - Transaction Control Language - SAVEPOINT, ROLLBACK, COMMIT 
-            
-            
-            Vocabulary:
-            
-            Primary Key - a field or entry on a table that must contain an unique identifying value. Primary Key can not be null.
-            
-            Foreign Key - the linking entry on a table to an external database or table. 
-            Foreign Keys enable databases to link one table inside another table if the stored values match the internal field’s primary key type.
-            
-            
-            Example Queries:
-            
-            SELECT column1, column2, columnN FROM table_name;
-            SELECT * FROM table_name;
-            
-            WHERE:
-            SELECT column1, column2, columnN
-            FROM table_name
-            WHERE [condition]
-            
-            SELECT CUSTOMERS.AGE from CUSTOMERS where AGE > 20; // DB name is prefix before column
-            
-            INSERT:
-            INSERT INTO TABLE_NAME (column1, column2, column3,...columnN) 
-            VALUES (value1, value2, value3,...valueN);
-            
-            INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY)
-            VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
-            
-            JOIN:
-            SELECT ID, NAME, AGE, AMOUNT
-              FROM CUSTOMERS INNER JOIN ORDERS
-              ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID
-            </pre>
-        </p>
+            <b>Data Structures (available in java.util):</b><br><br>
+            Collection<br>
+            - Queue<br>
+            - Set (can not have duplicate items)<br><br>
+            Array<br>
+            - Array (only primitive data types)<br>
+            - ArrayList (can contain objects)<br><br>
+            Map<br>
+            - Map (stores keys to data locations)<br><br><br></p>
+
+            <h2>Database/SQL</h2>
+            <p><br><b>Acronyms:</b><br><br>
+            SQL - Structured Query Language<br>
+            RDMS - Relational Database Management System<br><br>
+            <b>SQL Sub-Languages:</b> <br>
+            DDL - Data Definition Language - CREATE, ALTER, DROP <br>
+            DML - Data Manipulation Language - SELECT, INSERT, UPDATE, DELETE <br>
+            DCL - Data Control Language - GRANT, REVOKE <br>
+            TCL - Transaction Control Language - SAVEPOINT, ROLLBACK, COMMIT <br><br>
+            <b>Vocabulary:</b><br>
+            Primary Key - a field or entry on a table that must contain an unique identifying value. Primary Key can not be null.<br><br>
+            Foreign Key - the linking entry on a table to an external database or table.  <br>
+            Foreign Keys enable databases to link one table inside another table if the stored values match the internal field’s primary key type. <br><br>
+            <b>Example Queries:</b> <br><br>
+            SELECT column1, column2, columnN FROM table_name; <br>
+            SELECT * FROM table_name; <br><br>
+            <b>WHERE:</b> <br> 
+            SELECT column1, column2, columnN <br>
+            FROM table_name <br>
+            WHERE [condition] <br>
+            SELECT CUSTOMERS.AGE from CUSTOMERS where AGE > 20; // DB name is prefix before column <br><br>
+            <b>INSERT:</b> <br>
+            INSERT INTO TABLE_NAME (column1, column2, column3,...columnN)  <br>
+            VALUES (value1, value2, value3,...valueN); <br>
+            INSERT INTO CUSTOMERS (ID,NAME,AGE,ADDRESS,SALARY) <br>
+            VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 ); <br><br>
+            <b>JOIN:</b> <br>
+            SELECT ID, NAME, AGE, AMOUNT <br>
+            &emsp; FROM CUSTOMERS INNER JOIN ORDERS <br>
+            &emsp; ON CUSTOMERS.ID = ORDERS.CUSTOMER_ID <br><br></p>
+            <div><img style="width: 100%;" src="../../img/stock/joinVenn.png"/>
+                <h2><br>Software Development Life Cycle (SDLC)</h2><p>             
+                    The Phases of SDLC - <br>
+                    Investigation >> System Analysis >> Design >> <br>
+                    Testing >> Operations & Maintenance<br><br><br><br>
+            </p></div>
+        </div>
 
         <!-- City Image Galleries -->
         <div class="fb4c">
