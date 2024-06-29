@@ -1,0 +1,59 @@
+*{font-family: monospace;}
+a{text-decoration: none; color: black;}
+
+.bMain{
+    max-width: 48rem;
+    padding: 2rem;
+    margin: auto;
+}
+
+p.fbCaption{
+    text-align: center;
+    font-size: x-large;
+}
+
+p.text{
+    font-size: large;
+}
+
+.fb2c>div.item {
+-webkit-box-flex: 0;
+-webkit-flex: 0 50%;
+-moz-box-flex: 0;
+-ms-flex: 0 50%;
+flex: 0 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logoBox img{
+    max-width: 10rem;
+    height: auto;
+}
+
+.fb2c>div.embeddedItem{
+    margin: auto;
+    
+}
+
+@media only screen and (orientation:portrait) {
+    .brief h1{font-size: 3em;}
+    .brief h2{font-size: 2.8em;} 
+    .brief p{font-size: 2em;} 
+    .brief h6{font-size: 1.5em;}
+    .fb2c>div.item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 100%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 100%;
+            flex: 0 100%;
+    }
+    .fb2c>div.embeddedItem {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 100%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 100%;
+		        flex: 0 100%;
+	}
+}
