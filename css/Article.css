@@ -13,7 +13,7 @@ p.fbCaption{
 }
 
 p.text{
-    font-size: large;
+    font-size: 1.8rem;
 }
 
 .fb2c>div.item {
@@ -56,4 +56,13 @@ align-items: center;
 		    -ms-flex: 0 100%;
 		        flex: 0 100%;
 	}
+
+    .bMain{
+        max-width: 58rem;
+        padding: 2rem;
+        margin: auto;
+    }
+    p.text{
+        font-size: 1.2rem;
+    }
 }
