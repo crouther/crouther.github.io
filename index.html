@@ -1,83 +1,176 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<!-- Scripts -->
-	<script type="text/javascript" src="script/detectmobilebrowser.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
+
 	  gtag('config', 'UA-114285924-1');
 	</script>
 
-	<!-- CSS Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/frames/container.css">
-	<link rel="stylesheet" type="text/css" href="css/elements.css">
-
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./css/AvantFlat.css">
+    <link rel="stylesheet" type="text/css" href="./css/Article.css">
 
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="copyright" content="MKC is an unregistered trademark of MKC. A Crouther Company.">
-	<meta name="description" content="A portfolio site hosting industry experience, research, projects and arts from MKC.">
-	<meta name="keywords" content="myles crouther, crouther, myles">
+	<meta name="description" content="A high perfomance computing cluster side project">
+	<meta name="keywords" content="myles crouther, crouther, myles, computer crouther, myles personal computer, myles crouther workstation, PC, workstation myles">
 	<meta name="robots" content="index,follow">
-	<meta name="DC.title" content="MKC Portfolio">
+	<meta name="DC.title" content="MKC Projects">
 	<meta name="author" content="Myles Crouther">
 
-	<link rel="icon" href="img/icon/logoSQ.png">
-	<title>Myles Crouther</title>
+	<link rel="icon" href="./img/icon/logoSQ.png">
+	<title>Myles' Portfolio</title>
 </head>
 
 <style>
-	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-		/* Target Chrome on iOS */
-		body {height: 100vh;}
-		html {height: 100vh;}
-	}	/* Fixes Incorrect Zoom or Display Resolution Sent to Chrome */
+    .grid{
+        margin: 0px;
+        padding: 0%;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;}
+    .grid>div.tile {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 50%;
+	-moz-box-flex: 0;
+	-ms-flex: 0 50%;
+	flex: 0 50%;}
 </style>
 
-<body style="overflow: hidden;">
-	<div class="wrapper"><iframe src="on/me.html" id ="iframe" name ="contentFrame" frameBorder = "0" scrolling = "yes" style="width: 100%; height: 100%; overflow-x: hidden;"></iframe></div>
+<body>
 
-	<div class="navBox">
-		<a href="https://crouther.github.io"><img src="img/icon/logoSQ.png"></a>
-		<div class="navLinks">
-		<pre><b>
-		<a class="anc colorChange" id="ancAbout" href="on/me.html#about"   	target="contentFrame">About</a>
-		<a class="anc colorChange" id="ancWork"  href="on/me.html#work"		target="contentFrame">Work</a>
-		<a class="anc colorChange" id="ancResa"  href="on/me.html#research" target="contentFrame">Research</a>
-		<a class="anc colorChange" id="ancArt"   href="on/me.html#art" 		target="contentFrame">Art</a>
-		</b></pre>
-		</div>
-	</div>
+<!-- Career Content -->
+<div class="fb2c">
+
+    <!-- About -->
+    <div class="item ord2">
+        <div class="bMain">                      
+        <p style="font-size: x-large;">Myles is an expert hardware and software specialist with years of experience supporting over 1000+ customers, corporate enterprises, and federal agencies with design, software development, and information and communication technology support.<br><br>
+        <a href="mailto:mkcrouther@gmail.com" style="color:black; margin:.5em;">Contact</a> &nbsp;
+        <a href="./Crouther2024.pdf" target ="_blank" style="color:black; margin:.5em;">Resume</a></p>
+        </div>
+    </div>
+
+	<div class="item ord1">	
+        <img id="about" class="MKCBars loadingAnimation" alt="Myles' Picture"
+            style="width: 100%; height: auto;"
+            src="https://lh3.googleusercontent.com/pw/AMWts8DmHJ-xhe46ku6XgyI5zx5ffex3w5Wyw0YzOdywELFNvNJia49EyIWeZ3r4cQc2MHz0VZJ3nrYqQsC2ATjkd6yXrJFO3coHMty4cmgpyYLl7rouYFVwNeKiYpkK_s9xWms2FLOwKsaFRG_tz--zTKYmGw=w794-h795-no?authuser=0">
+    </div>
+
+    <!-- Career -->
+	<div class="item ord3">
+        <img id="projImage" alt="Desk Picture" style="width: 100%; height: auto;"  
+            src="https://lh3.googleusercontent.com/pw/AP1GczMVk4-mq7kvlgUN6i2WUnBNqCdYMJXshmMdp8rT7hhzJ1hfRjJOiAV9XN84goUkPlzkTcrEcnQ796fYBGTp6Gad2q34RBR3klntV50HAjtiOxfciPPjAUr00MWGcty8fsbbsdn2jOQ7R6TycFTtxr8hsA=w1906-h1906-s-no-gm?authuser=0"/>
+    </div>
+
+    <div class="item ord4">
+        <div id="work" class="bMain">
+
+        <h4 style="margin:.5em; margin-left:0em; font-size: xx-large;">
+            <i>Professional Projects</i></h4>
+
+        <p style="font-size: x-large;">Clients have ranged from small businesses to Fortune 500 
+            companies (<a style="color: gray;" href="./at/apple.html" target="_blank">
+            Apple</a>,<a style="color: #00b388;" href="./at/hpe.html">
+            Hewlett Packard Enterprise</a>, ...) and from mid-size international
+             lodging groups to multimedia conglomerates. Works have involved 
+             artificial intelligence, mobile computing, application development,
+              and more.
+            <br><br>
+            Partnered with consultant platforms and key systems integrators to provide 
+            technical analysis, market research, and various other services. Utilized a 
+            platform agnostic skill set to complete <a style="color: #3fe5ab;" href="on/design.html">
+            design</a>, <a style="color: #ff6347;" href="on/hardware.html">hardware</a>, 
+            and <a style="color: #47e3ff;" href="on/software.html" target="_blank">software</a> 
+            development tasks for various customers.
+        </p>
+        </div>
+    </div>
+
+    <!-- Disciplines -->
+	<div class="item ord6">
+        <div class="bMain">
+            <p style="font-size: xx-large;">And More...</p>
+
+        </div>
+    </div>
+
+    <div class="item ord5">
+        <div class="grid">
+            <div class="lightblue tile">
+                <a href="on/software.html">
+                    <p style="text-align: center; font-size: xx-large;">
+					<img alt="Software Icon" 
+                        style="width: 80%; height: auto; padding: 10%;" 
+                        src="./img/icon/coding.svg">
+                	<br>Software</p>
+                </a>
+            </div>
+
+            <div class="tomato tile">
+                <a href="on/hardware.html">
+                    <p style="text-align: center; font-size: xx-large;">
+					<img alt="Hardware Icon" 
+                        style="width: 80%; height: auto; padding: 10%;" 
+                        src="./img/icon/construction.svg">
+					<br>Hardware</p>
+                </a>
+            </div>
+
+            <div class="tangerine tile" id="research">
+                <a href="on/research.html">
+                    <p style="text-align: center; font-size: xx-large;">
+					<img alt="Research Icon" 
+                        style="width: 80%; height: auto; padding: 10%;" 
+                        src="./img/icon/resesarch.png">
+                	<br>Research</p>
+                </a>
+            </div>
+
+			<div class="limegreen tile" id="research">
+                <a href="on/design.html">
+                    <p style="text-align: center; font-size: xx-large;">
+					<img alt="Design Icon" 
+                        style="width: 80%; height: auto; padding: 10%;" 
+                        src="./img/icon/graphic-design.svg">
+					<br>Design</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Miscellaneous Portfolio Content -->
+<div class="fb2c">
+    <!-- More -->
+	<div class="item ord7" id="art">
+        <img alt="Digital Arts" style="width: 100%; height: auto;"  
+            src="https://lh3.googleusercontent.com/pw/AP1GczNcdNs4Ow6lmiudmpb8z2joJOAz-tyXrG9bGYHum2LB4lnv6fKMexmTg3qerty2zxqH69nOVdVwq8duCs07sVrD_Kv7fIvlNVsag9_iei0EexaaVPAMaCGUr7sULxvbEkx_EDyGf9xtDQ-Ru6XOfzUF3g=w1558-h1558-s-no-gm?authuser=0"/>
+    </div>
+
+    <!-- More -->
+    <div class="item ord8">			
+        <div class="bMain">
+        <h1 style="margin-bottom:0px; font-size: xx-large;">Arts</h1><br>
+        <p style="font-size: x-large;">
+        <a class="redTxt" href="photography.html" style="color: tomato; margin:.5em; font-size: 1.3em;">Photography</a>, 
+        <a class="redTxt" href="art.html"  style="color: tomato; margin:.5em; font-size: 1.3em;">More</a> 
+        </p>
+        </div>
+    </div>
+</div>
 
 </body>
-
-<!-- Responsive iFrame to Top Window Forwarding/Matching -->
-<script type="text/javascript">
-	(function(){
-		var url = document.getElementById("iframe").contentWindow.location.href;
-
-		if ($(window).width() < 700) { window.location.href = url;}// do some stuff
-    	setTimeout(arguments.callee, 500);
-    })();
-
-    //Confirms not in iFrame, forwards content from interior iFrame to Window location if nested iFrame is true
-    if (window!=window.top) { 
-    	var url = document.getElementById("iframe").contentWindow.location.href; 
-    	window.location.href = url; 
-    	location.reload();
-    }
-</script>
-
 </html>

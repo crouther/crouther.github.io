@@ -1055,6 +1055,7 @@ body {
 	.yellowgreen{background-color: #a2b241;}
 	.yellow{background-color: #ffed47;}
 	.tomato{background-color: #ff6347;}
+	.tangerine{background-color: #ffbf47;}
 	.fadedManila{background-color: #faf2de;}
 	.lightTan{background-color: #e8d9c5;}
 	.tan{background-color: #D2B48C;}
@@ -1582,6 +1583,11 @@ body {
 	.ord4{order: 4;}
 	.ord5{order: 5;}
 	.ord6{order: 6;}
+	.ord7{order: 7;}
+	.ord8{order: 8;}
+	.ord9{order: 9;}
+	.ord10{order: 10;}
+
 }
 
 
