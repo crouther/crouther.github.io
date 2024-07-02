@@ -218,8 +218,8 @@ body {
 .anc a:hover {color: gray;}
 
 
-//Custom Anchor Styling
-/* mouse over link */
+/* Custom Anchor Styling
+ mouse over link */
 #ancAbout:hover {color: green;}
 #ancWork:hover {color: #999999;}
 #ancResa:hover {color: #D2B48C;}
@@ -471,7 +471,7 @@ body {
     border-right: .15em solid tomato; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    //letter-spacing: .1em; /* Adjust as needed */
+    /*letter-spacing: .1em; Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -782,7 +782,7 @@ body {
     padding: 15px 32px;
 
     cursor: pointer;
-    float:center;
+    float: center;
     display: inline-block;
 
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -903,7 +903,7 @@ body {
 .sm-box-button{
 	width: 27%; 
 	padding-top: 27%;
-	//border-style: solid;
+	/*border-style: solid;*/
 	margin: 3vw;
 	border-color: white;
 	
@@ -954,7 +954,7 @@ body {
 	   text-overflow: ellipsis;
 	position: absolute;
 	margin-left: 3vw;
-	//font-size: 2.4vw;
+	/*font-size: 2.4vw;*/
 	width: 80%;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -1268,7 +1268,7 @@ body {
 .tileBlock p{
 	width: 80%;
 	min-height: 10vw;
-	//max-height: 15vw;
+	/*max-height: 15vw;*/
 	padding: 10%;
 	margin: 0%;
   	-o-text-overflow: ellipsis;
@@ -1336,7 +1336,7 @@ body {
 
 /* Flex box item which is slightly larger (66%) or 2x liteWeightedItem */
 .fb2c>div.weightedItem {
-	//margin: -4px;
+	/*margin: -4px;*/
 	padding: 0%;
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 66%;
@@ -1423,7 +1423,7 @@ body {
 	max-width: 40vw;
 }
 
-//Page or Item Specific Element Properties
+/*Page or Item Specific Element Properties*/
 .square{height: 50vw; width: 50vw;}
 .unorthodox{min-height: 50vw; max-height: 51vw; background-color: #ffcb66;}
 .sqTxt{
@@ -1456,11 +1456,11 @@ body {
 
 @media only screen and (orientation:portrait) {
 	
-	//Wireframes: Specific Element ID Stylings
+	/*Wireframes: Specific Element ID Stylings*/
 	#imIt{padding-top: 0%;}
 	#embeddedText{font-size: 2vw;}
 
-	//Page Specific Content
+	/*Page Specific Content*/
 	#address{display: none;}
 	#hardwareGear{max-width: 20vw; max-height: 10vh;}
 	.cTxt{line-height: 100vw;}
@@ -1468,7 +1468,7 @@ body {
 	.imgTxtOverlay p{font-size: 4vw; background-color: #000; 
 						padding: 2vw; padding-left: 10vw; }
 
-	//Product Page Generic Elements
+	/*Product Page Generic Elements*/
 	.brief h2{font-size: 3em;} 
 	.brief p{font-size: 2em;} 
 	.brief h6{font-size: 1.5em;}
@@ -1576,7 +1576,7 @@ body {
 		padding-left: 10vw; 
 	}
 
-	//Flexbox Items Organization Classes
+	/*Flexbox Items Organization Classes*/
 	.ord1{order: 1;}
 	.ord2{order: 2;}
 	.ord3{order: 3;}
@@ -1587,7 +1587,6 @@ body {
 	.ord8{order: 8;}
 	.ord9{order: 9;}
 	.ord10{order: 10;}
-
 }
 
 
