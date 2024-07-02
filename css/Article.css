@@ -61,11 +61,11 @@ p.text{
     .brief p{font-size: 2em;} 
     .brief h6{font-size: 1.5em;}
     .fb2c>div.item {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 100%;
-       -moz-box-flex: 0;
-        -ms-flex: 0 100%;
-            flex: 0 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 100%;
+        -moz-box-flex: 0;
+            -ms-flex: 0 100%;
+                flex: 0 100%;
     }
     .fb2c>div.embeddedItem {
 		-webkit-box-flex: 0;
@@ -92,14 +92,6 @@ p.text{
 	.ord8{order: 8;}
 	.ord9{order: 9;}
 	.ord10{order: 10;}
-}
-
-@media only screen and (min-width: 1440px) {
-    p.text{font-size: 1.8rem;}
-}
-
-@media only screen and (max-width: 1440px) {
-    p.text{font-size: 1.5rem}
 }
 
 
