@@ -18,9 +18,7 @@ p.fbCaption{
     font-size: x-large;
 }
 
-p.text{
-    font-size: 1.8rem;
-}
+p.text{font-size: 1.4em;}
 
 .logoBox img{
     max-width: 10rem;
@@ -55,6 +53,34 @@ p.text{
 
 .fb2c>div.embeddedItem{margin: auto;}
 
+/*  fb3c: - Flex box (2) Column CSS properties */
+.fb3c {
+	margin: 0px;
+	padding: 0%;
+	display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.fb3c>div.item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 33.333%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 33.333%;
+    flex: 0 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb3c>div.embeddedItem{margin: auto;}
+
 @media only screen and (orientation:portrait) {
     .brief h1{font-size: 3em;}
     .brief h2{font-size: 2.8em;} 
@@ -79,7 +105,7 @@ p.text{
         padding: 2rem;
         margin: auto;
     }
-    p.text{font-size: 1.5rem;}
+    p.text{font-size: 2.5em;}
 
     /*Flexbox Items Organization Classes*/
 	.ord1{order: 1;}
