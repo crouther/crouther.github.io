@@ -77,6 +77,8 @@ p.text{font-size: 1.4em;}
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 16.66665vw;
+    font-size: 2em;
 }
 
 .fb3c>div.embeddedItem{margin: auto;}
@@ -118,6 +120,18 @@ p.text{font-size: 1.4em;}
 	.ord8{order: 8;}
 	.ord9{order: 9;}
 	.ord10{order: 10;}
+
+    .fb3c>div.item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 33.333%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 33.333%;
+        flex: 0 33.333%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33.333vw;
+    }
 }
 
 
