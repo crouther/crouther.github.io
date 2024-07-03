@@ -29,6 +29,14 @@ p.PEco{font-size: 1.5em;
     height: auto;
 }
 
+/*Image Text Overlay Fade in and out loop */
+.flashingTxt {
+    -webkit-animation: fTxt 5s infinite;
+    -moz-animation: fTxt 5s infinite;
+    -o-animation: fTxt 5s infinite;
+     animation: fTxt 5s infinite;
+ }
+
 .listTitle{font-size:calc(12px + 1vw);}
 .listItems{font-size:calc(12px + 0.5vw);}
 .text{font-size:calc(12px + 0.5vw);}
