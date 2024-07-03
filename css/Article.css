@@ -15,15 +15,25 @@ body {
 
 p.fbCaption{
     text-align: center;
-    font-size: x-large;
+    font-size:1.5em;
 }
 
 p.text{font-size: 1.4em;}
 
+h2.PEco{font-size: 1.75em; 
+    text-align: center;}
+
+p.PEco{font-size: 1.5em; 
+    text-align: center;}
+
 .logoBox img{
-    max-width: 10rem;
+    max-width: 7.5em;
     height: auto;
 }
+
+.listTitle{font-size:calc(12px + 1vw);}
+.listItems{font-size:calc(12px + 0.5vw);}
+
 
 /*  fb2c: - Flex box (2) Column CSS properties */
 .fb2c {
@@ -103,12 +113,22 @@ p.text{font-size: 1.4em;}
 		        flex: 0 100%;
 	}
     .fb2c>div.sqItem {height: 100vw;};
+
     .bMain{
         max-width: 58rem;
         padding: 2rem;
         margin: auto;
     }
+
+    .listTitle{font-size:calc(12px + 3vw);}
+    .listItems{font-size:calc(12px + 2vw);}
+
     p.text{font-size: 2.5em;}
+
+    h2.PEco{font-size: 2.5em; 
+        text-align: center;}
+    p.PEco{font-size: 2em; 
+        text-align: center;}
 
     /*Flexbox Items Organization Classes*/
 	.ord1{order: 1;}

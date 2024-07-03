@@ -11,7 +11,6 @@
 	</script>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="../../css/AvantFlat.css">
     <link rel="stylesheet" type="text/css" href="../../css/Article.css">
 
 	<!-- Meta Tags -->
@@ -28,176 +27,209 @@
 	<title>iPad Pro</title>
 </head>
 
+<style>
+
+/* Item container for layering content within a flex box */
+.embeddedItem{width: 100%;}
+
+/* embeddedItem padding for images, an optional visual preference for spacing */
+.embeddedItem img{
+	width: 94%;
+	margin: 0%;
+	padding: 3%;
+}
+
+.fb2c>div.embeddedItem{
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 50%;
+	-moz-box-flex: 0;
+	-ms-flex: 0 50%;
+	flex: 0 50%;}
+
+@media only screen and (orientation:portrait) {
+    .fb2c>div.embeddedItem {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 100%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 100%;
+		        flex: 0 100%;
+	}
+}
+</style>
+
 <body>
-    <div>
-    <div class="logoBox">
-        <p style="text-align: center;">
-            <a href="GalaxyS21FE.html">
-                <img alt="Android Logo" src="../../img/icon/android.png"/></a>
-            <a href="iPadPro-2024.html">
-                <img alt="Apple Logo" src="../../img/icon/Apple.webp"/></a>
-            <a href="Elitebook.html">
-                <img alt="Linux Logo" src="../../img/icon/linux.png"/></a>
-            <a href="workstation-2024.html">
-                <img alt="Windows Logo" src="../../img/icon/windows10.png"/></a>
-            <a href="https://psnprofiles.com/TarzanSr" target="_blank">
-                <img alt="PlayStation Logo" src="../../img/icon/PS.png"/></a>
-        </p>
-    </div>
-    <h2 class="fbCaption" style="text-align: center;">
-        <a href="DailyCarry.html">Product Ecosystem:</a></h2><div style="text-align: center;">
-    <p class="text"> 
-        <a href="GalaxyS21FE.html">Smartphone: Android 14</a><br>
-        <a href="iPadPro-2024.html">Tablet: iPadOS</a><br>
-        <a href="Elitebook.html">Laptop: Ubuntu</a><br>
-        <a href="workstation-2024.html">Desktop: Windows</a><br>
-        <a href="https://psnprofiles.com/TarzanSr" target="_blank">Gaming System: PlayStation 5</a>
-    </p></div>
+
+<div class="fb2c">
+    <div class="embeddedItem">
+        <img alt="iPad Pro App Library"
+        src="https://lh3.googleusercontent.com/pw/AP1GczMjxPgW1aQ75Gcbw2aJ5LPKMyKT0k_nd0Ofh34EHuatN3NNJggBpVhzIHL-mxMXnohsNEbh01nF6bVtlsfFjz_PceBW7Nls9Rw0xwHBHtmjVg7Ki6MYMLQZ8sidbFwaGv8zPHVp86j6UJynk18MoUz7Rw=w2074-h1430-s-no?authuser=0"/>
+        <p class="fbCaption"><b>What's On My Device?</b><br>
+        <span>Recent Downloads</span></p>
     </div>
 
+    <div class="embeddedItem">
+        <img alt="Visual Studio Code"
+        src="https://lh3.googleusercontent.com/pw/AP1GczPV9kELoX_03rzhL9siGH1T1no0vwDCtrmZO8cwzUyzR12aTM0Yh-D41FAgca1KeKqqieWfseaSlaByMRCqMN3qvVi_MvkN9NSYqE60b-oYDhufKlRTn_cv7YviR5mpXhbigpbabdB1qCKOsbBXZWs5Kg=w1202-h828-s-no-gm?authuser=0"/>
+        <p class="fbCaption"><b>Create. Read. Update. Delete.</b><br>
+        <span>Visual Studios Code - Maintenance</span></p>
+    </div>
+
+    <div class="embeddedItem">
+        <img alt="Adobe Fresco Drawing"
+        src="https://lh3.googleusercontent.com/pw/AP1GczNrMf9Maf-J8ysc8mcG6qtKPFU-8DNOVXEEO5xHyD8VAsge8R_IZVZcP_hQ_mpgmha4BcSVDhiI1higWi8UmrMX2of3CeuQQAqW57T4XXDLOqntOriM-ku3Ae-rzmxTZRo9gfqT4-DeJShlYRzNkxRz9Q=w1198-h826-s-no-gm?authuser=0"/>
+        <p class="fbCaption"><b>Tracing Inspiration</b><br>
+        <span>Adobe Fresco - Drawings</span></p> 
+    </div>
+
+    <div class="embeddedItem">
+        <img alt="DaVinci Resolve Video Editing"
+        src="https://lh3.googleusercontent.com/pw/AP1GczOrP6ql0cBZeGNWT7kbFU_eHUnGIBkGySI9HiLO-R_uZ-gXUCecc10R3tKcFBI9pBamgdNLyZLH19iXesWs0LsRQwxLmshZXXyNgGkB71q2TWj6I2DW11OGPYagLLqlV7EM-HLT2kX_S3loyi3o934IYg=w1198-h826-s-no-gm?authuser=0"/>
+        <p class="fbCaption"><b>Content Creation</b><br>
+        <span>DaVinci Resolve - Footage</span></p> 
+    </div>
+
+    <div class="embeddedItem">
+        <img alt="Google Workspace Document Drafting"
+        src="https://lh3.googleusercontent.com/pw/AP1GczNoNGTJy5LNwA0g4q8-u9iJ-jhU5Nxcxv20DjwUVHDilrAa8eX7UEEdEudDScm7fCXT0J86H9FEN-hRmkQONmb6pI1ZEHmZOp7XEujajQzFGA_8Pn7RqRxydI3GxbsexT7dd0oKJf8NYvH8SbS3_H4IOQ=w2420-h1668-s-no-gm?authuser=0"/>
+        <p class="fbCaption"><b>Document Drafting</b><br>
+        <span>Google Workspace</span></p> 
+    </div>
+
+    <div class="embeddedItem">
+        <img alt="Culinary Instructions"
+        src="https://lh3.googleusercontent.com/pw/AP1GczMMggLAGzfaOKgXev407wUo1Cu4VlJIRxMgUWlbP3neEeKpVraSIGLhBRQcVCKS6M39xiTZZbmjFSO_JxIX5t-EJnlt-M5uWiJs8qTz42rzZcfxKILYqoF4hLzb6ERdnOkXD4Yn9u36YCV4OJQPH4h-FQ=w2420-h1668-s-no-gm?authuser=0"/>
+        <p class="fbCaption"><b>Culinary Instructions</b>
+        <br><span>Home Chef Digital Assistant</span></p>
+    </div>  
+</div>
+
+<h2 style="font-size: 3em; text-align: center;">Recommendations</h2>
+
+<div class="b2Main">
     <div class="fb2c">
-        <div class="embeddedItem">
-            <img alt="iPad Pro App Library" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczMjxPgW1aQ75Gcbw2aJ5LPKMyKT0k_nd0Ofh34EHuatN3NNJggBpVhzIHL-mxMXnohsNEbh01nF6bVtlsfFjz_PceBW7Nls9Rw0xwHBHtmjVg7Ki6MYMLQZ8sidbFwaGv8zPHVp86j6UJynk18MoUz7Rw=w2074-h1430-s-no?authuser=0"/>
-            <p class="fbCaption"><b>What's On My Device?</b><br>
-            <span>Recent Downloads</span></p>
+
+        <div class="item">
+            <div>
+                <h3 class="listTitle">Free</h3>
+                <ul class="listItems">
+                    <span style="color: #6347ff;"><br>Audio (Recording & Logs)<br></span>
+                    <li>Ferrite Recording Studio</li>
+                    <li>*Launchpad</li>
+                    <li>*djay </li>
+                    <li>Garage Band</li>
+                    <li>Ultimate Guitar: Chords & Tabs</li>
+                    <li>Tonebridge</li>
+
+                    <span style="color: #6347ff;"><br>Draw / Image<br></span>
+                    <li>Adobe Fresco</li>
+                    <li>*Concepts</li>
+                    <li>Sketchbook</li>
+                    <li>Google Photos </li>
+                    <li>Snapseed</li>
+
+                    <span style="color: #6347ff;"><br>Modeling<br></span>
+                    <li>*Shapr3D</li>
+                    <li>RenoPlan</li>
+                    <li>*SketchUp</li>
+
+                    <span style="color: #6347ff;"><br>Video<br></span>
+                    <li>*DaVinci Resolve</li>
+                    <li>*CapCut</li>
+
+                    <span style="color: #6347ff;"><br>Travel<br></span>
+                    <li>*Flighty</li>
+                    <li>*MyRadar</li>
+                    <li>Gaia Maps</li>
+
+                    <span style="color: #6347ff;"><br>Coding<br></span>
+                    <li>GitHub</li>
+                    <li>Python Editor App</li>
+                    <li>Visual Studios Code</li>
+
+                    <span style="color: #6347ff;"><br>Utility & Documentation<br></span>
+                    <li>Pastel</li>
+                    <li>Carnet</li>
+                    <li>TeamViewer</li>
+                    <li>Square Point of Sale</li>
+                    <li>Canva</li>
+                    <li>*Orion</li><br>
+
+                    * = <span style="color: tomato;">indicates some paid features</span>
+            </ul>
+            </div>
         </div>
-
-        <div class="embeddedItem">
-            <img alt="Visual Studio Code" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczPV9kELoX_03rzhL9siGH1T1no0vwDCtrmZO8cwzUyzR12aTM0Yh-D41FAgca1KeKqqieWfseaSlaByMRCqMN3qvVi_MvkN9NSYqE60b-oYDhufKlRTn_cv7YviR5mpXhbigpbabdB1qCKOsbBXZWs5Kg=w1202-h828-s-no-gm?authuser=0"/>
-            <p class="fbCaption"><b>Create. Read. Update. Delete.</b><br>
-            <span>Visual Studios Code - Maintenance</span></p>
-        </div>
-
-        <div class="embeddedItem">
-            <img alt="Adobe Fresco Drawing" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNrMf9Maf-J8ysc8mcG6qtKPFU-8DNOVXEEO5xHyD8VAsge8R_IZVZcP_hQ_mpgmha4BcSVDhiI1higWi8UmrMX2of3CeuQQAqW57T4XXDLOqntOriM-ku3Ae-rzmxTZRo9gfqT4-DeJShlYRzNkxRz9Q=w1198-h826-s-no-gm?authuser=0"/>
-            <p class="fbCaption"><b>Tracing Inspiration</b><br>
-            <span>Adobe Fresco - Drawings</span></p> 
-        </div>
-
-        <div class="embeddedItem">
-            <img alt="DaVinci Resolve Video Editing" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczOrP6ql0cBZeGNWT7kbFU_eHUnGIBkGySI9HiLO-R_uZ-gXUCecc10R3tKcFBI9pBamgdNLyZLH19iXesWs0LsRQwxLmshZXXyNgGkB71q2TWj6I2DW11OGPYagLLqlV7EM-HLT2kX_S3loyi3o934IYg=w1198-h826-s-no-gm?authuser=0"/>
-            <p class="fbCaption"><b>Content Creation</b><br>
-            <span>DaVinci Resolve - Footage</span></p> 
-        </div>
-
-        <div class="embeddedItem">
-            <img alt="Google Workspace Document Drafting" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczNoNGTJy5LNwA0g4q8-u9iJ-jhU5Nxcxv20DjwUVHDilrAa8eX7UEEdEudDScm7fCXT0J86H9FEN-hRmkQONmb6pI1ZEHmZOp7XEujajQzFGA_8Pn7RqRxydI3GxbsexT7dd0oKJf8NYvH8SbS3_H4IOQ=w2420-h1668-s-no-gm?authuser=0"/>
-            <p class="fbCaption"><b>Document Drafting</b><br>
-            <span>Google Workspace</span></p> 
-        </div>
-
-        <div class="embeddedItem">
-            <img alt="Culinary Instructions" style="margin-left: 3%;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczMMggLAGzfaOKgXev407wUo1Cu4VlJIRxMgUWlbP3neEeKpVraSIGLhBRQcVCKS6M39xiTZZbmjFSO_JxIX5t-EJnlt-M5uWiJs8qTz42rzZcfxKILYqoF4hLzb6ERdnOkXD4Yn9u36YCV4OJQPH4h-FQ=w2420-h1668-s-no-gm?authuser=0"/>
-            <p class="fbCaption"><b>Culinary Instructions</b>
-            <br><span>Home Chef Digital Assistant</span></p>
-        </div>  
-    </div>
-
-    <h2 style="font-size: 3em; text-align: center;">Recommendations</h2>
-
-    <div class="b2Main">
-        <div class="fb2c">
-            <div class="item">
-                <div class="bMain" style="font-size: large;">
-                    <h3>Free</h3>
-                    <ul>
-                        <span style="color: #6347ff;"><br>Audio (Recording & Logs)<br></span>
-                        <li>Ferrite Recording Studio</li>
-                        <li>*Launchpad</li>
-                        <li>*djay </li>
-                        <li>Garage Band</li>
-                        <li>Ultimate Guitar: Chords & Tabs</li>
-                        <li>Tonebridge</li>
-
-                        <span style="color: #6347ff;"><br>Draw / Image<br></span>
-                        <li>Adobe Fresco</li>
-                        <li>*Concepts</li>
-                        <li>Sketchbook</li>
-                        <li>Google Photos </li>
-                        <li>Snapseed</li>
-
-                        <span style="color: #6347ff;"><br>Modeling<br></span>
-                        <li>*Shapr3D</li>
-                        <li>RenoPlan</li>
-                        <li>*SketchUp</li>
-
-                        <span style="color: #6347ff;"><br>Video<br></span>
-                        <li>*DaVinci Resolve</li>
-                        <li>*CapCut</li>
-
-                        <span style="color: #6347ff;"><br>Travel<br></span>
-                        <li>*Flighty</li>
-                        <li>*MyRadar</li>
-                        <li>Gaia Maps</li>
-
-                        <span style="color: #6347ff;"><br>Coding<br></span>
-                        <li>GitHub</li>
-                        <li>Python Editor App</li>
-                        <li>Visual Studios Code</li>
-
-                        <span style="color: #6347ff;"><br>Utility & Documentation<br></span>
-                        <li>Pastel</li>
-                        <li>Carnet</li>
-                        <li>TeamViewer</li>
-                        <li>Square Point of Sale</li>
-                        <li>Canva</li>
-                        <li>*Orion</li><br>
-
-                        * = <span style="color: tomato;">indicates some paid features</span>
+        
+        <div class="item">
+            <div class="bMain">
+                <h3 class="listTitle">Paid</h3>
+                <ul class="listItems">
+                    <span style="color: #6347ff;"><br>Audio (Recording & Logs)<br></span>
+                    <li>*Cubasis</li>
+                    <li>Logic Pro</li>
+                    <li>Aurora DSP (App Suite)</li>
+                    <li>Focusrite Audio Engineering</li>
+                    <li>ToneStack Pro</li>
+                    <li>*Nembrini Audio</li>
+                    <li>KORG INC.</li>
+                    <li>StaffPad</li>
+                    <li>forScore</li>
+                    <span style="color: #6347ff;"><br>Draw / Image<br></span>
+                    <li>Procreate (+ Dreams)</li>
+                    <li>*Clip Studio</li>
+                    <li>Affinity</li>
+                    <li>*Adobe Creative Suite</li>
+                    <span style="color: #6347ff;"><br>Modeling<br></span>
+                    <li>Nomad Sculpt</li>
+                    <li>Shapr3D</li>
+                    <li>ZBrush</li>
+                    <span style="color: #6347ff;"><br>Video<br></span>
+                    <li>Final Cut Pro for iPad 2</li>
+                    <li>LumaFusion</li>
+                    <span style="color: #6347ff;"><br>Travel<br></span>
+                    <li>*ForeFlight</li>
+                    <li>Boondocking</li>
+                    <li>*Argo Nav</li>
+                    <span style="color: #6347ff;"><br>Coding<br></span>
+                    <li>*Runestone</li>
+                    <li>Textastic</li>
+                    <li>Pythonista</li>
+                    <li>Working Copy</li>
+                    <span style="color: #6347ff;"><br>Utility & Documentation<br></span>
+                    <li>Numerics</li>
+                    <li>*WolframAlpha</li>
+                    <li>*Complete Anatomy</li><br>
+                    * = <span style="color: tomato;">indicates some free features</span>
                 </ul>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="bMain" style="font-size: large;">
-                    <h3>Paid</h3>
-                    <ul>
-                        <span style="color: #6347ff;"><br>Audio (Recording & Logs)<br></span>
-                        <li>*Cubasis (Steinberg Media Technologies App Suite)</li>
-                        <li>Logic Pro</li>
-                        <li>Aurora DSP (App Suite)</li>
-                        <li>Focusrite Audio Engineering (App Suite)</li>
-                        <li>ToneStack Pro</li>
-                        <li>*Nembrini Audio (App Suite)</li>
-                        <li>KORG INC. (App Suite)</li>
-                        <li>StaffPad</li>
-                        <li>forScore</li>
-                        <span style="color: #6347ff;"><br>Draw / Image<br></span>
-                        <li>Procreate (+ Dreams)</li>
-                        <li>*Clip Studio</li>
-                        <li>Affinity (App Suite)</li>
-                        <li>*Adobe Creative Suite</li>
-                        <span style="color: #6347ff;"><br>Modeling<br></span>
-                        <li>Nomad Sculpt</li>
-                        <li>Shapr3D</li>
-                        <li>ZBrush</li>
-                        <span style="color: #6347ff;"><br>Video<br></span>
-                        <li>Final Cut Pro for iPad 2</li>
-                        <li>LumaFusion</li>
-                        <span style="color: #6347ff;"><br>Travel<br></span>
-                        <li>*ForeFlight</li>
-                        <li>Boondocking</li>
-                        <li>*Argo Nav</li>
-                        <span style="color: #6347ff;"><br>Coding<br></span>
-                        <li>*Runestone</li>
-                        <li>Textastic</li>
-                        <li>Pythonista</li>
-                        <li>Working Copy</li>
-                        <span style="color: #6347ff;"><br>Utility & Documentation<br></span>
-                        <li>Numerics</li>
-                        <li>*WolframAlpha</li>
-                        <li>*Complete Anatomy</li><br>
-                        * = <span style="color: tomato;">indicates some free features</span>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
+</div>
+
+<div><!-- Product Ecosystem Navigation Bar -->
+    <h2 class="PEco"><a href="DailyCarry.html">Product Ecosystem:</a></h2>
+    <div style="text-align: center;"><p class="PEco"> 
+    <a href="GalaxyS21FE.html">Smartphone: Android 14</a><br>
+    <a href="iPadPro-2024.html">Tablet: iPadOS</a><br>
+    <a href="Elitebook.html">Laptop: Ubuntu</a><br>
+    <a href="workstation-2024.html">Desktop: Windows</a><br>
+    <a href="https://psnprofiles.com/TarzanSr" target="_blank">Gaming System: PlayStation 5</a>
+    </p></div>
+    
+    <div class="logoBox">
+    <p style="text-align: center;">
+        <a href="GalaxyS21FE.html">
+            <img alt="Android Logo" src="../../img/icon/android.png"/></a>
+        <a href="iPadPro-2024.html">
+            <img alt="Apple Logo" src="../../img/icon/Apple.webp"/></a>
+        <a href="Elitebook.html">
+            <img alt="Linux Logo" src="../../img/icon/linux.png"/></a>
+        <a href="workstation-2024.html">
+            <img alt="Windows Logo" src="../../img/icon/windows10.png"/></a>
+        <a href="https://psnprofiles.com/TarzanSr" target="_blank">
+            <img alt="PlayStation Logo" src="../../img/icon/PS.png"/></a><br><br>
+    </p>
+    </div>
+</div>
+
 </body>
 </html>
