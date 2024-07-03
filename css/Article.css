@@ -18,8 +18,6 @@ p.fbCaption{
     font-size:1.5em;
 }
 
-p.text{font-size: 1.4em;}
-
 h2.PEco{font-size: 1.75em; 
     text-align: center;}
 
@@ -33,6 +31,7 @@ p.PEco{font-size: 1.5em;
 
 .listTitle{font-size:calc(12px + 1vw);}
 .listItems{font-size:calc(12px + 0.5vw);}
+.text{font-size:calc(12px + 0.5vw);}
 
 
 /*  fb2c: - Flex box (2) Column CSS properties */
@@ -93,6 +92,33 @@ p.PEco{font-size: 1.5em;
 
 .fb3c>div.embeddedItem{margin: auto;}
 
+/* Item container for layering content within a flex box */
+.embeddedItem{width: 100%;}
+
+/* embeddedItem padding for images, an optional visual preference for spacing */
+.embeddedItem img{
+	width: 94%;
+	margin: 0%;
+	padding: 3%;
+}
+
+.fb2c>div.embeddedItem{
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 50%;
+	-moz-box-flex: 0;
+	-ms-flex: 0 50%;
+	flex: 0 50%;}
+
+@media only screen and (orientation:portrait) {
+    .fb2c>div.embeddedItem {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 100%;
+		   -moz-box-flex: 0;
+		    -ms-flex: 0 100%;
+		        flex: 0 100%;
+	}
+}
+
 @media only screen and (orientation:portrait) {
     .brief h1{font-size: 3em;}
     .brief h2{font-size: 2.8em;} 
@@ -123,7 +149,7 @@ p.PEco{font-size: 1.5em;
     .listTitle{font-size:calc(12px + 3vw);}
     .listItems{font-size:calc(12px + 2vw);}
 
-    p.text{font-size: 2.5em;}
+    .text{font-size:calc(12px + 1vw);}
 
     h2.PEco{font-size: 2.5em; 
         text-align: center;}
