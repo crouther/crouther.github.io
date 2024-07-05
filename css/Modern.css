@@ -68,6 +68,7 @@ p.PEco{font-size: 1.5em;
     align-items: center;
 }
 
+.fb2c>div.sqLandscape{height: 50vw;}
 .fb2c>div.embeddedItem{margin: auto;}
 
 /*  fb3c: - Flex box (2) Column CSS properties */
