@@ -202,36 +202,18 @@ p.PEco{font-size: 1.5em;
 .ord10{order: default;}
 
 /* Colors */
-.pal-1-1{background-color: #D5C7BC;}
 .pal-1-2{background-color: #F1FFFA;}
-.pal-1-3{background-color: #93B7BE;}
-.pal-1-4{background-color: #785964;}
-.pal-1-5{background-color: #454545;}
-.pal-1-6{background-color: #fdd00b;}
-.pal-1-7{background-color: #F1FFF3;}
-.pal-1-8{background-color: #FFFAF1;}
-
-.dimgray{background-color: #5b7278;}
 .purp{background-color:#d890ff;}
 .lightblue{background-color: #47e3ff;}
 .greenSpring{background-color: #A5A996;}
 .seaGreen{background-color: #398778;}
 .limegreen{background-color: #47ffbf;}
-.lightYellowGreen{background-color: #d9e0b3;}
-.yellowgreen{background-color: #a2b241;}
 .yellow{background-color: #ffed47;}
 .tomato{background-color: #ff6347;}
 .tangerine{background-color: #ffbf47;}
-.fadedManila{background-color: #faf2de;}
-.lightTan{background-color: #e8d9c5;}
 .tan{background-color: #D2B48C;}
-.darkTan{background-color: #695a46;}
-
-.white{background-color: #fff;}
-.offWhite{background-color: #f6f6f6;}
 .lightgray{background-color: #e5e5e5;}
 .gray{background-color: #666666;}
-.darkGray{background-color: #999999;}
 .black{background-color: black;}
 
 .ducati{background-color: #d40000;}
@@ -246,3 +228,40 @@ p.PEco{font-size: 1.5em;
 .ducatiTxt{color: #d40000;}
 .whiteTxt{color: #fff;}
 .blackTxt{color: #000;}
+
+/* PICO-8 Palette 
+    00 #000000	black
+    01	#1D2B53	dark blue
+    02	#7E2553	dark purple
+    03	#008751	dark green
+    04	#AB5236	brown
+    05	#5F574F	dark gray
+    06	#C2C3C7	light gray
+    07	#FFF1E8	white
+    08	#FF004D	red
+    09	#FFA300	orange
+    10	#FFFF27	yellow
+    11	#00E756	green
+    12	#29ADFF	blue
+    13	#83769C	indigo
+    14	#FF77A8	pink
+    15	#FFCCAA	peach  */
+
+.picoRed{background-color:#FF004D;}
+.picoOrange{background-color:#FFA300;}
+.picoYellow{background-color:#FFFF27;}
+.picoGreen{background-color:#00E756;}
+.picoLimeGreen{background-color:#A8E72E;}
+.picoDarkGreen{background-color:#008751;}
+.picoBlueGreen{background-color:#125359;}
+.picoBlue{background-color:#29ADFF;}
+.picoNavy{background-color: #1D2B53;}
+.picoIndigo{background-color:#83769C;}
+.picoDarkPurple{background-color:#7E2553;}
+.picoPink{background-color:#FF77A8;}
+.picoPeach{background-color:#FFCCAA;}
+.picoBrown{background-color:#AB5236;}
+.picoDarkGray{background-color:#5F574F;}
+.picoLightGray{background-color:#C2C3C7;}
+.picoWhite{background-color:#FFF1E8;}
+.picoBlack{background-color: #000;}
