@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   viewBox="0 0 1000 1000"
+   id="svg4305"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Martian Manhunter logo.svg">
+  <defs
+     id="defs4307" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="933.72883"
+     inkscape:cy="438.90089"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4310">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.362154)">
+    <path
+       id="path28"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 499.99956,1052.3622 C 224.29731,1052.3622 0,828.06354 0,552.36625 0,276.67717 224.29731,52.362154 499.99956,52.362154 775.70763,52.362154 1000,276.67717 1000,552.36625 1000,828.06354 775.70763,1052.3622 499.99956,1052.3622 l 0,0"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path30"
+       style="fill:#ffff00;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 499.99956,1040.0245 c -268.89093,0 -487.66179,-218.76314 -487.66179,-487.65825 0,-268.8869 218.77086,-487.666436 487.66179,-487.666436 268.90587,0 487.66267,218.779536 487.66267,487.666436 0,268.89511 -218.7568,487.65825 -487.66267,487.65825 l 0,0"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path32"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 499.99956,1014.7158 c -254.93692,0 -462.3595,-207.41246 -462.3595,-462.34955 0,-254.93714 207.42258,-462.357836 462.3595,-462.357836 254.94767,0 462.36197,207.420696 462.36197,462.357836 0,254.93709 -207.4143,462.34955 -462.36197,462.34955 l 0,0"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path34"
+       style="fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 935.83543,552.35805 c 0,240.70763 -195.1342,435.82361 -435.83587,435.82361 -240.69753,0 -435.82669,-195.11598 -435.82669,-435.82361 0,-240.7077 195.12916,-435.82367 435.82669,-435.82367 240.70167,0 435.83587,195.11597 435.83587,435.82367"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path36"
+       style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 846.06583,796.29815 602.13993,552.35805 846.08223,308.42609 C 818.11663,268.82221 783.54613,234.2521 743.94193,206.28676 L 499.99956,450.22692 256.05719,206.28676 c -39.6001,27.96534 -74.16146,62.52725 -102.12378,102.13113 l 243.93411,243.94016 -243.93411,243.9401 c 27.96232,39.60387 62.52368,74.16579 102.12378,102.13112 L 499.99956,654.49738 743.94193,898.42927 c 39.6042,-27.96533 74.1665,-62.52725 102.1239,-102.13112"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
