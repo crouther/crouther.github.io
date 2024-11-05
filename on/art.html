@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<!-- Javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../script/i.js"></script>
-	<script type="text/javascript" src="../script/text.js"></script>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114285924-1"></script>
 	<script>
@@ -17,93 +11,100 @@
 	  gtag('config', 'UA-114285924-1');
 	</script>
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" type="text/css" href="../css/elements.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/frames/post.css">
-	<link rel="stylesheet" type="text/css" href="../css/frames/flexbox.css">
-	<link rel="stylesheet" type="text/css" href="../css/AvantFlat.css">
-
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<!-- Stylesheets 
+    <link rel="stylesheet" type="text/css" href="../css/AvantFlat.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/Modern.css">
 
 	<!-- Meta Tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="copyright" content="Pending...">
-	<meta name="description" content="A portfolio site hosting industry experience, research, projects and arts from MKC.">
-	<meta name="keywords" content="myles crouther, crouther, myles, portfolio crouther, myles portfolio, myles crouther arts, arts, arts myles">
+	<meta name="description" content="A high perfomance computing cluster side project">
+	<meta name="keywords" content="myles crouther, crouther, myles, computer crouther, myles personal computer, myles crouther workstation, PC, workstation myles">
 	<meta name="robots" content="index,follow">
-	<meta name="DC.title" content="MKC Arts">
+	<meta name="DC.title" content="MKC Projects">
 	<meta name="author" content="Myles Crouther">
 
-	<!-- Tab Decorations -->
 	<link rel="icon" href="../img/icon/logoSQ.png">
-	<title>MKC Arts</title>
+	<title>Myles' Portfolio</title>
 </head>
 
-<body style="background-color: #fff;">
+<style>
+    .grid{
+        margin: 0px;
+        padding: 0%;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
 
-	<div class="fw-box white" id="artSection">
-		<img id ="art" style="max-width: 100%; min-height: 55vw;" onclick="skipToArt();" src="https://lh3.googleusercontent.com/ZaS52RC4UOlQ5xyk11N87UbEJ271psTHqwQucltci6cqGBU-y6qetF2hLWvdMSR6auuQ2JF7CoIDncm6X0z22eV581Z0NBf2sxVV4a-M2B9Gonp6ODH3G0k3_5FnDwn9tzzVsdkKiWkq7_eLnIfmiMwKb3TrYXe35Dg_uq5aPmbIOIddAZtM8-E3MRzx1pWC4LDPTc6akY2LUIgO4T-5WZjv_lq5_Sezw3-Q7qp9Ks7Frad_mTVuyH3FeETzQ8rZuO2B25H_liKK_mwuJxVY-zWVS_QeQcPv8rqOXr7pD_6_aif5Oyf6SyWMAMBRD6sbFeSGOIkfQh_XkMET2qdYpY_yPGaFzrQfOi6wdyPkSVJns33bTU5P0wf3dHoOIwxLvqEiTtO-9QQdmnEV1qxEbK8ogRYlBFU0lStolGRuvDeKG9wH9zeSzlQQkx2g5E4wPFSQ9CP2uDmkoacWPXqaiqF-Bmdf07QReLS7XtZC6RectGAcuVFHe6OHs2XaaZTOC9VV7FgmNMJi1NxoQ4nKB9OssVOKGz67gJrI0oGph6oPmWLe9aSLQXHEgFz38y63SJToqg63UW3lp2qe9Pyu1UzhxagJxKcu6f3N2OuSqVLPTg_w-r89kaMnFgTUA0K-bPbJvyi4GEG8y-mLWk3f0K5_CuYW9wRnVirxW-qOLFk1mSUpLX3-3_PbQd56TJE5HBamLGDRI4AL63vSyDQG_kkzdQ=w1560-h878-no">
-		<div style="padding: 5%;">
-			<a id="bookTitle" href="book.html" target="_blank"><h1 style="margin-bottom:0px;">Living Vicariously</h1></a>
-			<h4 style="margin:.5em; margin-left:0em;"><i>A pending novel by the works of Myles Crouther</i></h4>
-			<p>The book discusses the spoils of suburbia and the urban struggle in a dystopian fictional memoir. Taking place in the outskirts of the Washingtonian area during the turn of the 21st century. Unknown reasons explain the current plight of the world. The narrative follows the lives of the remaining American tribes of the eastern seaboard.</p><a href="book"><p id="bkMr">Read more ></p></a>
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;}
+    .grid>div.tile {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 50%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 50%;
+        flex: 0 50%;
+    }
+    @media only screen and (orientation:portrait) {.fb2c>div.sqItem{height: 100vw;}}
+</style>
 
-			<p id="bkAbtMr">The adolescent narrator discusses political, social, and ethical issues of a previous era  while trying to recover memories of what life was like before the change to dystopia. In an unusual environment he observes the coming of age of both preadolescences and his own search for adulthood. Bouncing between the different tribes he attempts to piece together his own recollection of his past life in order to come to peace with the isolation of this new dystopia. Questions of happiness and the will to survive drive this epic, fictional, American story.</p>
-			<a id="bookLaunchPage" href="book.html" target="_blank"><p><i>Launch Page</i></p></a>
-		</div>
-	</div>
+<body>
 
-	<div class="fw-box" id="photographyPortfolio">
-		<a href="travel/dn-sea-img.html" id="pp">
-			<img id ="photography" class="MKCBars loadingAnimation" style="max-width: 100%; min-height: 30vw;" src="https://lh3.googleusercontent.com/ov8oQw4LUQVViwcJarwUfvASMJyut9Yw4WZTAjsNA6wRtFqYczLvrjuNM8sQwsn3qrk7L0Fu9AdU8XyBLkYNwvBua7B4qSTH_hteTJVC2MwmY19lZ801cpUzdQj9W5E2JfmOyokokHf7nWFuNUeNNv-EkuiVEc8Vu4fW-LZfDlgb23Zolx4q5McRlIUB8qX262o7fwa6A3FvHW99L1a5SB3vYAlFQZfGyTy6iVDG05iOkEH_8BbzYFklYIKomqFO2CZRE0DT5gnjcyKDY-eV8n-VtQBhXISSj30PmwGKgC2L0hLLqheVndrih6mzzowtq4OOrwQw1T91ZKRemU_gE6URbqh9-zfFFwASrytRU4Hhhr5q3YYqj77NQFbYn02o6qlh7oCbitnMxw5ovL25ovjeMqpmeqg6xMonISfuBI5pgrj0P28EDjbwue4ldsN_skeHPHc1PschGeHF8zvcEggqDycLU6DA9zWhqJnjsL8rBEVTqU8Xkytm3FQz3-BQQfwmXtDU4izC_kSM525YKCbSG9KLgAGEL4anOasuO7dD815sZLcGH5Y4zIdaZwHJE8Mpcn2Sfe-tQRBku6vCwBLA2oNJ7zeqnuMeNptLxPaNoIuTkeqmB_SQA0TJ2W_hkXhBmrlmFI6dbJYHAU61I_5KhuDmG3VaOon4_DHhFWDsGPNpop7PzGowfanmOiPxmcuUgnzZHWLaaDkS5fhyN_Z8KA=w1560-h482-no"></a>
-			<div style="padding: 5%;">
-				<h1 style="margin-bottom:0px;">Photography / Lifestyle</h1> <br>
-				<p>
-				<a class="redTxt" href="travel/dn-sea-img.html"  style="color: tomato; margin:.5em; font-size: 1.3em;">Asia</a>, 
-        		<a class="redTxt" href="travel/dn-noram.html"  style="color: tomato; margin:.5em; font-size: 1.3em;">North America</a>, 
-        		<a class="redTxt" href="photography.html" style="color: tomato; margin:.5em; font-size: 1.3em;">Archive</a> 
-        		</p>
-			</div>
-	</div>
 
-	<div class="fw-box offWhite" id="researchSection">
-		<div id ="research" class="MKCBars loadingAnimation" style="max-width: 100%; min-height: 43vw;" onclick="skipToResearch();"><video src="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/03/Connes-2880x1620_v2.mp4" autoplay="autoplay" muted="true" loop="true" playsinline="true" width="100%" poster="https://d2r55xnwy6nx47.cloudfront.net/uploads/2020/03/Connes-Lede-cover-2880x1620.jpg"></video><p style="text-align: right; margin: .05em;"><a href="https://davidope.com/" target="_blank" style="color: tomato; font-size: 1em;">[DVDP]</a></p></div>
-		
-		<a href="research.html"><div style="padding: 5%;">
-			<h1 style="margin-bottom:0px;">Research</h1>
-			<h4  style="margin:.5em; margin-left:0em;"><i>Fact-finding analysis</i></h4>
-			<p>Due to the depth and sensitivity of some of the research topics, not all information about each subject matter is immediately accessible or publicly available. However, abstracts, thesis, and some research documentation is available upon request in the listed fields of interest.</p>
+<!-- Arts -->
+<div class="fb2c">
 
-			<div class="md-box" style="margin-bottom: 2.5em;">
-			<div class = "content">
-			<div class="fb2c" style="border-style: dotted; margin-top: 2em;">
-				<div class="item"><h3 style="padding-left:3em;">Learn About > &nbsp;</h3></div>
-				
-				<div class="item">
-				<h3 style="padding-left: 3em;"><a href="research.html" class="typewrite yellow" data-period="2000" data-type='[ "Internet of Things", "Cryptography", "Quantum Computing", "Digital Privacy", "Big Data", "Artificial Intelligence" ]'><span class="wrap"></span>
-  				</a></h3>
-  				</div>
+    <div class="item ord1" id="art">
+        <img alt="Digital Arts" style="width: 100%; height: auto;" id="photography"
+            src="https://lh3.googleusercontent.com/pw/AP1GczNcdNs4Ow6lmiudmpb8z2joJOAz-tyXrG9bGYHum2LB4lnv6fKMexmTg3qerty2zxqH69nOVdVwq8duCs07sVrD_Kv7fIvlNVsag9_iei0EexaaVPAMaCGUr7sULxvbEkx_EDyGf9xtDQ-Ru6XOfzUF3g=w1558-h1558-s-no-gm?authuser=0"/>
+    </div>
 
-  			</div></div></div>
-  		</div></a>
-  	</div>
+    <div class="item ord2">			
+        <div class="bMain">
+        <h2 style="text-align: center; font-size: 3rem;">
+        <a href="on/photography.html">Photography</a></h2>
+        </div>
+    </div>
 
-	<!-- <div class="fw-box" id="audio">
-		<a href="https://soundcloud.com/2mylesaway" target="_blank">
-			<img id ="SoundCloudCoverPhoto" style="max-width: 100%;" src="../img/bkg/sc.png">
-			<div style="padding: 5%;">
-				<a href="https://soundcloud.com/2mylesaway" target="_blank"><h1 style="margin-bottom:0px;">SoundCloud... ^</h1></a>
-			</div>
-		</a>
-	</div> -->
+	<div class="item ord4">
+        <div class="bMain">                      
+			<h1 style="margin-bottom:0px;">Living Vicariously</h1>
+			<h4><i>A pending novel by the works of Myles Crouther</i></h4>
+
+			<p>The book discusses the spoils of suburbia and the urban struggle in a dystopian fictional memoir. Taking place in the outskirts of the Washingtonian area during the turn of the 21st century. Unknown reasons explain the current plight of the world. The narrative follows the lives of the remaining American tribes of the eastern seaboard. 
+			<br><br> 
+			The adolescent narrator discusses political, social, and ethical issues of a previous era  while trying to recover memories of what life was like before the change to dystopia. In an unusual environment he observes the coming of age of both preadolescences and his own search for adulthood. Bouncing between the different tribes he attempts to piece together his own recollection of his past life in order to come to peace with the isolation of this new dystopia. Questions of happiness and the will to survive drive this epic, fictional, American story.</p>
+
+			<button class = "button">
+				<a href="mailto:mkcrouther@gmail.com"><b>Buy</b></a>
+			</button>
+			<button class = "button">
+				<a href="mailto:mkcrouther@gmail.com"><b>Request Updates</b></a>
+			</button>
+        </div>
+    </div>
+
+    <div class="item ord3">	
+        <img id="about" class="MKCBars loadingAnimation" alt="Myles' Picture"
+            style="width: 100%; height: auto;"
+            src="../img/bkg/bookSQ.jpg">
+    </div>
+</div>
+
 
 </body>
-
 </html>
-<!-- The original was a product of a one day build. Minor finessing of details and fine tuning have been gradually applied over time but the enhancements are negligible to the layout and framework -->
+
+<script type="text/javascript"> // RELOADS WEBPAGE WHEN MOBILE ORIENTATION CHANGES  
+    window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
+</script>
