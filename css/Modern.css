@@ -153,6 +153,11 @@ p.PEco{font-size: 1.5em;
         padding: 2rem;
         margin: auto;
     }
+    .briefMain{
+        max-width: 50rem;
+        padding: 2rem;
+        margin: auto;
+    }
 
     .listTitle{font-size:calc(12px + 3vw);}
     .listItems{font-size:calc(12px + 2vw);}
@@ -177,6 +182,10 @@ p.PEco{font-size: 1.5em;
     .ord11{order: 11;}
     .ord12{order: 12;}
     .ord13{order: 13;}
+    .ord14{order: 14;}
+    .ord15{order: 15;}
+    .ord16{order: 16;}
+    .ord17{order: 17;}
 
     .fb3c>div.item {
         -webkit-box-flex: 0;
