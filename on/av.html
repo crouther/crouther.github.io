@@ -48,12 +48,12 @@
         -ms-flex: 0 50%;
         flex: 0 50%;
     }
+    
     @media only screen and (orientation:portrait) {
         .fb2c>div.sqItem{height: 100vw;}
-        .role{font-size:calc(12px + 0.5vh)}
+        .role{font-size:calc(18px + 0.5vh)}
     }
-
-    .role{font-size:calc(12px + 0.6vw)}
+    .role{font-size:calc(18px + 0.5vw)}
 </style>
 
 <body>
@@ -318,9 +318,19 @@
     </div>
 
     <div class="item ord11" id="ProjectionistPhoto">	
-        <img id="PJT" class="MKCBars loadingAnimation" alt="Projectionist Photo"
+        <!--<img id="PJT" class="MKCBars loadingAnimation" alt="Projectionist Photo"
             style="width: 100%; height: auto;"
-            src="https://lh3.googleusercontent.com/pw/AP1GczPgCiR3ciOA3nunrngAlqSdyUPJMEY30WqelQ6SJvq6KFi66ofFSAcT6_ktV4BtQ2XFn6lF5RG7TC158O-zFjflC-kt2mE-W6eZlznbnWc-Ra7fQA5I2P7tfK_AKkGuger5TAR1XWNRDsYRATjaIE2fkQ=w567-h567-s-no-gm?authuser=0">
+            src="https://lh3.googleusercontent.com/pw/AP1GczPgCiR3ciOA3nunrngAlqSdyUPJMEY30WqelQ6SJvq6KFi66ofFSAcT6_ktV4BtQ2XFn6lF5RG7TC158O-zFjflC-kt2mE-W6eZlznbnWc-Ra7fQA5I2P7tfK_AKkGuger5TAR1XWNRDsYRATjaIE2fkQ=w567-h567-s-no-gm?authuser=0">-->
+            <div class="slideshow-container" id="PJT">
+
+                <div class="mySlidesPJT fade">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPgCiR3ciOA3nunrngAlqSdyUPJMEY30WqelQ6SJvq6KFi66ofFSAcT6_ktV4BtQ2XFn6lF5RG7TC158O-zFjflC-kt2mE-W6eZlznbnWc-Ra7fQA5I2P7tfK_AKkGuger5TAR1XWNRDsYRATjaIE2fkQ=w567-h567-s-no-gm?authuser=0" style="width:100%">
+                </div>
+
+                <div class="mySlidesPJT fade">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMDXqZ9xq9Dmv0sG2sHIzYT__4qvUGJ2-z3C_ad12OhL-jMR2ncIO5reRVLKvIq4GP2HkWjeDjhLFFuw2mbee4S1ZCT9dNvxcd0ELvK2BWuQ7wYEIr_l7VE353aMwcOGmzZt1rj4tT22BVCxtefO8UaiQ=w961-h961-s-no-gm?authuser=0" style="width:100%">
+                </div>
+            </div>
     </div>
 
     <!-- General AV -->
@@ -509,6 +519,11 @@
     /* Slideshow Photos */
     .mySlides {display: none;}
     .mySlides img {vertical-align: middle;}
+
+    /* Slideshow Photos */
+    .mySlidesPJT {display: none;}
+    .mySlidesPJT img {vertical-align: middle;}
+    
     
     /* Fading Animation */
     .fade {
@@ -536,6 +551,22 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}    
   slides[slideIndex-1].style.display = "block";  
 
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+let slideIndexPJT = 0;
+showSlidesPJT();
+
+function showSlidesPJT() {
+  let i;
+  let slides = document.getElementsByClassName("mySlidesPJT");
+
+  for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+  slideIndexPJT++;
+
+  if (slideIndexPJT > slides.length) {slideIndexPJT = 1}    
+  slides[slideIndexPJT-1].style.display = "block";  
+
+  setTimeout(showSlidesPJT, 5000); // Change image every 5 seconds
 }
 </script>
